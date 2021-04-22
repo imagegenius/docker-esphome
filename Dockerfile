@@ -10,7 +10,7 @@ RUN set -xe && \
 	echo "**** install runtime packages ****" && \
 	apk add --no-cache \
 		py3-pip && \
-	if [ -z ${VERSION+x} ]; then \
+	if [ -z ${VERSION} ]; then \
 		VERSION=$(curl -sX GET https://api.github.com/repos/esphome/esphome/releases/latest | \
 			jq -r '.tag_name'); \
 	fi && \

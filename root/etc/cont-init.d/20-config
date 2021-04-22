@@ -1,9 +1,5 @@
 #!/usr/bin/with-contenv bash
 
-mkdir -p \
-	/var/run/esphome
-
 # permissions
 chown -R abc:abc \
 	/config \
-	/var/run/esphome

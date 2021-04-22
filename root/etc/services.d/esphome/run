@@ -12,5 +12,4 @@ echo "Starting ESPHome."
 redirect_cmd exec s6-setuidgid abc \
 	esphome \
 	/config \
-	dashboard \
-	--socket /var/run/esphome/esphome.sock
+	dashboard
