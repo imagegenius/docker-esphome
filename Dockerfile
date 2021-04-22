@@ -6,9 +6,6 @@ ARG VERSION
 LABEL build_version="ESPHome version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="hydaz"
 
-# environment settings
-ENV HOME="/config"
-
 RUN set -xe && \
 	echo "**** install runtime packages ****" && \
 	apk add --no-cache \
@@ -20,10 +17,11 @@ RUN set -xe && \
 	pip3 install --no-cache-dir --upgrade \
 		esphome=="${VERSION}" && \
 	echo "**** cleanup ****" && \
-	apk del --purge \
-		build-dependencies && \
 	rm -rf \
 		/tmp/*
+
+# environment settings
+ENV HOME="/config"
 
 # copy local files
 COPY root/ /
