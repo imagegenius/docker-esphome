@@ -14,12 +14,14 @@ RUN set -xe && \
 		VERSION=$(curl -sX GET https://api.github.com/repos/esphome/esphome/releases/latest | \
 			jq -r '.tag_name'); \
 	fi && \
-	pip3 install --no-cache-dir --upgrade \
-		esphome=="${VERSION}" \
-		platformio && \
+	pip3 install -U \
+		pip && \
+	pip3 install -U \
+		esphome=="${VERSION}" && \
 	echo "**** cleanup ****" && \
 	rm -rf \
-		/tmp/*
+		/tmp/* \
+		/root/.cache
 
 # environment settings
 ENV HOME="/config"

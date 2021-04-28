@@ -47,6 +47,11 @@ jobs:
             --tag vcxpz/ci-build:ci-build \
             --file Dockerfile .
 
+      - name: Test the Docker Image
+        run: |
+          export TEST_SEARCH="Starting dashboard web server on port 6052"
+          curl -sSL https://raw.githubusercontent.com/hydazz/docker-utils/main/docker/docker-ci.sh | bash
+
       - name: Build and Push the Docker Image
         run: |
           docker buildx build \
