@@ -15,7 +15,8 @@ RUN set -xe && \
 			jq -r '.tag_name'); \
 	fi && \
 	pip3 install --no-cache-dir --upgrade \
-		esphome=="${VERSION}" && \
+		esphome=="${VERSION}" \
+		platformio && \
 	echo "**** cleanup ****" && \
 	rm -rf \
 		/tmp/*
