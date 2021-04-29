@@ -23,9 +23,6 @@ RUN set -xe && \
 		/tmp/* \
 		/root/.cache
 
-# environment settings
-ENV HOME="/config"
-
 # copy local files
 COPY root/ /
 
