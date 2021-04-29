@@ -5,4 +5,4 @@ mkdir -p /tmp/platformio
 # permissions
 chown -R abc:abc \
 	/config \
-	/tmp/platformio \
+	/tmp/platformio
