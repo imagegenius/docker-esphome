@@ -1,8 +1,6 @@
 #!/usr/bin/with-contenv bash
 
-mkdir -p /tmp/platformio
-
 # permissions
 chown -R abc:abc \
 	/config \
-	/tmp/platformio
+	/tmp

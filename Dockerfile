@@ -24,7 +24,7 @@ RUN set -xe && \
 		/root/.cache
 
 # environment settings
-ENV HOME="/tmp/platformio"
+ENV HOME="/tmp/"
 
 # copy local files
 COPY root/ /
