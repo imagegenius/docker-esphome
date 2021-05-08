@@ -7,6 +7,10 @@ LABEL build_version="ESPHome version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="hydaz"
 
 RUN set -xe && \
+	echo "**** install build packages ****" && \
+	apk add --no-cache --virtual=build-dependencies \
+		curl \
+		jq && \
 	echo "**** install runtime packages ****" && \
 	apk add --no-cache \
 		py3-pip && \
@@ -19,12 +23,14 @@ RUN set -xe && \
 	pip3 install -U \
 		esphome=="${VERSION}" && \
 	echo "**** cleanup ****" && \
+	apk del --purge \
+		build-dependencies && \
 	rm -rf \
 		/tmp/* \
 		/root/.cache
 
 # environment settings
-ENV HOME="/tmp/"
+ENV HOME="/config/"
 
 # copy local files
 COPY root/ /
