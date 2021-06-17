@@ -21,7 +21,7 @@ libintl-0.21-r0
 libproc-3.3.17-r0
 libretls-3.3.3-r0
 libssl1.1-1.1.1k-r0
-libstdc++-10.3.1_git20210424-r1
+libstdc++-10.3.1_git20210424-r2
 linux-pam-1.5.1-r1
 mpdecimal-2.5.1-r1
 musl-1.2.2-r3
