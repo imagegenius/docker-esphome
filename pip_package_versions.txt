@@ -20,7 +20,7 @@ html5lib==1.1
 idna==3.2
 ifaddr==0.1.7
 lockfile==0.12.2
-marshmallow==3.12.1
+marshmallow==3.12.2
 msgpack==1.0.2
 ordered-set==4.0.2
 packaging==20.9
