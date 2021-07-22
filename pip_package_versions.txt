@@ -12,15 +12,15 @@ contextlib2==21.6.0
 distlib==0.3.1
 distro==1.5.0
 ecdsa==0.17.0
-esphome-dashboard==20210623.0
-esphome==1.19.4
+esphome-dashboard==20210719.0
+esphome==1.20.0
 esptool==2.8
 h11==0.12.0
 html5lib==1.1
 idna==3.2
 ifaddr==0.1.7
 lockfile==0.12.2
-marshmallow==3.12.2
+marshmallow==3.13.0
 msgpack==1.0.2
 ordered-set==4.0.2
 packaging==20.9
@@ -28,7 +28,7 @@ paho-mqtt==1.5.1
 pep517==0.10.0
 platformio==5.1.1
 progress==1.5
-protobuf==3.17.0
+protobuf==3.17.3
 pyaes==1.6.1
 pyelftools==0.27
 pyparsing==2.4.7
