@@ -9,7 +9,7 @@ chardet==4.0.0
 click==7.1.2
 colorama==0.4.4
 contextlib2==21.6.0
-distlib==0.3.1
+distlib==0.3.2
 distro==1.5.0
 ecdsa==0.17.0
 esphome-dashboard==20210719.0
