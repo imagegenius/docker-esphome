@@ -13,7 +13,7 @@ distlib==0.3.2
 distro==1.5.0
 ecdsa==0.17.0
 esphome-dashboard==20210719.0
-esphome==1.20.0
+esphome==1.20.1
 esptool==2.8
 h11==0.12.0
 html5lib==1.1
