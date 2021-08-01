@@ -50,7 +50,7 @@ jobs:
       - name: Test the Docker Image
         run: |
           export TEST_SEARCH="Starting dashboard web server on port 6052"
-          curl -sSL https://raw.githubusercontent.com/hydazz/docker-utils/main/docker/docker-ci.sh | bash
+          curl -sSL https://raw.githubusercontent.com/hydazz/docker-utils/main/scripts/docker-ci.sh | bash
 
       - name: Build and Push the Docker Image
         run: |
@@ -66,7 +66,7 @@ jobs:
       - name: Get New Package Versions From Image
         run: |
           docker run --rm --entrypoint /bin/sh -v ${PWD}:/tmp vcxpz/ci-build:ci-build -c '\
-            wget -q -O - https://raw.githubusercontent.com/hydazz/docker-utils/main/docker/package_versioner.sh | bash'
+            wget -q -O - https://raw.githubusercontent.com/hydazz/docker-utils/main/scripts/package_versioner.sh | bash'
 
       - name: Commit and Push Changes to Github
         run: |
