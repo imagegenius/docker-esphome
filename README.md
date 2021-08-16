@@ -1,6 +1,6 @@
 ## docker-esphome
 
-[![docker hub](https://img.shields.io/badge/docker_hub-link-blue?style=for-the-badge&logo=docker)](https://hub.docker.com/r/vcxpz/esphome) ![docker image size](https://img.shields.io/docker/image-size/vcxpz/esphome?style=for-the-badge&logo=docker) [![auto build](https://img.shields.io/badge/docker_builds-automated-blue?style=for-the-badge&logo=docker?color=d1aa67)](https://github.com/hydazz/docker-esphome/actions?query=workflow%3A"Auto+Builder+CI") [![codacy branch grade](https://img.shields.io/codacy/grade/def2f218a5eb46cf91a24afde10c253d/main?style=for-the-badge&logo=codacy)](https://app.codacy.com/gh/hydazz/docker-esphome)
+[![docker hub](https://img.shields.io/badge/docker_hub-link-blue?style=for-the-badge&logo=docker)](https://hub.docker.com/r/vcxpz/esphome) ![docker image size](https://img.shields.io/docker/image-size/vcxpz/esphome?style=for-the-badge&logo=docker) [![auto build](https://img.shields.io/badge/docker_builds-automated-blue?style=for-the-badge&logo=docker?color=d1aa67)](https://github.com/hydazz/docker-esphome/actions?query=workflow%3A"Auto+Builder+CI")
 
 [ESPHome](https://esphome.io/) is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.
 
