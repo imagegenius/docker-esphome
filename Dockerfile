@@ -15,7 +15,7 @@ RUN set -xe && \
 	apk add --no-cache \
 		py3-pip && \
 	if [ -z ${VERSION} ]; then \
-		VERSION=$(curl -sX GET https://api.github.com/repos/esphome/esphome/releases/latest | \
+		VERSION=$(curl -sL https://api.github.com/repos/esphome/esphome/releases/latest | \
 			jq -r '.tag_name'); \
 	fi && \
 	pip3 install -U \
