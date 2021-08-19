@@ -9,8 +9,14 @@ LABEL maintainer="hydaz"
 RUN set -xe && \
 	echo "**** install build packages ****" && \
 	apk add --no-cache --virtual=build-dependencies \
+		cargo \
 		curl \
-		jq && \
+		g++ \
+		gcc \
+		jq \
+		openssl-dev \
+		libffi-dev \
+		python3-dev && \
 	echo "**** install runtime packages ****" && \
 	apk add --no-cache \
 		py3-pip && \
@@ -27,7 +33,8 @@ RUN set -xe && \
 		build-dependencies && \
 	rm -rf \
 		/tmp/* \
-		/root/.cache
+		/root/.cache \
+		/root/.cargo
 
 # environment settings
 ENV HOME="/config/"
