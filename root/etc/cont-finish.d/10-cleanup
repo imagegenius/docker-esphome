@@ -1,10 +1,12 @@
 #!/usr/bin/with-contenv bash
-configs=$(find /config -name "*.yaml" -maxdepth 1)
 
-echo "Cleaning up ESPHome"
-for i in $configs; do
-	if [ -d ${i%.*} ]; then
-		esphome clean $i >/dev/null
-	fi
-	pio system prune -f >/dev/null
-done
+if [[ "${CLEANUP}" == "true" ]]; then
+	configs=$(find /config -name "*.yaml" -maxdepth 1)
+	echo "Cleaning up ESPHome"
+	for i in $configs; do
+		if [ -d ${i%.*} ]; then
+			esphome clean $i &>/dev/null
+		fi
+		pio system prune -f &>/dev/null
+	done
+fi

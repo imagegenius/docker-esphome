@@ -6,6 +6,8 @@ ARG VERSION
 LABEL build_version="ESPHome version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="hydaz"
 
+ENV S6_KILL_FINISH_MAXTIME="30000"
+
 RUN set -xe && \
 	echo "**** install build packages ****" && \
 	apk add --no-cache --virtual=build-dependencies \
