@@ -12,7 +12,6 @@ RUN set -xe && \
 	echo "**** install build packages ****" && \
 	apk add --no-cache --virtual=build-dependencies \
 		cargo \
-		curl \
 		g++ \
 		gcc \
 		jq \
