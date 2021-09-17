@@ -58,4 +58,4 @@ uvicorn==0.15.0
 voluptuous==0.12.1
 webencodings==0.5.1
 wsproto==1.0.0
-zeroconf==0.36.3
+zeroconf==0.36.4
