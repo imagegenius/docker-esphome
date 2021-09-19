@@ -25,9 +25,9 @@ RUN set -xe && \
 		VERSION=$(curl -sL https://api.github.com/repos/esphome/esphome/releases/latest | \
 			jq -r '.tag_name'); \
 	fi && \
-	pip3 install -U \
+	pip install -U \
 		pip && \
-	pip3 install -U \
+	pip install -U \
 		esphome=="${VERSION}" && \
 	echo "**** cleanup ****" && \
 	apk del --purge \
