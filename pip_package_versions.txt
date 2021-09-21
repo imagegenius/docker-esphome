@@ -19,7 +19,7 @@ distlib==0.3.2
 distro==1.6.0
 ecdsa==0.17.0
 esphome-dashboard==20210908.0
-esphome==2021.9.0
+esphome==2021.9.1
 esptool==3.1
 h11==0.12.0
 html5lib==1.1
@@ -58,4 +58,4 @@ uvicorn==0.15.0
 voluptuous==0.12.1
 webencodings==0.5.1
 wsproto==1.0.0
-zeroconf==0.36.5
+zeroconf==0.36.6
