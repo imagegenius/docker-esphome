@@ -7,6 +7,6 @@ if [[ "${CLEANUP}" == "true" ]]; then
 		if [ -d ${i%.*} ]; then
 			esphome clean $i &>/dev/null
 		fi
-		pio system prune -f &>/dev/null
 	done
+	pio system prune -f &>/dev/null
 fi
