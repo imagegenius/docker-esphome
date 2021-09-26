@@ -6,7 +6,10 @@ ARG VERSION
 LABEL build_version="ESPHome version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="hydaz"
 
-ENV S6_KILL_FINISH_MAXTIME="30000"
+# environment settings
+ENV PIPFLAGS="--no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine/ --find-links https://wheel-index.linuxserver.io/homeassistant/" \
+	PYTHONPATH="${PYTHONPATH}:/pip-packages" \
+	S6_KILL_FINISH_MAXTIME="30000"
 
 RUN set -xe && \
 	echo "**** install build packages ****" && \
@@ -20,14 +23,15 @@ RUN set -xe && \
 		python3-dev && \
 	echo "**** install runtime packages ****" && \
 	apk add --no-cache \
+		python3 \
 		py3-pip && \
 	if [ -z ${VERSION} ]; then \
 		VERSION=$(curl -sL https://api.github.com/repos/esphome/esphome/releases/latest | \
 			jq -r '.tag_name'); \
 	fi && \
-	pip install -U \
-		pip && \
-	pip install -U \
+	pip install --no-cache-dir --upgrade \
+		wheel && \
+	pip install ${PIPFLAGS} \
 		esphome=="${VERSION}" && \
 	echo "**** cleanup ****" && \
 	apk del --purge \
