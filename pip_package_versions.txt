@@ -1,9 +1,9 @@
 CacheControl==0.12.6
 PyYAML==5.4.1
-aioesphomeapi==9.0.0
+aioesphomeapi==9.1.1
 aiofiles==0.7.0
 ajsonrpc==1.2.0
-anyio==3.3.1
+anyio==3.3.2
 appdirs==1.4.4
 asgiref==3.4.1
 bitstring==3.1.9
@@ -19,7 +19,7 @@ distlib==0.3.3
 distro==1.6.0
 ecdsa==0.17.0
 esphome-dashboard==20210908.0
-esphome==2021.9.1
+esphome==2021.9.2
 esptool==3.1
 h11==0.12.0
 html5lib==1.1
