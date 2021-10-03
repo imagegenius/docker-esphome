@@ -14,7 +14,7 @@ chardet==4.0.0
 click==7.1.2
 colorama==0.4.4
 contextlib2==21.6.0
-cryptography==3.4.8
+cryptography==35.0.0
 distlib==0.3.3
 distro==1.6.0
 ecdsa==0.17.0
