@@ -1,0 +1,13 @@
+#!/usr/bin/with-contenv bash
+
+redirect_cmd() {
+	if [[ "${DEBUG}" == "true" ]]; then
+		"$@"
+	else
+		"$@" >/dev/null 2>&1
+	fi
+}
+
+echo "Starting ESPHome."
+redirect_cmd exec s6-setuidgid abc \
+	esphome dashboard /config
