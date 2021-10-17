@@ -4,13 +4,13 @@ PyYAML==5.4.1
 aioesphomeapi==9.1.4
 aiofiles==0.7.0
 ajsonrpc==1.2.0
-anyio==3.3.2
+anyio==3.3.4
 appdirs==1.4.4
 asgiref==3.4.1
 bitstring==3.1.9
 bottle==0.12.19
 certifi==2020.12.5
-cffi==1.14.6
+cffi==1.15.0
 chardet==4.0.0
 click==7.1.2
 colorama==0.4.4
@@ -59,4 +59,4 @@ uvicorn==0.15.0
 voluptuous==0.12.1
 webencodings==0.5.1
 wsproto==1.0.0
-zeroconf==0.36.7
+zeroconf==0.36.8
