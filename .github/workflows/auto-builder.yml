@@ -10,7 +10,7 @@ on:
       - released
 
 jobs:
-  alpine-latest:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -59,8 +59,8 @@ jobs:
             --output "type=image,push=true" \
             --build-arg BUILD_DATE="$(date +%Y-%m-%d)" \
             --build-arg VERSION=$(curl -sL "https://api.github.com/repos/hydazz/docker-esphome/releases/latest" | jq -r '.tag_name') \
-            --tag vcxpz/esphome:$(curl -sL "https://api.github.com/repos/hydazz/docker-esphome/releases/latest" | jq -r '.tag_name') \
             --tag vcxpz/esphome:latest \
+            --tag vcxpz/esphome:$(curl -sL "https://api.github.com/repos/hydazz/docker-esphome/releases/latest" | jq -r '.tag_name') \
             --file Dockerfile .
 
       - name: Get New Package Versions From Image
