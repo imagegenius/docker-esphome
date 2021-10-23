@@ -25,15 +25,18 @@ RUN set -xe && \
 		openssl-dev \
 		py3-pip \
 		python3 && \
-	if [ -z ${VERSION} ]; then \
-		VERSION=$(curl -sL https://api.github.com/repos/esphome/esphome/releases/latest | \
-			jq -r '.tag_name'); \
-	fi && \
+	echo "**** temporarily patch libffi libs ****" && \
+	ln -s /usr/lib/libffi.so.8 /usr/lib/libffi.so.7 && \
 	pip install --no-cache-dir --upgrade \
 		cython \
 		pip \
 		setuptools \
 		wheel && \
+	echo "**** install esphome ****" && \
+	if [ -z ${VERSION} ]; then \
+		VERSION=$(curl -sL https://api.github.com/repos/esphome/esphome/releases/latest | \
+			jq -r '.tag_name'); \
+	fi && \
 	pip install ${PIPFLAGS} \
 		esphome=="${VERSION}" && \
 	echo "**** cleanup ****" && \
