@@ -56,7 +56,7 @@ jobs:
       - name: Build and Push the Docker Image
         run: |
           docker buildx build \
-            --platform=linux/amd64,linux/arm64,linux/arm/v7 \
+            --platform=linux/amd64 \
             --output "type=image,push=true" \
             --build-arg BUILD_DATE="$(date +%Y-%m-%d)" \
             --build-arg VERSION=$(curl -sL "https://api.github.com/repos/hydazz/docker-esphome/releases/latest" | jq -r '.tag_name') \
