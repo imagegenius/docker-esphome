@@ -49,7 +49,7 @@ jobs:
 
       - name: Test the Docker Image
         run: |
-          export TEST_SEARCH="Starting dashboard web server on port 6052"
+          export TEST_SEARCH="Starting dashboard web server on"
           export INVERT_TEST_SEARCH=""
           curl -sSL https://raw.githubusercontent.com/hydazz/docker-utils/main/scripts/docker-ci.sh | bash
 
