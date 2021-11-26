@@ -4,7 +4,7 @@ PyYAML==6.0
 aioesphomeapi==10.2.0
 aiofiles==0.7.0
 ajsonrpc==1.2.0
-anyio==3.3.4
+anyio==3.4.0
 appdirs==1.4.4
 asgiref==3.4.1
 bitstring==3.1.9
@@ -15,12 +15,12 @@ charset-normalizer==2.0.7
 click==8.0.3
 colorama==0.4.4
 contextlib2==21.6.0
-cryptography==35.0.0
+cryptography==36.0.0
 distlib==0.3.3
 distro==1.6.0
 ecdsa==0.17.0
 esphome-dashboard==20211021.1
-esphome==2021.11.1
+esphome==2021.11.2
 esptool==3.2
 h11==0.12.0
 html5lib==1.1
