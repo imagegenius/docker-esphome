@@ -1,5 +1,5 @@
 CacheControl==0.12.10
-Cython==0.29.24
+Cython==0.29.25
 PyYAML==6.0
 aioesphomeapi==10.2.0
 aiofiles==0.7.0
@@ -16,7 +16,7 @@ click==8.0.3
 colorama==0.4.4
 contextlib2==21.6.0
 cryptography==36.0.0
-distlib==0.3.3
+distlib==0.3.4
 distro==1.6.0
 ecdsa==0.17.0
 esphome-dashboard==20211021.1
