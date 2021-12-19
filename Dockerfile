@@ -26,10 +26,11 @@ RUN set -xe && \
 		py3-pip \
 		python3 && \
 	echo "**** temporarily patch libffi libs ****" && \
-	ln -s /usr/lib/libffi.so.8 /usr/lib/libffi.so.7 && \
 	pip install --no-cache-dir --upgrade \
 		cython \
 		pip \
+		# force build reedsolo for python3.10
+		reedsolo \
 		setuptools \
 		wheel && \
 	echo "**** install esphome ****" && \
