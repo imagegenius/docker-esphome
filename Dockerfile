@@ -13,24 +13,22 @@ ENV PIPFLAGS="--no-cache-dir --find-links https://wheel-index.linuxserver.io/alp
 
 RUN set -xe && \
 	echo "**** install build packages ****" && \
-	apk add --no-cache --virtual=build-dependencies \
+	apk add --no-cache --virtual=build-dependencies -X http://dl-cdn.alpinelinux.org/alpine/v3.15/main \
 		cargo \
 		g++ \
 		gcc \
 		jq \
 		libffi-dev \
-		python3-dev && \
+		python3-dev==3.9.7-r4 && \
 	echo "**** install runtime packages ****" && \
-	apk add --no-cache \
+	apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/v3.15/community -X http://dl-cdn.alpinelinux.org/alpine/v3.15/main \
 		openssl-dev \
-		py3-pip \
-		python3 && \
+		py3-pip==20.3.4-r1 \
+		python3==3.9.7-r4 && \
 	echo "**** temporarily patch libffi libs ****" && \
 	pip install --no-cache-dir --upgrade \
 		cython \
 		pip \
-		# force build reedsolo for python3.10
-		reedsolo \
 		setuptools \
 		wheel && \
 	echo "**** install esphome ****" && \
