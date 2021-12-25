@@ -9,11 +9,11 @@ LABEL maintainer="hydaz"
 # environment settings
 ENV PIPFLAGS="--no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine/ --find-links https://wheel-index.linuxserver.io/homeassistant/" \
 	PYTHONPATH="${PYTHONPATH}:/pip-packages" \
-	S6_KILL_FINISH_MAXTIME="30000"
+	PY39_REPOS="-X http://dl-cdn.alpinelinux.org/alpine/v3.15/community -X http://dl-cdn.alpinelinux.org/alpine/v3.15/main"
 
 RUN set -xe && \
 	echo "**** install build packages ****" && \
-	apk add --no-cache --virtual=build-dependencies -X http://dl-cdn.alpinelinux.org/alpine/v3.15/main \
+	apk add --no-cache --virtual=build-dependencies ${PY39_REPOS} \
 		cargo \
 		g++ \
 		gcc \
@@ -21,11 +21,10 @@ RUN set -xe && \
 		libffi-dev \
 		python3-dev==3.9.7-r4 && \
 	echo "**** install runtime packages ****" && \
-	apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/v3.15/community -X http://dl-cdn.alpinelinux.org/alpine/v3.15/main \
+	apk add --no-cache ${PY39_REPOS} \
 		openssl-dev \
 		py3-pip==20.3.4-r1 \
 		python3==3.9.7-r4 && \
-	echo "**** temporarily patch libffi libs ****" && \
 	pip install --no-cache-dir --upgrade \
 		cython \
 		pip \
