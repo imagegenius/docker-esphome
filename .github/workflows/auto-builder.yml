@@ -40,7 +40,7 @@ jobs:
       - name: Build the Docker Image Locally (amd64)
         run: |
           docker buildx build \
-            --platform=amd64 \
+            --platform=linux/amd64 \
             --output "type=docker" \
             --build-arg BUILD_DATE="$(date +%Y-%m-%d)" \
             --build-arg VERSION=$(curl -sL "https://api.github.com/repos/hydazz/docker-esphome/releases/latest" | jq -r '.tag_name') \
