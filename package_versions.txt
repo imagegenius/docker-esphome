@@ -24,7 +24,7 @@ libintl-0.21-r1
 libproc-3.3.17-r1
 libretls-3.4.2-r0
 libssl1.1-1.1.1m-r1
-libstdc++-11.2.1_git20220106-r0
+libstdc++-11.2.1_git20220117-r0
 linux-pam-1.5.2-r0
 mpdecimal-2.5.1-r1
 musl-1.2.2-r7
@@ -37,7 +37,7 @@ pkgconf-1.8.0-r0
 procps-3.3.17-r1
 py3-appdirs-1.4.4-r3
 py3-cachecontrol-0.12.10-r1
-py3-certifi-2020.12.5-r2
+py3-certifi-2021.10.8-r0
 py3-charset-normalizer-2.0.7-r1
 py3-colorama-0.4.4-r2
 py3-contextlib2-21.6.0-r2
