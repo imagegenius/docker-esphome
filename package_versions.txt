@@ -38,7 +38,7 @@ procps-3.3.17-r1
 py3-appdirs-1.4.4-r3
 py3-cachecontrol-0.12.10-r1
 py3-certifi-2021.10.8-r0
-py3-charset-normalizer-2.0.7-r1
+py3-charset-normalizer-2.0.10-r0
 py3-colorama-0.4.4-r2
 py3-contextlib2-21.6.0-r2
 py3-distlib-0.3.4-r1
