@@ -1,6 +1,6 @@
 Cython==0.29.27
 PyYAML==6.0
-aioesphomeapi==10.6.0
+aioesphomeapi==10.8.2
 aiofiles==0.8.0
 ajsonrpc==1.2.0
 anyio==3.5.0
@@ -14,8 +14,8 @@ click==8.0.3
 colorama==0.4.4
 cryptography==36.0.1
 ecdsa==0.17.0
-esphome-dashboard==20220116.0
-esphome==2022.1.4
+esphome-dashboard==20220209.0
+esphome==2022.2.1
 esptool==3.2
 h11==0.13.0
 idna==3.3
