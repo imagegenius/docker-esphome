@@ -15,7 +15,7 @@ colorama==0.4.4
 cryptography==36.0.1
 ecdsa==0.17.0
 esphome-dashboard==20220209.0
-esphome==2022.2.3
+esphome==2022.2.4
 esptool==3.2
 h11==0.13.0
 idna==3.3
