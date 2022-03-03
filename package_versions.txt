@@ -42,11 +42,11 @@ py3-charset-normalizer-2.0.10-r0
 py3-colorama-0.4.4-r2
 py3-contextlib2-21.6.0-r2
 py3-distlib-0.3.4-r1
-py3-distro-1.6.0-r1
+py3-distro-1.7.0-r0
 py3-html5lib-1.1-r2
 py3-idna-3.3-r2
 py3-lockfile-0.12.2-r5
-py3-msgpack-1.0.2-r2
+py3-msgpack-1.0.3-r0
 py3-ordered-set-4.0.2-r3
 py3-packaging-21.3-r0
 py3-parsing-2.4.7-r3
