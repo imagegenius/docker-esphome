@@ -7,31 +7,29 @@ LABEL build_version="ESPHome version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="hydaz"
 
 # environment settings
-ENV PIPFLAGS="--no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine/ --find-links https://wheel-index.linuxserver.io/homeassistant/" \
-	PYTHONPATH="${PYTHONPATH}:/pip-packages" \
-	PY39_REPOS="-X http://dl-cdn.alpinelinux.org/alpine/v3.15/community -X http://dl-cdn.alpinelinux.org/alpine/v3.15/main"
+ENV PIPFLAGS="--no-cache-dir --find-links https://packages.hyde.services/alpine/wheels/ --find-links https://wheel-index.linuxserver.io/alpine/ --find-links https://wheel-index.linuxserver.io/homeassistant/" \
+	PYTHONPATH="${PYTHONPATH}:/pip-packages"
 
 RUN set -xe && \
 	echo "**** install build packages ****" && \
-	apk add --no-cache --virtual=build-dependencies ${PY39_REPOS} \
+	apk add --no-cache --virtual=build-dependencies \
 		cargo \
 		g++ \
 		gcc \
 		jq \
 		libffi-dev \
-		python3-dev==3.9.7-r4 && \
+		python3-dev && \
 	echo "**** install runtime packages ****" && \
-	apk add --no-cache ${PY39_REPOS} \
+	apk add --no-cache \
 		openssl-dev \
-		py3-pip==20.3.4-r1 \
-		python3==3.9.7-r4 && \
+		py3-pip \
+		python3 && \
 	pip install --no-cache-dir --upgrade \
 		cython \
 		pip \
+		reedsolo \
 		setuptools \
 		wheel && \
-	echo "**** patch libffi libs ****" && \
-	ln -s /usr/lib/libffi.so.8 /usr/lib/libffi.so.7 && \
 	echo "**** install esphome ****" && \
 	if [ -z ${VERSION} ]; then \
 		VERSION=$(curl -sL https://api.github.com/repos/esphome/esphome/releases/latest | \
@@ -42,6 +40,10 @@ RUN set -xe && \
 	echo "**** cleanup ****" && \
 	apk del --purge \
 		build-dependencies && \
+	for cleanfiles in *.pyc *.pyo; \
+  		do \
+  		find /usr/lib/python3.*  -iname "${cleanfiles}" -exec rm -f '{}' + ; \
+	done && \
 	rm -rf \
 		/tmp/* \
 		/root/.cache \
