@@ -15,12 +15,12 @@ charset-normalizer==2.0.10
 click==8.0.3
 colorama==0.4.4
 contextlib2==21.6.0
-cryptography==36.0.1
+cryptography==36.0.2
 distlib==0.3.4
 distro==1.7.0
 ecdsa==0.17.0
-esphome-dashboard==20220209.0
-esphome==2022.2.6
+esphome-dashboard==20220309.0
+esphome==2022.3.0
 esptool==3.2
 h11==0.13.0
 html5lib==1.1
