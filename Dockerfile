@@ -1,4 +1,4 @@
-FROM vcxpz/baseimage-alpine-glibc:latest
+FROM vcxpz/baseimage-alpine-glibc:2.34-r0
 
 # set version label
 ARG BUILD_DATE
@@ -37,6 +37,12 @@ RUN set -xe && \
 	fi && \
 	pip install ${PIPFLAGS} \
 		esphome=="${VERSION}" && \
+	echo "**** configure platformio ****" && \
+    platformio settings set enable_telemetry No && \
+    platformio settings set check_libraries_interval 1000000 && \
+    platformio settings set check_platformio_interval 1000000 && \
+    platformio settings set check_platforms_interval 1000000 && \
+    mkdir -p /piolibs && \
 	echo "**** cleanup ****" && \
 	apk del --purge \
 		build-dependencies && \
