@@ -54,9 +54,9 @@ tabulate==0.8.9
 toml==0.10.2
 tomli==2.0.0
 tornado==6.1
-tzdata==2021.5
+tzdata==2022.1
 tzlocal==4.1
-urllib3==1.26.8
+urllib3==1.26.9
 uvicorn==0.17.6
 voluptuous==0.12.2
 webencodings==0.5.1
