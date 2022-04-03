@@ -37,7 +37,7 @@ paho-mqtt==1.6.1
 pep517==0.12.0
 platformio==5.2.5
 progress==1.6
-protobuf==3.19.4
+protobuf==3.20.0
 pycparser==2.21
 pyelftools==0.28
 pyparsing==2.4.7
@@ -52,7 +52,7 @@ sniffio==1.2.0
 starlette==0.18.0
 tabulate==0.8.9
 toml==0.10.2
-tomli==2.0.0
+tomli==2.0.1
 tornado==6.1
 tzdata==2022.1
 tzlocal==4.1
