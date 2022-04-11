@@ -12,10 +12,12 @@ curl-7.82.0-r0
 expat-2.4.8-r0
 gdbm-1.23-r0
 glibc-2.35-r0
+glibc-bin-2.35-r0
 libacl-2.2.53-r0
 libattr-2.5.1-r1
 libbz2-1.0.8-r1
 libc-utils-0.7.2-r3
+libc6-compat-1.2.3-r0
 libcrypto1.1-1.1.1n-r0
 libcurl-7.82.0-r0
 libffi-3.4.2-r1
