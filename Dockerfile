@@ -1,4 +1,4 @@
-FROM vcxpz/baseimage-alpine-glibc:2.34-r0
+FROM vcxpz/baseimage-alpine-glibc:latest
 
 # set version label
 ARG BUILD_DATE
@@ -8,7 +8,8 @@ LABEL maintainer="hydaz"
 
 # environment settings
 ENV PIPFLAGS="--no-cache-dir --find-links https://packages.hyde.services/alpine/wheels/ --find-links https://wheel-index.linuxserver.io/alpine/ --find-links https://wheel-index.linuxserver.io/homeassistant/" \
-	PYTHONPATH="${PYTHONPATH}:/pip-packages"
+	PYTHONPATH="${PYTHONPATH}:/pip-packages" \
+	PLATFORMIO_GLOBALLIB_DIR=/piolibs
 
 RUN set -xe && \
 	echo "**** install build packages ****" && \
