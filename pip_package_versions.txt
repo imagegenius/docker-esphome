@@ -5,7 +5,7 @@ aiofiles==0.8.0
 ajsonrpc==1.2.0
 anyio==3.5.0
 appdirs==1.4.4
-asgiref==3.5.0
+asgiref==3.5.1
 bitstring==3.1.9
 bottle==0.12.19
 certifi==2021.10.8
@@ -14,7 +14,7 @@ charset-normalizer==2.0.12
 click==8.1.2
 colorama==0.4.4
 contextlib2==21.6.0
-cryptography==36.0.2
+cryptography==37.0.1
 ecdsa==0.17.0
 esphome-dashboard==20220309.0
 esphome==2022.4.0
