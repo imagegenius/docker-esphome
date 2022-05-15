@@ -3,7 +3,7 @@ PyYAML==6.0
 aioesphomeapi==10.8.2
 aiofiles==0.8.0
 ajsonrpc==1.2.0
-anyio==3.5.0
+anyio==3.6.1
 appdirs==1.4.4
 asgiref==3.5.1
 bitstring==3.1.9
