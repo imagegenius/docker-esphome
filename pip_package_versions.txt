@@ -17,7 +17,7 @@ contextlib2==21.6.0
 cryptography==37.0.2
 ecdsa==0.17.0
 esphome-dashboard==20220508.0
-esphome==2022.5.0
+esphome==2022.5.1
 esptool==3.3
 h11==0.13.0
 idna==3.3
