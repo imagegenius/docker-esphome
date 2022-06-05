@@ -1,4 +1,4 @@
-FROM vcxpz/baseimage-alpine-glibc:2.34-r0
+FROM vcxpz/baseimage-alpine-glibc
 
 # set version label
 ARG BUILD_DATE
@@ -8,8 +8,7 @@ LABEL maintainer="hydaz"
 
 # environment settings
 ENV PIPFLAGS="--no-cache-dir --find-links https://packages.hyde.services/alpine/wheels/ --find-links https://wheel-index.linuxserver.io/alpine/ --find-links https://wheel-index.linuxserver.io/homeassistant/" \
-	PYTHONPATH="${PYTHONPATH}:/pip-packages" \
-	PLATFORMIO_GLOBALLIB_DIR=/piolibs
+	PYTHONPATH="${PYTHONPATH}:/pip-packages"
 
 RUN set -xe && \
 	echo "**** install build packages ****" && \
@@ -38,12 +37,6 @@ RUN set -xe && \
 	fi && \
 	pip install ${PIPFLAGS} \
 		esphome=="${VERSION}" && \
-	echo "**** configure platformio ****" && \
-    platformio settings set enable_telemetry No && \
-    platformio settings set check_libraries_interval 1000000 && \
-    platformio settings set check_platformio_interval 1000000 && \
-    platformio settings set check_platforms_interval 1000000 && \
-    mkdir -p /piolibs && \
 	echo "**** cleanup ****" && \
 	apk del --purge \
 		build-dependencies && \
