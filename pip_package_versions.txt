@@ -23,7 +23,7 @@ h11==0.13.0
 idna==3.3
 ifaddr==0.1.7
 kconfiglib==13.7.1
-marshmallow==3.15.0
+marshmallow==3.16.0
 more-itertools==8.13.0
 noiseprotocol==0.3.1
 ordered-set==4.0.2

@@ -42,7 +42,7 @@ py3-ordered-set-4.0.2-r3
 py3-packaging-21.3-r0
 py3-parsing-2.4.7-r3
 py3-pep517-0.12.0-r2
-py3-pip-22.1.1-r0
+py3-pip-22.1.2-r0
 py3-retrying-1.3.3-r3
 py3-setuptools-59.4.0-r0
 py3-six-1.16.0-r1
