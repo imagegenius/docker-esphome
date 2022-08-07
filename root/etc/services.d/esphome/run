@@ -1,5 +1,5 @@
 #!/usr/bin/with-contenv bash
 
 echo "Starting ESPHome."
-redirect_cmd exec s6-setuidgid abc \
+exec s6-setuidgid abc \
 	esphome dashboard /config

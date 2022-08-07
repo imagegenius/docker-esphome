@@ -12,8 +12,6 @@ docker run -d \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=Australia/Melbourne \
-  -e DEBUG=true/false #optional \
-  -e CLEANUP=true/false #optional \
   -p 6052:6052 \
   -v <path to appdata>:/config \
   --restart unless-stopped \
@@ -21,13 +19,6 @@ docker run -d \
 ```
 
 [![template](https://img.shields.io/badge/unraid_template-ff8c2f?style=for-the-badge&logo=docker?color=d1aa67)](https://github.com/hydazz/docker-templates/blob/main/hydaz/esphome.xml)
-
-## Environment Variables
-
-| Name      | Description                                                                                                                                                                          | Default Value |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
-| `DEBUG`   | set `true` to display errors in the Docker logs. When set to `false` the Docker log is completely muted.                                                                             | `false`       |
-| `CLEANUP` | set `true` to cleanup PlatformIO and ESPHome on container shutdown. See cleanup script [here](https://github.com/hydazz/docker-esphome/blob/main/root/etc/cont-finish.d/10-cleanup). | `false`       |
 
 ## Upgrading ESPHome
 
