@@ -7,7 +7,7 @@ anyio==3.6.1
 appdirs==1.4.4
 asgiref==3.5.2
 bitstring==3.1.9
-bottle==0.12.21
+bottle==0.12.23
 certifi==2022.6.15
 cffi==1.15.1
 charset-normalizer==2.1.0
@@ -34,7 +34,7 @@ platformio==5.2.5
 protobuf==3.20.1
 pycparser==2.21
 pyelftools==0.28
-pyparsing==2.4.7
+pyparsing==3.0.9
 pyserial==3.5
 pytz-deprecation-shim==0.1.0.post0
 reedsolo==1.5.4
