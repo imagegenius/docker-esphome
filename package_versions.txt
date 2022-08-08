@@ -35,13 +35,13 @@ ncurses-libs-6.3_p20220729-r0
 ncurses-terminfo-base-6.3_p20220729-r0
 nghttp2-libs-1.48.0-r1
 openssl-dev-3.0.5-r1
-pkgconf-1.8.0-r0
+pkgconf-1.9.1-r0
 procps-3.3.17-r1
 py3-appdirs-1.4.4-r4
 py3-contextlib2-21.6.0-r2
 py3-more-itertools-8.13.0-r0
 py3-ordered-set-4.0.2-r4
-py3-packaging-21.3-r1
+py3-packaging-21.3-r2
 py3-parsing-3.0.9-r0
 py3-pep517-0.13.0-r0
 py3-pip-22.2.1-r0
