@@ -33,7 +33,7 @@ pep517==0.13.0
 platformio==5.2.5
 protobuf==3.20.1
 pycparser==2.21
-pyelftools==0.28
+pyelftools==0.29
 pyparsing==3.0.9
 pyserial==3.5
 pytz-deprecation-shim==0.1.0.post0
@@ -47,7 +47,7 @@ starlette==0.18.0
 tabulate==0.8.10
 tomli==2.0.1
 tornado==6.1
-tzdata==2022.1
+tzdata==2022.2
 tzlocal==4.2
 urllib3==1.26.11
 uvicorn==0.17.6
