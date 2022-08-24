@@ -1,5 +1,12 @@
 #!/usr/bin/with-contenv bash
 
+pio_cache_base=/config/.esphome/platformio
+
+mkdir -p "${pio_cache_base}"
+export PLATFORMIO_PLATFORMS_DIR="${pio_cache_base}/platforms"
+export PLATFORMIO_PACKAGES_DIR="${pio_cache_base}/packages"
+export PLATFORMIO_CACHE_DIR="${pio_cache_base}/cache"
+
 echo "Starting ESPHome."
 exec s6-setuidgid abc \
 	esphome dashboard /config
