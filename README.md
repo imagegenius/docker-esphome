@@ -31,6 +31,10 @@ docker run -d \
 
 [![template](https://img.shields.io/badge/unraid_template-ff8c2f?style=for-the-badge&logo=docker?color=d1aa67)](https://github.com/hydazz/docker-templates/blob/main/hydaz/esphome.xml)
 
+## Cleanup Command
+This container has an in-build utility to purge unused ESPHome and PlatformIO data, you can run the utility within the container wit the `cleanup` command.
+
+
 ## Upgrading ESPHome
 
 To upgrade, all you have to do is pull the latest Docker image. We automatically check for ESPHome updates daily. When a new version is released, we build and publish an image both as a version tag and on `:latest`.
