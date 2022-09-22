@@ -9,7 +9,7 @@ ca-certificates-20220614-r0
 ca-certificates-bundle-20220614-r0
 coreutils-9.1-r0
 curl-7.83.1-r3
-expat-2.4.8-r0
+expat-2.4.9-r0
 gdbm-1.23-r0
 glibc-2.35-r0
 glibc-bin-2.35-r0
