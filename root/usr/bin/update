@@ -1,10 +1,8 @@
 #!/usr/bin/with-contenv bash
 
 configs=$(find /config -name "*.yaml" -maxdepth 1)
-echo "Cleaning up ESPHome"
 for i in $configs; do
 	if [ ! $i = "secrets.yaml" ]; then
-		esphome clean $i &>/dev/null
+		s6-setuidgid abc esphome run $i
 	fi
 done
-pio system prune -f &>/dev/null
