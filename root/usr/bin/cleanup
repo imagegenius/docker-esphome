@@ -3,8 +3,6 @@
 configs=$(find /config -name "*.yaml" -maxdepth 1)
 echo "Cleaning up ESPHome"
 for i in $configs; do
-	if [ ! $i = "secrets.yaml" ]; then
-		esphome clean $i &>/dev/null
-	fi
+	s6-setuidgid abc esphome clean $i &>/dev/null
 done
-pio system prune -f &>/dev/null
+s6-setuidgid abc pio system prune -f &>/dev/null

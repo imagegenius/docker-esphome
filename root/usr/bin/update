@@ -1,8 +1,0 @@
-#!/usr/bin/with-contenv bash
-
-configs=$(find /config -name "*.yaml" -maxdepth 1)
-for i in $configs; do
-	if [ ! $i = "secrets.yaml" ]; then
-		s6-setuidgid abc esphome run $i
-	fi
-done
