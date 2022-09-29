@@ -21,7 +21,7 @@ ecdsa==0.18.0
 esphome-dashboard==20220920.1
 esphome==2022.9.1
 esptool==3.3.1
-h11==0.13.0
+h11==0.14.0
 idna==3.4
 ifaddr==0.2.0
 kconfiglib==13.7.1
@@ -49,7 +49,7 @@ starlette==0.20.4
 tabulate==0.8.10
 tomli==2.0.1
 tornado==6.1
-tzdata==2022.2
+tzdata==2022.4
 tzlocal==4.2
 urllib3==1.26.12
 uvicorn==0.17.6
