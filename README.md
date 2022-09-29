@@ -1,8 +1,6 @@
 ## docker-esphome
 
-**moved to https://hub.docker.com/u/hydaz**
-
-[![docker hub](https://img.shields.io/badge/docker_hub-link-blue?style=for-the-badge&logo=docker)](https://hub.docker.com/r/vcxpz/esphome) ![docker image size](https://img.shields.io/docker/image-size/vcxpz/esphome?style=for-the-badge&logo=docker) [![auto build](https://img.shields.io/badge/docker_builds-automated-blue?style=for-the-badge&logo=docker?color=d1aa67)](https://github.com/hydazz/docker-esphome/actions?query=workflow%3A"Auto+Builder+CI")
+[![docker hub](https://img.shields.io/badge/docker_hub-link-blue?style=for-the-badge&logo=docker)](https://hub.docker.com/r/hydaz/esphome) ![docker image size](https://img.shields.io/docker/image-size/hydaz/esphome?style=for-the-badge&logo=docker) [![auto build](https://img.shields.io/badge/docker_builds-automated-blue?style=for-the-badge&logo=docker?color=d1aa67)](https://github.com/hydazz/docker-esphome/actions?query=workflow%3A"Auto+Builder+CI")
 
 **This image has been adapted from [esphome/esphome](https://github.com/esphome/esphome/)**
 
@@ -28,7 +26,7 @@ docker run -d \
   -p 6052:6052 \
   -v <path to appdata>:/config \
   --restart unless-stopped \
-  vcxpz/esphome
+  hydaz/esphome
 ```
 
 [![template](https://img.shields.io/badge/unraid_template-ff8c2f?style=for-the-badge&logo=docker?color=d1aa67)](https://github.com/hydazz/docker-templates/blob/main/hydaz/esphome.xml)

@@ -29,7 +29,7 @@ jobs:
       - name: Docker Login
         uses: docker/login-action@v1
         with:
-          username: vcxpz
+          username: hydaz
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Github Login
@@ -44,7 +44,7 @@ jobs:
             --output "type=docker" \
             --build-arg BUILD_DATE="$(date +%Y-%m-%d)" \
             --build-arg VERSION=$(curl -sL "https://api.github.com/repos/hydazz/docker-esphome/releases/latest" | jq -r '.tag_name') \
-            --tag vcxpz/ci-build:ci-build \
+            --tag hydaz/ci-build:ci-build \
             --file Dockerfile .
 
       - name: Test the Docker Image
@@ -60,13 +60,13 @@ jobs:
             --output "type=image,push=true" \
             --build-arg BUILD_DATE="$(date +%Y-%m-%d)" \
             --build-arg VERSION=$(curl -sL "https://api.github.com/repos/hydazz/docker-esphome/releases/latest" | jq -r '.tag_name') \
-            --tag vcxpz/esphome:latest \
-            --tag vcxpz/esphome:$(curl -sL "https://api.github.com/repos/hydazz/docker-esphome/releases/latest" | jq -r '.tag_name') \
+            --tag hydaz/esphome:latest \
+            --tag hydaz/esphome:$(curl -sL "https://api.github.com/repos/hydazz/docker-esphome/releases/latest" | jq -r '.tag_name') \
             --file Dockerfile .
 
       - name: Get New Package Versions From Image
         run: |
-          docker run --rm --entrypoint /bin/sh -v ${PWD}:/tmp vcxpz/ci-build:ci-build -c '\
+          docker run --rm --entrypoint /bin/sh -v ${PWD}:/tmp hydaz/ci-build:ci-build -c '\
             curl -sSL https://raw.githubusercontent.com/hydazz/docker-utils/main/scripts/package_versioner.sh | bash'
 
       - name: Commit and Push Changes to Github
@@ -78,7 +78,7 @@ jobs:
       - name: Sync README.md With Docker Hub
         uses: peter-evans/dockerhub-description@v2
         with:
-          username: vcxpz
+          username: hydaz
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: vcxpz/esphome
+          repository: hydaz/esphome
 

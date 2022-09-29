@@ -1,3 +1,0 @@
-#!/usr/bin/with-contenv bash
-
-echo "This image will no longer receive updates, please update to hydaz/esphome!"
