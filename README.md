@@ -7,11 +7,11 @@
 #### Modifications:
 | | Modified|
 |--|--|
-| Packages | N/A |
-| Scripts | N/A |
 | Base OS | Rebased to Alpine |
-| Other | N/A |
 
+This image is 43% smaller than `esphome/esphome`
+
+**Compiling for ESP32 device does not currently work**
 
 [ESPHome](https://esphome.io/) is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.
 
