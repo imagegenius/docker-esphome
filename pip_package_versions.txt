@@ -18,8 +18,8 @@ colorama==0.4.5
 contextlib2==21.6.0
 cryptography==3.4.8
 ecdsa==0.18.0
-esphome-dashboard==20220920.1
-esphome==2022.9.1
+esphome-dashboard==20220925.0
+esphome==2022.9.2
 esptool==3.3.1
 h11==0.14.0
 idna==3.4
@@ -33,7 +33,7 @@ packaging==21.3
 paho-mqtt==1.6.1
 pep517==0.12.0
 platformio==6.0.2
-protobuf==3.20.2
+protobuf==3.20.3
 pycparser==2.21
 pyelftools==0.29
 pyparsing==2.4.7
