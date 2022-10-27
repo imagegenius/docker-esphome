@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: main
+          ref: ubuntu
           fetch-depth: 0
 
       - name: Set up QEMU
@@ -43,7 +43,6 @@ jobs:
             --platform=linux/amd64 \
             --output "type=docker" \
             --build-arg BUILD_DATE="$(date +%Y-%m-%d)" \
-            --build-arg VERSION=$(curl -sL "https://api.github.com/repos/hydazz/docker-esphome/releases/latest" | jq -r '.tag_name') \
             --tag hydaz/ci-build:ci-build \
             --file Dockerfile .
 
@@ -59,9 +58,7 @@ jobs:
             --platform=linux/amd64 \
             --output "type=image,push=true" \
             --build-arg BUILD_DATE="$(date +%Y-%m-%d)" \
-            --build-arg VERSION=$(curl -sL "https://api.github.com/repos/hydazz/docker-esphome/releases/latest" | jq -r '.tag_name') \
-            --tag hydaz/esphome:latest \
-            --tag hydaz/esphome:$(curl -sL "https://api.github.com/repos/hydazz/docker-esphome/releases/latest" | jq -r '.tag_name') \
+            --tag hydaz/esphome:ubuntu \
             --file Dockerfile .
 
       - name: Get New Package Versions From Image
@@ -74,11 +71,4 @@ jobs:
           git add -A
           git commit -m "Bot Updating Files" || true
           git push || true
-
-      - name: Sync README.md With Docker Hub
-        uses: peter-evans/dockerhub-description@v2
-        with:
-          username: hydaz
-          password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: hydaz/esphome
 

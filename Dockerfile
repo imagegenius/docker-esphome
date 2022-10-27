@@ -1,4 +1,4 @@
-FROM hydaz/baseimage-alpine-glibc
+FROM ghcr.io/linuxserver/baseimage-ubuntu:jammy
 
 # set version label
 ARG BUILD_DATE
@@ -8,24 +8,17 @@ LABEL maintainer="hydaz"
 
 # environment settings
 ENV \
-	PIPFLAGS=" --no-cache-dir --find-links https://packages.hyde.services/alpine/wheels/ --find-links https://wheel-index.linuxserver.io/alpine-3.16/ --find-links https://wheel-index.linuxserver.io/homeassistant-3.16/" \
+	PIPFLAGS="--no-cache-dir" \
 	PYTHONPATH="${PYTHONPATH}:/pip-packages" \
 	PLATFORMIO_GLOBALLIB_DIR=/piolibs
 
 RUN set -xe && \
-	echo "**** install build packages ****" && \
-	apk add --no-cache --virtual=build-dependencies \
-		cargo \
-		g++ \
-		gcc \
-		jq \
-		libffi-dev \
-		python3-dev && \
 	echo "**** install runtime packages ****" && \
-	apk add --no-cache \
-		openssl-dev \
-		iputils \
-		py3-pip \
+	apt-get update && \
+	apt-get install --no-install-recommends -y \
+		iputils-ping \
+		openssh-client \
+		python3-pip \
 		python3 && \
 	pip install --no-cache-dir --upgrade \
 		cython \
@@ -55,16 +48,15 @@ RUN set -xe && \
 	pip install ${PIPFLAGS} \
 		esphome=="${VERSION}" && \
 	echo "**** cleanup ****" && \
-	apk del --purge \
-		build-dependencies && \
 	for cleanfiles in *.pyc *.pyo; \
   		do \
-  		find /usr/lib/python3.*  -iname "${cleanfiles}" -exec rm -f '{}' + ; \
+  		find /usr/local/lib/python3.* -iname "${cleanfiles}" -exec rm -f '{}' + ; \
 	done && \
+	apt-get clean && \
 	rm -rf \
 		/tmp/* \
-		/root/.cache \
-		/root/.cargo
+		/var/lib/apt/lists/* \
+		/var/tmp/*
 
 # environment settings
 ENV HOME="/config/"
