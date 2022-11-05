@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-ubuntu:jammy
+FROM hydaz/baseimage-ubuntu:latest
 
 # set version label
 ARG BUILD_DATE
