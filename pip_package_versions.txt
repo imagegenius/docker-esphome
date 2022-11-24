@@ -18,7 +18,7 @@ contextlib2==21.6.0
 cryptography==3.4.8
 ecdsa==0.18.0
 esphome-dashboard==20221109.0
-esphome==2022.11.1
+esphome==2022.11.2
 esptool==3.3.1
 h11==0.14.0
 idna==3.4
@@ -50,7 +50,7 @@ tomli==2.0.1
 tornado==6.2
 tzdata==2022.6
 tzlocal==4.2
-urllib3==1.26.12
+urllib3==1.26.13
 uvicorn==0.19.0
 voluptuous==0.13.1
 wsproto==1.2.0
