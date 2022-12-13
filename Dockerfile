@@ -21,7 +21,6 @@ RUN set -xe && \
 		python3-pip \
 		python3 && \
 	pip install --no-cache-dir --upgrade \
-		cython \
 		pip \
 		reedsolo \
 		setuptools \
