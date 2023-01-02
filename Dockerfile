@@ -3,6 +3,7 @@ FROM hydaz/baseimage-ubuntu:latest
 # set version label
 ARG BUILD_DATE
 ARG VERSION
+ARG ESPHOME_VERSION
 LABEL build_version="ESPHome version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="hydaz"
 
@@ -29,13 +30,13 @@ RUN set -xe && \
 	mkdir -p \
 		/tmp/esphome \
 		/piolibs && \
-	if [ -z ${VERSION} ]; then \
-		VERSION=$(curl -sL https://api.github.com/repos/esphome/esphome/releases/latest | \
+	if [ -z ${ESPHOME_VERSION} ]; then \
+		ESPHOME_VERSION=$(curl -sL https://api.github.com/repos/esphome/esphome/releases/latest | \
 			jq -r '.tag_name'); \
 	fi && \
 	curl -o \
 		/tmp/esphome.tar.gz -L \
-		"https://github.com/esphome/esphome/archive/${VERSION}.tar.gz" && \
+		"https://github.com/esphome/esphome/archive/${ESPHOME_VERSION}.tar.gz" && \
 	tar xf \
 		/tmp/esphome.tar.gz -C \
 		/tmp/esphome --strip-components=1 && \
@@ -45,7 +46,7 @@ RUN set -xe && \
 		-r requirements_optional.txt && \
 	python3 docker/platformio_install_deps.py platformio.ini && \
 	pip install ${PIPFLAGS} \
-		esphome=="${VERSION}" && \
+		esphome=="${ESPHOME_VERSION}" && \
 	echo "**** cleanup ****" && \
 	for cleanfiles in *.pyc *.pyo; \
   		do \
