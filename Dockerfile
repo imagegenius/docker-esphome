@@ -2,8 +2,9 @@ FROM hydaz/baseimage-alpine-glibc
 
 # set version label
 ARG BUILD_DATE
+ARG VERSION
 ARG ESPHOME_VERSION
-LABEL build_version="ESPHome version:- ${ESPHOME_VERSION} Build-date:- ${BUILD_DATE}"
+LABEL build_version="ESPHome version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="hydaz"
 
 # environment settings
@@ -28,7 +29,6 @@ RUN set -xe && \
 		py3-pip \
 		python3 && \
 	pip install --no-cache-dir --upgrade \
-		cython \
 		pip \
 		reedsolo \
 		setuptools \
