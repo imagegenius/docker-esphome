@@ -6,7 +6,7 @@ project_url: "https://esphome.io/"
 project_logo: "https://esphome.io/_static/logo-text.svg"
 project_blurb: |
   [ESPHome]({{ project_url }}) - A system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.
-project_lsio_github_repo_url: "https://github.com/hydazz/docker-{{ project_name }}"
+project_github_repo_url: "https://github.com/hydazz/docker-{{ project_name }}"
 
 # supported architectures
 available_architectures:
@@ -31,6 +31,7 @@ opt_param_usage_include_env: false
 app_setup_block_enabled: true
 app_setup_block: |
   Access the webui at `<your-ip>:6052`, for more information check out [ESPHome]({{ project_url }}).
+  **Compiling for the ESP32 does not currently work on the `latest`/`main`/alpine image, please use the `:ubuntu` image instead!**
 
 # changelog
 changelogs:
