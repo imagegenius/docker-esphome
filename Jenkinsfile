@@ -13,7 +13,7 @@ pipeline {
   // Configuration for the variables used for this specific repo
   environment {
     BUILDS_DISCORD=credentials('build_webhook_url')
-    GITHUB_TOKEN=credentials('GITHUB_TOKEN')
+    GITHUB_TOKEN=credentials('github_token')
     EXT_RELEASE_TYPE = 'pip_version'
     EXT_PIP = 'esphome'
     BUILD_VERSION_ARG = 'ESPHOME_VERSION'
