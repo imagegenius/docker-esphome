@@ -571,7 +571,7 @@ pipeline {
         withCredentials([
           [
             $class: 'UsernamePasswordMultiBinding',
-            credentialsId: 'DOCKER_CREDS',
+            credentialsId: 'docker_creds',
             usernameVariable: 'DOCKERUSER',
             passwordVariable: 'DOCKERPASS'
           ]
@@ -621,7 +621,7 @@ pipeline {
         withCredentials([
           [
             $class: 'UsernamePasswordMultiBinding',
-            credentialsId: 'DOCKER_CREDS',
+            credentialsId: 'docker_creds',
             usernameVariable: 'DOCKERUSER',
             passwordVariable: 'DOCKERPASS'
           ]
@@ -759,7 +759,7 @@ pipeline {
         withCredentials([
           [
             $class: 'UsernamePasswordMultiBinding',
-            credentialsId: 'DOCKER_CREDS',
+            credentialsId: 'docker_creds',
             usernameVariable: 'DOCKERUSER',
             passwordVariable: 'DOCKERPASS'
           ]
