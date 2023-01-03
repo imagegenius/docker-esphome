@@ -1,5 +1,5 @@
 # This file is globally distributed to all container image projects from
-# https://github.com/linuxserver/docker-jenkins-builder/blob/master/.editorconfig
+# https://github.com/hydazz/docker-jenkins-builder/blob/master/.editorconfig
 
 # top-most EditorConfig file
 root = true
