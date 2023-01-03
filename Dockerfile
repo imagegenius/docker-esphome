@@ -13,7 +13,7 @@ ENV \
 	PYTHONPATH="${PYTHONPATH}:/pip-packages" \
 	PLATFORMIO_GLOBALLIB_DIR=/piolibs
 
-RUN set -xe && \
+RUN  \
 	echo "**** install build packages ****" && \
 	apk add --no-cache --virtual=build-dependencies \
 		cargo \

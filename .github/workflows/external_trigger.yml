@@ -12,6 +12,7 @@ jobs:
       - name: External Trigger
         if: github.ref == 'refs/heads/main'
         run: |
+          set -xe
           if [ -n "${{ secrets.PAUSE_EXTERNAL_TRIGGER_ESPHOME_MAIN }}" ]; then
             echo "**** Github secret PAUSE_EXTERNAL_TRIGGER_ESPHOME_MAIN is set; skipping trigger. ****"
             exit 0
