@@ -6,7 +6,7 @@ project_url: "https://esphome.io/"
 project_logo: "https://esphome.io/_static/logo-text.svg"
 project_blurb: |
   [ESPHome]({{ project_url }}) - A system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.
-project_github_repo_url: "https://github.com/hydazz/docker-{{ project_name }}"
+project_github_repo_url: "https://github.com/imagegenius/docker-{{ project_name }}"
 
 # supported architectures
 available_architectures:
