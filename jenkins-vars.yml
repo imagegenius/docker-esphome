@@ -5,17 +5,17 @@ project_name: docker-esphome
 external_type: pip_version
 release_type: stable
 release_tag: ubuntu
-branch: ubuntu
+ig_branch: ubuntu
 repo_vars:
   - EXT_RELEASE_TYPE = 'pip_version'
   - EXT_PIP = 'esphome'
   - BUILD_VERSION_ARG = 'ESPHOME_VERSION'
-  - USER = 'hydazz'
-  - REPO = 'docker-esphome'
+  - IG_USER = 'imagegenius'
+  - IG_REPO = 'docker-esphome'
   - CONTAINER_NAME = 'esphome'
-  - DOCKERHUB_IMAGE = 'hydaz/esphome'
-  - DEV_DOCKERHUB_IMAGE = 'dev/esphome'
-  - PR_DOCKERHUB_IMAGE = 'pipepr/esphome'
+  - DOCKERHUB_IMAGE = 'imagegenius/esphome'
+  - DEV_DOCKERHUB_IMAGE = 'igdev/esphome'
+  - PR_DOCKERHUB_IMAGE = 'igpipepr/esphome'
   - DIST_IMAGE = 'ubuntu'
   - MULTIARCH = 'false'
   - CI = 'true'
