@@ -1,11 +1,11 @@
-FROM hydaz/baseimage-alpine-glibc
+FROM ghcr.io/imagegenius/baseimage-alpine-glibc:latest
 
 # set version label
 ARG BUILD_DATE
 ARG VERSION
 ARG ESPHOME_VERSION
-LABEL build_version="Version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="hydaz"
+LABEL build_version="ImageGenius Version:- ${VERSION} Build-date:- ${BUILD_DATE}"
+LABEL maintainer="hydazz"
 
 # environment settings
 ENV \
