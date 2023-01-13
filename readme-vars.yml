@@ -8,6 +8,12 @@ project_blurb: |
   [ESPHome]({{ project_url }}) - A system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.
 project_github_repo_url: "https://github.com/imagegenius/docker-{{ project_name }}"
 
+# development version
+development_versions: true
+development_versions_items:
+  - { tag: "latest", desc: "Latest version of ESPHome with an Ubuntu Base" }
+  - { tag: "ubuntu", desc: "Latest version of ESPHome with an Alpine Base (ESP32 Compiling does not work)" }
+
 # supported architectures
 available_architectures:
   - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
