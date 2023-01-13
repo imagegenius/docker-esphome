@@ -26,6 +26,15 @@ The architectures supported by this image are:
 | arm64 | ❌ | |
 | armhf| ❌ | |
 
+## Version Tags
+
+This image provides various versions that are available via tags. Please read the descriptions carefully and exercise caution when using unstable or development tags.
+
+| Tag | Available | Description |
+| :----: | :----: |--- |
+| latest | ✅ | Latest version of ESPHome with an Ubuntu Base |
+| ubuntu | ✅ | Latest version of ESPHome with an Alpine Base (ESP32 Compiling does not work) |
+
 ## Application Setup
 
 Access the webui at `<your-ip>:6052`, for more information check out [ESPHome](https://esphome.io/).
