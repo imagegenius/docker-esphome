@@ -8,7 +8,8 @@ LABEL build_version="ImageGenius Version:- ${VERSION} Build-date:- ${BUILD_DATE}
 LABEL maintainer="hydazz"
 
 # environment settings
-ENV PYTHONPATH="${PYTHONPATH}:/pip-packages" \
+ENV DEBIAN_FRONTEND="noninteractive"\
+  PYTHONPATH="${PYTHONPATH}:/pip-packages" \
 	PLATFORMIO_GLOBALLIB_DIR=/piolibs
 
 RUN set -xe && \
@@ -17,8 +18,8 @@ RUN set -xe && \
 	apt-get install --no-install-recommends -y \
 		iputils-ping \
 		openssh-client \
-		python3-pip \
-		python3 && \
+		python3 \
+		python3-pip && \
 	pip install --no-cache-dir --upgrade \
 		reedsolo \
 		setuptools \
@@ -45,10 +46,9 @@ RUN set -xe && \
 	pip install --no-cache-dir \
 		esphome=="${ESPHOME_VERSION}" && \
 	echo "**** cleanup ****" && \
-	for cleanfiles in *.pyc *.pyo; \
-  		do \
-  		find /usr/local/lib/python3.* -iname "${cleanfiles}" -exec rm -f '{}' + ; \
-	done && \
+  for cleanfiles in *.pyc *.pyo; do \
+    find /usr/local/lib/python3.* /usr/lib/python3.* -name "${cleanfiles}" -delete; \
+  done && \
 	apt-get clean && \
 	rm -rf \
 		/tmp/* \
