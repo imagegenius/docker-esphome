@@ -8,8 +8,7 @@ LABEL build_version="ImageGenius Version:- ${VERSION} Build-date:- ${BUILD_DATE}
 LABEL maintainer="hydazz"
 
 # environment settings
-ENV \
-	PIPFLAGS=" --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.16/ --find-links https://wheel-index.linuxserver.io/homeassistant-3.16/" \
+ENV PIPFLAGS=" --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/" \
 	PYTHONPATH="${PYTHONPATH}:/pip-packages" \
 	PLATFORMIO_GLOBALLIB_DIR=/piolibs
 
@@ -29,7 +28,6 @@ RUN  \
 		py3-pip \
 		python3 && \
 	pip install --no-cache-dir --upgrade \
-		pip \
 		reedsolo \
 		setuptools \
 		wheel && \
