@@ -32,8 +32,8 @@ This image provides various versions that are available via tags. Please read th
 
 | Tag | Available | Description |
 | :----: | :----: |--- |
-| latest | ✅ | Latest version of ESPHome with an Ubuntu Base |
-| ubuntu | ✅ | Latest version of ESPHome with an Alpine Base (ESP32 Compiling does not work) |
+| latest | ✅ | Latest version of ESPHome with an Alpine Base (ESP32 Compiling does not work) |
+| ubuntu | ✅ | Latest version of ESPHome with an Ubuntu Base |
 
 ## Application Setup
 
