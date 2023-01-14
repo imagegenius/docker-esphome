@@ -11,8 +11,8 @@ project_github_repo_url: "https://github.com/imagegenius/docker-{{ project_name 
 # development version
 development_versions: true
 development_versions_items:
-  - { tag: "latest", desc: "Latest version of ESPHome with an Ubuntu Base" }
-  - { tag: "ubuntu", desc: "Latest version of ESPHome with an Alpine Base (ESP32 Compiling does not work)" }
+  - { tag: "latest", desc: "Latest version of ESPHome with an Alpine Base (ESP32 Compiling does not work)" }
+  - { tag: "ubuntu", desc: "Latest version of ESPHome with an Ubuntu Base" }
 
 # supported architectures
 available_architectures:
