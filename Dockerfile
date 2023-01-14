@@ -8,9 +8,7 @@ LABEL build_version="ImageGenius Version:- ${VERSION} Build-date:- ${BUILD_DATE}
 LABEL maintainer="hydazz"
 
 # environment settings
-ENV \
-	PIPFLAGS="--no-cache-dir" \
-	PYTHONPATH="${PYTHONPATH}:/pip-packages" \
+ENV PYTHONPATH="${PYTHONPATH}:/pip-packages" \
 	PLATFORMIO_GLOBALLIB_DIR=/piolibs
 
 RUN set -xe && \
@@ -22,7 +20,6 @@ RUN set -xe && \
 		python3-pip \
 		python3 && \
 	pip install --no-cache-dir --upgrade \
-		pip \
 		reedsolo \
 		setuptools \
 		wheel && \
@@ -41,11 +38,11 @@ RUN set -xe && \
 		/tmp/esphome.tar.gz -C \
 		/tmp/esphome --strip-components=1 && \
 	cd /tmp/esphome && \
-	pip install ${PIPFLAGS} \
+	pip install --no-cache-dir \
 		-r requirements.txt \
 		-r requirements_optional.txt && \
 	python3 docker/platformio_install_deps.py platformio.ini && \
-	pip install ${PIPFLAGS} \
+	pip install --no-cache-dir \
 		esphome=="${ESPHOME_VERSION}" && \
 	echo "**** cleanup ****" && \
 	for cleanfiles in *.pyc *.pyo; \
