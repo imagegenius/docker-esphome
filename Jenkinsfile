@@ -30,7 +30,7 @@ pipeline {
     CI_PORT = '6052'
     CI_SSL = 'false'
     CI_DELAY = '30'
-    CI_DOCKERENV = 'TZ=Europe/London'
+    CI_DOCKERENV = 'TZ=Australia/Melbourne'
     CI_AUTH = ''
     CI_WEBPATH = ''
   }
@@ -153,7 +153,7 @@ pipeline {
           env.IMAGE = env.DOCKERHUB_IMAGE
           env.GITHUBIMAGE = 'ghcr.io/' + env.IG_USER + '/' + env.CONTAINER_NAME
           if (env.MULTIARCH == 'true') {
-            env.CI_TAGS = 'amd64-' + env.EXT_RELEASE_CLEAN + '-ig' + env.IG_TAG_NUMBER + '|arm32v7-' + env.EXT_RELEASE_CLEAN + '-ig' + env.IG_TAG_NUMBER + '|arm64v8-' + env.EXT_RELEASE_CLEAN + '-ig' + env.IG_TAG_NUMBER
+            env.CI_TAGS = 'amd64-' + env.EXT_RELEASE_CLEAN + '-ig' + env.IG_TAG_NUMBER + '|arm64v8-' + env.EXT_RELEASE_CLEAN + '-ig' + env.IG_TAG_NUMBER
           } else {
             env.CI_TAGS = env.EXT_RELEASE_CLEAN + '-ig' + env.IG_TAG_NUMBER
           }
@@ -174,7 +174,7 @@ pipeline {
           env.IMAGE = env.DEV_DOCKERHUB_IMAGE
           env.GITHUBIMAGE = 'ghcr.io/' + env.IG_USER + '/igdev-' + env.CONTAINER_NAME
           if (env.MULTIARCH == 'true') {
-            env.CI_TAGS = 'amd64-' + env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-dev-' + env.COMMIT_SHA + '|arm32v7-' + env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-dev-' + env.COMMIT_SHA + '|arm64v8-' + env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-dev-' + env.COMMIT_SHA
+            env.CI_TAGS = 'amd64-' + env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-dev-' + env.COMMIT_SHA + '|arm64v8-' + env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-dev-' + env.COMMIT_SHA
           } else {
             env.CI_TAGS = env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-dev-' + env.COMMIT_SHA
           }
@@ -195,7 +195,7 @@ pipeline {
           env.IMAGE = env.PR_DOCKERHUB_IMAGE
           env.GITHUBIMAGE = 'ghcr.io/' + env.IG_USER + '/igpipepr-' + env.CONTAINER_NAME
           if (env.MULTIARCH == 'true') {
-            env.CI_TAGS = 'amd64-' + env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-pr-' + env.PULL_REQUEST + '|arm32v7-' + env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-pr-' + env.PULL_REQUEST + '|arm64v8-' + env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-pr-' + env.PULL_REQUEST
+            env.CI_TAGS = 'amd64-' + env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-pr-' + env.PULL_REQUEST + '|arm64v8-' + env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-pr-' + env.PULL_REQUEST
           } else {
             env.CI_TAGS = env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-pr-' + env.PULL_REQUEST
           }
@@ -403,39 +403,6 @@ pipeline {
                '''
           }
         }
-        stage('Build ARMHF') {
-          agent {
-            label 'ARMHF'
-          }
-          steps {
-            echo "Running on node: ${NODE_NAME}"
-            echo 'Logging into Github'
-            sh '''#! /bin/bash
-                  echo $GITHUB_TOKEN | docker login ghcr.io -u ImageGenius-CI --password-stdin
-               '''
-            sh "docker build \
-              --label \"org.opencontainers.image.created=${GITHUB_DATE}\" \
-              --label \"org.opencontainers.image.authors=imagegenius.io\" \
-              --label \"org.opencontainers.image.url=https://github.com/imagegenius/docker-esphome/packages\" \
-              --label \"org.opencontainers.image.source=https://github.com/imagegenius/docker-esphome\" \
-              --label \"org.opencontainers.image.version=${EXT_RELEASE_CLEAN}-ig${IG_TAG_NUMBER}\" \
-              --label \"org.opencontainers.image.revision=${COMMIT_SHA}\" \
-              --label \"org.opencontainers.image.vendor=imagegenius.io\" \
-              --label \"org.opencontainers.image.licenses=GPL-3.0-only\" \
-              --label \"org.opencontainers.image.ref.name=${COMMIT_SHA}\" \
-              --label \"org.opencontainers.image.title=Esphome\" \
-              --label \"org.opencontainers.image.description=[ESPHome](https://esphome.io/) - A system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.  \" \
-              --no-cache --pull -f Dockerfile.armhf -t ${IMAGE}:arm32v7-${META_TAG} \
-              --build-arg ${BUILD_VERSION_ARG}=${EXT_RELEASE} --build-arg VERSION=\"${VERSION_TAG}\" --build-arg BUILD_DATE=${GITHUB_DATE} ."
-            sh "docker tag ${IMAGE}:arm32v7-${META_TAG} ghcr.io/imagegenius/igdev-buildcache:arm32v7-${COMMIT_SHA}-${BUILD_NUMBER}"
-            retry(5) {
-              sh "docker push ghcr.io/imagegenius/igdev-buildcache:arm32v7-${COMMIT_SHA}-${BUILD_NUMBER}"
-            }
-            sh '''docker rmi \
-                  ${IMAGE}:arm32v7-${META_TAG} \
-                  ghcr.io/imagegenius/igdev-buildcache:arm32v7-${COMMIT_SHA}-${BUILD_NUMBER} || :'''
-          }
-        }
         stage('Build ARM64') {
           agent {
             label 'ARM64'
@@ -597,9 +564,7 @@ pipeline {
                     ghcr.io/imagegenius/igdev-buildcache:${COMMIT_SHA}-${BUILD_NUMBER} || :
                   else
 				    echo "Pulling images"
-                    docker pull ghcr.io/imagegenius/igdev-buildcache:arm32v7-${COMMIT_SHA}-${BUILD_NUMBER}
                     docker pull ghcr.io/imagegenius/igdev-buildcache:arm64v8-${COMMIT_SHA}-${BUILD_NUMBER}
-                    docker tag ghcr.io/imagegenius/igdev-buildcache:arm32v7-${COMMIT_SHA}-${BUILD_NUMBER} ${IMAGE}:arm32v7-${META_TAG}
                     docker tag ghcr.io/imagegenius/igdev-buildcache:arm64v8-${COMMIT_SHA}-${BUILD_NUMBER} ${IMAGE}:arm64v8-${META_TAG}
                   fi
                '''
@@ -615,10 +580,8 @@ pipeline {
                   if [ "${MULTIARCH}" == "true" ]; then
 				    echo "Pulling images"
                     docker pull ghcr.io/imagegenius/igdev-buildcache:amd64-${COMMIT_SHA}-${BUILD_NUMBER}
-                    docker pull ghcr.io/imagegenius/igdev-buildcache:arm32v7-${COMMIT_SHA}-${BUILD_NUMBER}
                     docker pull ghcr.io/imagegenius/igdev-buildcache:arm64v8-${COMMIT_SHA}-${BUILD_NUMBER}
                     docker tag ghcr.io/imagegenius/igdev-buildcache:amd64-${COMMIT_SHA}-${BUILD_NUMBER} ${IMAGE}:amd64-${META_TAG}
-                    docker tag ghcr.io/imagegenius/igdev-buildcache:arm32v7-${COMMIT_SHA}-${BUILD_NUMBER} ${IMAGE}:arm32v7-${META_TAG}
                     docker tag ghcr.io/imagegenius/igdev-buildcache:arm64v8-${COMMIT_SHA}-${BUILD_NUMBER} ${IMAGE}:arm64v8-${META_TAG}
                   else
 				    echo "Pulling image"
@@ -751,49 +714,37 @@ pipeline {
                   echo $GITHUB_TOKEN | docker login ghcr.io -u ImageGenius-CI --password-stdin
                   for MANIFESTIMAGE in "${IMAGE}" "${GITHUBIMAGE}"; do
                     docker tag ${IMAGE}:amd64-${META_TAG} ${MANIFESTIMAGE}:amd64-${META_TAG}
-                    docker tag ${IMAGE}:arm32v7-${META_TAG} ${MANIFESTIMAGE}:arm32v7-${META_TAG}
                     docker tag ${IMAGE}:arm64v8-${META_TAG} ${MANIFESTIMAGE}:arm64v8-${META_TAG}
                     docker tag ${MANIFESTIMAGE}:amd64-${META_TAG} ${MANIFESTIMAGE}:amd64-latest
-                    docker tag ${MANIFESTIMAGE}:arm32v7-${META_TAG} ${MANIFESTIMAGE}:arm32v7-latest
                     docker tag ${MANIFESTIMAGE}:arm64v8-${META_TAG} ${MANIFESTIMAGE}:arm64v8-latest
                     docker tag ${MANIFESTIMAGE}:amd64-${META_TAG} ${MANIFESTIMAGE}:amd64-${EXT_RELEASE_TAG}
-                    docker tag ${MANIFESTIMAGE}:arm32v7-${META_TAG} ${MANIFESTIMAGE}:arm32v7-${EXT_RELEASE_TAG}
                     docker tag ${MANIFESTIMAGE}:arm64v8-${META_TAG} ${MANIFESTIMAGE}:arm64v8-${EXT_RELEASE_TAG}
                     if [ -n "${SEMVER}" ]; then
                       docker tag ${MANIFESTIMAGE}:amd64-${META_TAG} ${MANIFESTIMAGE}:amd64-${SEMVER}
-                      docker tag ${MANIFESTIMAGE}:arm32v7-${META_TAG} ${MANIFESTIMAGE}:arm32v7-${SEMVER}
                       docker tag ${MANIFESTIMAGE}:arm64v8-${META_TAG} ${MANIFESTIMAGE}:arm64v8-${SEMVER}
                     fi
                     docker push ${MANIFESTIMAGE}:amd64-${META_TAG}
-                    docker push ${MANIFESTIMAGE}:arm32v7-${META_TAG}
                     docker push ${MANIFESTIMAGE}:arm64v8-${META_TAG}
                     docker push ${MANIFESTIMAGE}:amd64-latest
-                    docker push ${MANIFESTIMAGE}:arm32v7-latest
                     docker push ${MANIFESTIMAGE}:arm64v8-latest
                     docker push ${MANIFESTIMAGE}:amd64-${EXT_RELEASE_TAG}
-                    docker push ${MANIFESTIMAGE}:arm32v7-${EXT_RELEASE_TAG}
                     docker push ${MANIFESTIMAGE}:arm64v8-${EXT_RELEASE_TAG}
                     if [ -n "${SEMVER}" ]; then
                       docker push ${MANIFESTIMAGE}:amd64-${SEMVER}
-                      docker push ${MANIFESTIMAGE}:arm32v7-${SEMVER}
                       docker push ${MANIFESTIMAGE}:arm64v8-${SEMVER}
                     fi
                     docker manifest push --purge ${MANIFESTIMAGE}:latest || :
-                    docker manifest create ${MANIFESTIMAGE}:latest ${MANIFESTIMAGE}:amd64-latest ${MANIFESTIMAGE}:arm32v7-latest ${MANIFESTIMAGE}:arm64v8-latest
-                    docker manifest annotate ${MANIFESTIMAGE}:latest ${MANIFESTIMAGE}:arm32v7-latest --os linux --arch arm
+                    docker manifest create ${MANIFESTIMAGE}:latest ${MANIFESTIMAGE}:amd64-latest ${MANIFESTIMAGE}:arm64v8-latest
                     docker manifest annotate ${MANIFESTIMAGE}:latest ${MANIFESTIMAGE}:arm64v8-latest --os linux --arch arm64 --variant v8
                     docker manifest push --purge ${MANIFESTIMAGE}:${META_TAG} || :
-                    docker manifest create ${MANIFESTIMAGE}:${META_TAG} ${MANIFESTIMAGE}:amd64-${META_TAG} ${MANIFESTIMAGE}:arm32v7-${META_TAG} ${MANIFESTIMAGE}:arm64v8-${META_TAG}
-                    docker manifest annotate ${MANIFESTIMAGE}:${META_TAG} ${MANIFESTIMAGE}:arm32v7-${META_TAG} --os linux --arch arm
+                    docker manifest create ${MANIFESTIMAGE}:${META_TAG} ${MANIFESTIMAGE}:amd64-${META_TAG} ${MANIFESTIMAGE}:arm64v8-${META_TAG}
                     docker manifest annotate ${MANIFESTIMAGE}:${META_TAG} ${MANIFESTIMAGE}:arm64v8-${META_TAG} --os linux --arch arm64 --variant v8
                     docker manifest push --purge ${MANIFESTIMAGE}:${EXT_RELEASE_TAG} || :
-                    docker manifest create ${MANIFESTIMAGE}:${EXT_RELEASE_TAG} ${MANIFESTIMAGE}:amd64-${EXT_RELEASE_TAG} ${MANIFESTIMAGE}:arm32v7-${EXT_RELEASE_TAG} ${MANIFESTIMAGE}:arm64v8-${EXT_RELEASE_TAG}
-                    docker manifest annotate ${MANIFESTIMAGE}:${EXT_RELEASE_TAG} ${MANIFESTIMAGE}:arm32v7-${EXT_RELEASE_TAG} --os linux --arch arm
+                    docker manifest create ${MANIFESTIMAGE}:${EXT_RELEASE_TAG} ${MANIFESTIMAGE}:amd64-${EXT_RELEASE_TAG} ${MANIFESTIMAGE}:arm64v8-${EXT_RELEASE_TAG}
                     docker manifest annotate ${MANIFESTIMAGE}:${EXT_RELEASE_TAG} ${MANIFESTIMAGE}:arm64v8-${EXT_RELEASE_TAG} --os linux --arch arm64 --variant v8
                     if [ -n "${SEMVER}" ]; then
                       docker manifest push --purge ${MANIFESTIMAGE}:${SEMVER} || :
-                      docker manifest create ${MANIFESTIMAGE}:${SEMVER} ${MANIFESTIMAGE}:amd64-${SEMVER} ${MANIFESTIMAGE}:arm32v7-${SEMVER} ${MANIFESTIMAGE}:arm64v8-${SEMVER}
-                      docker manifest annotate ${MANIFESTIMAGE}:${SEMVER} ${MANIFESTIMAGE}:arm32v7-${SEMVER} --os linux --arch arm
+                      docker manifest create ${MANIFESTIMAGE}:${SEMVER} ${MANIFESTIMAGE}:amd64-${SEMVER} ${MANIFESTIMAGE}:arm64v8-${SEMVER}
                       docker manifest annotate ${MANIFESTIMAGE}:${SEMVER} ${MANIFESTIMAGE}:arm64v8-${SEMVER} --os linux --arch arm64 --variant v8
                     fi
                     docker manifest push --purge ${MANIFESTIMAGE}:latest
@@ -823,10 +774,8 @@ pipeline {
             sh '''#! /bin/bash
                   if [ "${MULTIARCH}" == "true" ]; then
                     docker rmi \
-                    ghcr.io/imagegenius/igdev-buildcache:arm32v7-${COMMIT_SHA}-${BUILD_NUMBER} \
                     ghcr.io/imagegenius/igdev-buildcache:arm64v8-${COMMIT_SHA}-${BUILD_NUMBER} \
                     ${IMAGE}:amd64-${META_TAG} \
-                    ${IMAGE}:arm32v7-${META_TAG} \
                     ${IMAGE}:arm64v8-${META_TAG} || :
                   else
                     docker rmi \
@@ -859,22 +808,17 @@ pipeline {
                       ${DELETEIMAGE}:amd64-${META_TAG} \
                       ${DELETEIMAGE}:amd64-latest \
                       ${DELETEIMAGE}:amd64-${EXT_RELEASE_TAG} \
-                      ${DELETEIMAGE}:arm32v7-${META_TAG} \
-                      ${DELETEIMAGE}:arm32v7-latest \
-                      ${DELETEIMAGE}:arm32v7-${EXT_RELEASE_TAG} \
                       ${DELETEIMAGE}:arm64v8-${META_TAG} \
                       ${DELETEIMAGE}:arm64v8-latest \
                       ${DELETEIMAGE}:arm64v8-${EXT_RELEASE_TAG} || :
                       if [ -n "${SEMVER}" ]; then
                         docker rmi \
                         ${DELETEIMAGE}:amd64-${SEMVER} \
-                        ${DELETEIMAGE}:arm32v7-${SEMVER} \
                         ${DELETEIMAGE}:arm64v8-${SEMVER} || :
                       fi
                     done
                     docker rmi \
                     ghcr.io/imagegenius/igdev-buildcache:amd64-${COMMIT_SHA}-${BUILD_NUMBER} \
-                    ghcr.io/imagegenius/igdev-buildcache:arm32v7-${COMMIT_SHA}-${BUILD_NUMBER} \
                     ghcr.io/imagegenius/igdev-buildcache:arm64v8-${COMMIT_SHA}-${BUILD_NUMBER} || :
                   else
                     for DELETEIMAGE in "${GITHUBIMAGE}" "${IMAGE}"; do
