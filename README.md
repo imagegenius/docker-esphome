@@ -23,7 +23,7 @@ The architectures supported by this image are:
 | Architecture | Available | Tag |
 | :----: | :----: | ---- |
 | x86-64 | ✅ | amd64-\<version tag\> |
-| arm64 | ❌ | |
+| arm64 | ✅ | arm64v8-\<version tag\> |
 
 ## Version Tags
 
@@ -55,7 +55,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/London
+      - TZ=Australia/Melbourne
     volumes:
       - <path to data>:/config
     ports:
@@ -70,7 +70,7 @@ docker run -d \
   --name=esphome \
   -e PUID=1000 \
   -e PGID=1000 \
-  -e TZ=Europe/London \
+  -e TZ=Australia/Melbourne \
   -p 6052:6052 \
   -v <path to data>:/config \
   --restart unless-stopped \
@@ -86,7 +86,7 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-p 6052` | WebUI Port |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
-| `-e TZ=Europe/London` | Specify a timezone to use, eg. Europe/London |
+| `-e TZ=Australia/Melbourne` | Specify a timezone to use, eg. Australia/Melbourne |
 | `-v /config` | Appdata Path |
 
 ## Environment variables from files (Docker secrets)
@@ -173,4 +173,5 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **1.20.23:** - Add aarch64 support.
 * **1.02.23:** - Initial Release.
