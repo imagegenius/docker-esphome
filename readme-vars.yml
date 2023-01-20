@@ -38,7 +38,8 @@ opt_param_usage_include_env: false
 app_setup_block_enabled: true
 app_setup_block: |
   Access the webui at `<your-ip>:6052`, for more information check out [ESPHome]({{ project_url }}).
-  **Compiling for the ESP32 does not currently work on the `latest`/`main`/alpine image, please use the `:ubuntu` image instead!**
+
+  **Compiling for the ESP32 does not currently work on the `latest`/`main`/`alpine` image, please use the `:ubuntu` image instead!**
 
 # changelog
 changelogs:
