@@ -37,7 +37,8 @@ This image provides various versions that are available via tags. Please read th
 ## Application Setup
 
 Access the webui at `<your-ip>:6052`, for more information check out [ESPHome](https://esphome.io/).
-**Compiling for the ESP32 does not currently work on the `latest`/`main`/alpine image, please use the `:ubuntu` image instead!**
+
+**Compiling for the ESP32 does not currently work on the `latest`/`main`/`alpine` image, please use the `:ubuntu` image instead!**
 
 ## Usage
 
