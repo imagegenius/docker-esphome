@@ -12,8 +12,8 @@ ca-certificates-bundle-20220614-r4
 coreutils-9.1-r0
 curl-7.87.0-r1
 gdbm-1.23-r0
-glibc-2.35-r2
-glibc-bin-2.35-r2
+glibc-2.35-r5
+glibc-bin-2.35-r5
 iputils-20211215-r0
 jq-1.6-r2
 libacl-2.3.1-r1
