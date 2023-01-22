@@ -4,7 +4,7 @@
 
 [![GitHub Release](https://img.shields.io/github/release/imagegenius/docker-esphome.svg?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/imagegenius/docker-esphome/releases)
 [![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=imagegenius.io&message=GitHub%20Package&logo=github)](https://github.com/imagegenius/docker-esphome/packages)
-![Image Size](https://img.shields.io/docker/image-size/imagegenius/esphome.svg?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=docker)
+![Image Size](https://img.shields.io/docker/image-size/imagegenius/esphome/ubuntu.svg?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=docker)
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.imagegenius.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-esphome%2Fjob%2Fubuntu%2F&logo=jenkins)](https://ci.imagegenius.io/job/Docker-Pipeline-Builders/job/docker-esphome/job/ubuntu/)
 [![IG CI](https://img.shields.io/badge/dynamic/yaml?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.imagegenius.io%2Fimagegenius%2Fesphome%2Flatest%2Fci-status.yml)](https://ci-tests.imagegenius.io/imagegenius/esphome/latest/index.html)
 
