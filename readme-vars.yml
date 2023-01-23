@@ -34,6 +34,9 @@ param_env_vars:
 # optional env variables
 opt_param_usage_include_env: false
 
+# unraid template
+unraid_category: "HomeAutomation: Tools:"
+
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
