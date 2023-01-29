@@ -31,8 +31,11 @@ param_ports:
 param_usage_include_env: true
 param_env_vars:
   - { env_var: "TZ", env_value: "Australia/Melbourne", desc: "Specify a timezone to use, eg. Australia/Melbourne"}
-# optional env variables
-opt_param_usage_include_env: false
+
+# optional container parameters
+opt_param_usage_include_env: true
+opt_param_env_vars:
+  - { env_var: "ESPHOME_DASHBOARD_USE_PING", env_value: "false", desc: "Use ping rather than mDNS to get device status, set to true if devices are appearing offline" }
 
 # application setup block
 app_setup_block_enabled: true
