@@ -6,7 +6,7 @@
 [![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=imagegenius.io&message=GitHub%20Package&logo=github)](https://github.com/imagegenius/docker-esphome/packages)
 ![Image Size](https://img.shields.io/docker/image-size/imagegenius/esphome/ubuntu.svg?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=docker)
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.imagegenius.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-esphome%2Fjob%2Fubuntu%2F&logo=jenkins)](https://ci.imagegenius.io/job/Docker-Pipeline-Builders/job/docker-esphome/job/ubuntu/)
-[![IG CI](https://img.shields.io/badge/dynamic/yaml?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.imagegenius.io%2Fimagegenius%2Fesphome%2Flatest%2Fci-status.yml)](https://ci-tests.imagegenius.io/imagegenius/esphome/latest/index.html)
+[![IG CI](https://img.shields.io/badge/dynamic/yaml?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.imagegenius.io%2Fimagegenius%2Fesphome%2Flatest%2Fci-status.yml)](https://ci-tests.imagegenius.io/imagegenius/esphome/latest-ubuntu/index.html)
 
 [ESPHome](https://esphome.io/) - A system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.
 
@@ -31,8 +31,8 @@ This image provides various versions that are available via tags. Please read th
 
 | Tag | Available | Description |
 | :----: | :----: |--- |
-| latest | ✅ | Latest version of ESPHome with an Alpine Base (ESP32 Compiling does not work) |
-| ubuntu | ✅ | Latest version of ESPHome with an Ubuntu Base |
+| latest | ✅ | Latest ESPHome release with an Alpine Base (ESP32 Compiling does not work) |
+| ubuntu | ✅ | Latest ESPHome release with an Ubuntu base. |
 
 ## Application Setup
 
@@ -56,7 +56,7 @@ services:
       - PGID=1000
       - TZ=Australia/Melbourne
     volumes:
-      - <path to data>:/config
+      - path_to_appdata:/config
     ports:
       - 6052:6052
     restart: unless-stopped
@@ -71,7 +71,7 @@ docker run -d \
   -e PGID=1000 \
   -e TZ=Australia/Melbourne \
   -p 6052:6052 \
-  -v <path to data>:/config \
+  -v path_to_appdata:/config \
   --restart unless-stopped \
   ghcr.io/imagegenius/esphome:ubuntu
 ```
@@ -172,5 +172,5 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
-* **20.01.23:** - Add support for aarch64.
+* **20.01.23:** - Add aarch64 support.
 * **02.01.23:** - Initial Release.
