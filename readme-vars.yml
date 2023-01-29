@@ -11,8 +11,8 @@ project_github_repo_url: "https://github.com/imagegenius/docker-{{ project_name 
 # development version
 development_versions: true
 development_versions_items:
-  - { tag: "latest", desc: "Latest version of ESPHome with an Alpine Base (ESP32 Compiling does not work)" }
-  - { tag: "ubuntu", desc: "Latest version of ESPHome with an Ubuntu Base" }
+  - { tag: "latest", desc: "Latest ESPHome release with an Alpine Base (ESP32 Compiling does not work)" }
+  - { tag: "ubuntu", desc: "Latest ESPHome release with an Ubuntu base." }
 
 # supported architectures
 available_architectures:
@@ -23,7 +23,7 @@ available_architectures:
 param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "<path to data>", desc: "Appdata Path" }
+  - { vol_path: "/config", vol_host_path: "path_to_appdata", desc: "Appdata Path" }
 
 param_usage_include_ports: true
 param_ports:
@@ -41,5 +41,5 @@ app_setup_block: |
 
 # changelog
 changelogs:
-  - { date: "20.01.23:", desc: "Add support for aarch64." }
+  - { date: "20.01.23:", desc: "Add aarch64 support." }
   - { date: "02.01.23:", desc: "Initial Release." }
