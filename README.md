@@ -6,7 +6,7 @@
 [![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=imagegenius.io&message=GitHub%20Package&logo=github)](https://github.com/imagegenius/docker-esphome/packages)
 ![Image Size](https://img.shields.io/docker/image-size/imagegenius/esphome/ubuntu.svg?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=docker)
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.imagegenius.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-esphome%2Fjob%2Fubuntu%2F&logo=jenkins)](https://ci.imagegenius.io/job/Docker-Pipeline-Builders/job/docker-esphome/job/ubuntu/)
-[![IG CI](https://img.shields.io/badge/dynamic/yaml?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.imagegenius.io%2Fimagegenius%2Fesphome%2Flatest%2Fci-status.yml)](https://ci-tests.imagegenius.io/imagegenius/esphome/latest-ubuntu/index.html)
+[![IG CI](https://img.shields.io/badge/dynamic/yaml?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.imagegenius.io%2Fimagegenius%2Fesphome%2Flatest-ubuntu%2Fci-status.yml)](https://ci-tests.imagegenius.io/imagegenius/esphome/latest-ubuntu/index.html)
 
 [ESPHome](https://esphome.io/) - A system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.
 
@@ -55,6 +55,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Australia/Melbourne
+      - ESPHOME_DASHBOARD_USE_PING=false #optional
     volumes:
       - path_to_appdata:/config
     ports:
@@ -70,6 +71,7 @@ docker run -d \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=Australia/Melbourne \
+  -e ESPHOME_DASHBOARD_USE_PING=false `#optional` \
   -p 6052:6052 \
   -v path_to_appdata:/config \
   --restart unless-stopped \
@@ -86,6 +88,7 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Australia/Melbourne` | Specify a timezone to use, eg. Australia/Melbourne |
+| `-e ESPHOME_DASHBOARD_USE_PING=false` | Use ping rather than mDNS to get device status, set to true if devices are appearing offline |
 | `-v /config` | Appdata Path |
 
 ## Environment variables from files (Docker secrets)
