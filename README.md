@@ -7,7 +7,7 @@
 [![Docker Hub](https://shields.io/badge/Docker%20Hub-blue?logo=docker&logoColor=ffffff&style=for-the-badge)](https://hub.docker.com/r/imagegenius/esphome)
 ![Image Size](https://img.shields.io/docker/image-size/imagegenius/esphome/latest.svg?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=docker)
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.imagegenius.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-esphome%2Fjob%2Fmain%2F&logo=jenkins)](https://ci.imagegenius.io/job/Docker-Pipeline-Builders/job/docker-esphome/job/main/)
-[![IG CI](https://img.shields.io/badge/dynamic/yaml?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.imagegenius.io%2Fimagegenius%2Fesphome%2Flatest-main%2Fci-status.yml)](https://ci-tests.imagegenius.io/imagegenius/esphome/latest-main/index.html)
+[![IG CI](https://img.shields.io/badge/dynamic/yaml?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.imagegenius.io%2Fesphome%2Flatest-main%2Fci-status.yml)](https://ci-tests.imagegenius.io/imagegenius/esphome/latest-main/index.html)
 
 [ESPHome](https://esphome.io/) - A system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.
 
