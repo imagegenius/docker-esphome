@@ -16,7 +16,6 @@ RUN \
     cargo \
     g++ \
     gcc \
-    jq \
     libffi-dev \
     python3-dev && \
   echo "**** install runtime packages ****" && \
