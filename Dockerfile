@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1
+
 FROM ghcr.io/imagegenius/baseimage-alpine-glibc:latest
 
 # set version label
