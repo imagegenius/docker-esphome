@@ -20,9 +20,6 @@ pipeline {
     IG_USER = 'imagegenius'
     IG_REPO = 'docker-esphome'
     CONTAINER_NAME = 'esphome'
-    DOCKERHUB_IMAGE = 'imagegenius/esphome'
-    DEV_DOCKERHUB_IMAGE = 'igdev/esphome'
-    PR_DOCKERHUB_IMAGE = 'igpipepr/esphome'
     DIST_IMAGE = 'alpine'
     MULTIARCH = 'true'
     CI = 'true'
@@ -30,7 +27,7 @@ pipeline {
     CI_PORT = '6052'
     CI_SSL = 'false'
     CI_DELAY = '30'
-    CI_DOCKERENV = 'TZ=Australia/Melbourne'
+    CI_DOCKERENV = ''
     CI_AUTH = ''
     CI_WEBPATH = ''
   }
