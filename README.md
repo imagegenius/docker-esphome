@@ -5,7 +5,7 @@
 [![GitHub Release](https://img.shields.io/github/release/imagegenius/docker-esphome.svg?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/imagegenius/docker-esphome/releases)
 [![GitHub Package Repository](https://shields.io/badge/GitHub%20Package-blue?logo=github&logoColor=ffffff&style=for-the-badge)](https://github.com/imagegenius/docker-esphome/packages)
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.imagegenius.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-esphome%2Fjob%2Fmain%2F&logo=jenkins)](https://ci.imagegenius.io/job/Docker-Pipeline-Builders/job/docker-esphome/job/main/)
-[![IG CI](https://img.shields.io/badge/dynamic/yaml?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.imagegenius.io%2Fesphome%2Flatest-main%2Fci-status.yml)](https://ci-tests.imagegenius.io/imagegenius/esphome/latest-main/index.html)
+[![IG CI](https://img.shields.io/badge/dynamic/yaml?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.imagegenius.io%2Fesphome%2Flatest-main%2Fci-status.yml)](https://ci-tests.imagegenius.io/esphome/latest-main/index.html)
 
 ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.
 
@@ -23,6 +23,7 @@ This image supports the following architectures:
 | :----: | :----: | ---- |
 | x86-64 | ✅ | amd64-\<version tag\> |
 | arm64 | ✅ | arm64v8-\<version tag\> |
+| armhf | ❌ | |
 
 ## Version Tags
 
@@ -32,7 +33,6 @@ This image offers different versions via tags. Be cautious when using unstable o
 | :----: | :----: |--- |
 | latest | ✅ | Latest ESPHome release with an Alpine Base (ESP32 Compiling does not work) |
 | ubuntu | ✅ | Latest ESPHome release with an Ubuntu base. |
-
 ## Application Setup
 
 Access the webui at `<your-ip>:6052`, for more information check out [ESPHome](https://esphome.io/).
@@ -55,7 +55,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Australia/Melbourne
+      - TZ=Etc/UTC
       - ESPHOME_DASHBOARD_USE_PING=false #optional
     volumes:
       - path_to_appdata:/config
@@ -71,15 +71,16 @@ docker run -d \
   --name=esphome \
   -e PUID=1000 \
   -e PGID=1000 \
-  -e TZ=Australia/Melbourne \
+  -e TZ=Etc/UTC \
   -e ESPHOME_DASHBOARD_USE_PING=false `#optional` \
   -p 6052:6052 \
   -v path_to_appdata:/config \
   --restart unless-stopped \
   ghcr.io/imagegenius/esphome:latest
+
 ```
 
-## Container Variables
+## Variables
 
 To configure the container, pass variables at runtime using the format `<external>:<internal>`. For instance, `-p 8080:80` exposes port `80` inside the container, making it accessible outside the container via the host's IP on port `8080`.
 
@@ -88,7 +89,7 @@ To configure the container, pass variables at runtime using the format `<externa
 | `-p 6052` | WebUI Port |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
-| `-e TZ=Australia/Melbourne` | Specify a timezone to use, eg. Australia/Melbourne |
+| `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
 | `-e ESPHOME_DASHBOARD_USE_PING=false` | Use ping rather than mDNS to get device status, set to true if devices are appearing offline |
 | `-v /config` | Appdata Path |
 
