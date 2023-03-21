@@ -48,5 +48,6 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "21.03.23:", desc: "Add service checks" }
   - { date: "20.01.23:", desc: "Add aarch64 support." }
   - { date: "02.01.23:", desc: "Initial Release." }
