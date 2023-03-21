@@ -32,7 +32,7 @@ dirmngr                2.2.27-3ubuntu2.1                        deb
 dpkg                   1.21.1ubuntu2.1                          deb     
 e2fsprogs              1.46.5-2ubuntu1.1                        deb     
 ecdsa                  0.18.0                                   python  
-esphome                2023.3.0                                 python  
+esphome                2023.3.1                                 python  
 esphome-dashboard      20230214.0                               python  
 esptool                4.5.1                                    python  
 findutils              4.8.0-1ubuntu3                           deb     
@@ -121,8 +121,8 @@ libpcre3               2:8.39-13ubuntu0.22.04.1                 deb
 libprocps8             2:3.3.17-6ubuntu2                        deb     
 libpsl5                0.21.0-1.2build2                         deb     
 libpython3-stdlib      3.10.6-1~22.04                           deb     
-libpython3.10-minimal  3.10.6-1~22.04.2                         deb     
-libpython3.10-stdlib   3.10.6-1~22.04.2                         deb     
+libpython3.10-minimal  3.10.6-1~22.04.2ubuntu1                  deb     
+libpython3.10-stdlib   3.10.6-1~22.04.2ubuntu1                  deb     
 libreadline8           8.1.2-1                                  deb     
 librtmp1               2.4+20151223.gitfa8646d.1-2build4        deb     
 libsasl2-2             2.1.27+dfsg2-3ubuntu1.2                  deb     
@@ -186,8 +186,8 @@ python3-pip            22.0.2+dfsg-1ubuntu0.2                   deb
 python3-pkg-resources  59.6.0-1.2ubuntu0.22.04.1                deb     
 python3-setuptools     59.6.0-1.2ubuntu0.22.04.1                deb     
 python3-wheel          0.37.1-2ubuntu0.22.04.1                  deb     
-python3.10             3.10.6-1~22.04.2                         deb     
-python3.10-minimal     3.10.6-1~22.04.2                         deb     
+python3.10             3.10.6-1~22.04.2ubuntu1                  deb     
+python3.10-minimal     3.10.6-1~22.04.2ubuntu1                  deb     
 pytz-deprecation-shim  0.1.0.post0                              python  
 readline-common        8.1.2-1                                  deb     
 reedsolo               1.6.0                                    python  
