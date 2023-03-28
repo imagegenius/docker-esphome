@@ -10,5 +10,5 @@ export PLATFORMIO_CACHE_DIR="${pio_cache_base}/cache"
 
 # permissions
 chown -R abc:abc \
-	/config \
-	/piolibs
+    /config \
+    /piolibs
