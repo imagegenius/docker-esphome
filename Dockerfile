@@ -62,9 +62,6 @@ RUN \
     /root/.cache \
     /root/.cargo
 
-# environment settings
-ENV HOME="/config/"
-
 # copy local files
 COPY root/ /
 
