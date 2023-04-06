@@ -1,5 +1,5 @@
 NAME                   VERSION                                  TYPE   
-Pillow                 9.4.0                                    python  
+Pillow                 9.5.0                                    python  
 PyYAML                 6.0                                      python  
 adduser                3.118ubuntu5                             deb     
 aioesphomeapi          13.5.0                                   python  
