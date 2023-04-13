@@ -87,9 +87,9 @@ To configure the container, pass variables at runtime using the format `<externa
 | Variable | Description |
 | :----: | --- |
 | `-p 6052` | WebUI Port |
-| `-e PUID=1000` | for UserID - see below for explanation |
-| `-e PGID=1000` | for GroupID - see below for explanation |
-| `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
+| `-e PUID=1000` | UID for permissions - see below for explanation |
+| `-e PGID=1000` | GID for permissions - see below for explanation |
+| `-e TZ=Etc/UTC` | Specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
 | `-e ESPHOME_DASHBOARD_USE_PING=false` | Use ping rather than mDNS to get device status, set to true if devices are appearing offline |
 | `-v /config` | Appdata Path |
 
