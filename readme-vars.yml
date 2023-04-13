@@ -10,7 +10,7 @@ project_github_repo_url: "https://github.com/imagegenius/docker-{{ project_name 
 # development version
 development_versions: true
 development_versions_items:
-  - { tag: "latest", desc: "Latest ESPHome release with an Alpine Base (ESP32 Compiling does not work)" }
+  - { tag: "latest", desc: "Latest ESPHome release with an Alpine Base." }
   - { tag: "ubuntu", desc: "Latest ESPHome release with an Ubuntu base." }
 
 # supported architectures
@@ -27,9 +27,7 @@ param_volumes:
 param_usage_include_ports: true
 param_ports:
   - { external_port: "6052", internal_port: "6052", port_desc: "WebUI Port" }
-param_usage_include_env: true
-param_env_vars:
-  - { env_var: "TZ", env_value: "Australia/Melbourne", desc: "Specify a timezone to use, eg. Australia/Melbourne"}
+param_usage_include_env: false
 
 # optional container parameters
 opt_param_usage_include_env: true
@@ -44,10 +42,9 @@ app_setup_block_enabled: true
 app_setup_block: |
   Access the webui at `<your-ip>:6052`, for more information check out [ESPHome]({{ project_url }}).
 
-  **Compiling for the ESP32 does not currently work on the `latest`/`main`/`alpine` image, please use the `:ubuntu` image instead!**
-
 # changelog
 changelogs:
+  - { date: "14.04.23:", desc: "switch to gcompat" }
   - { date: "21.03.23:", desc: "Add service checks" }
   - { date: "20.01.23:", desc: "Add aarch64 support." }
   - { date: "02.01.23:", desc: "Initial Release." }

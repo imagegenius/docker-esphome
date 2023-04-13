@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/imagegenius/baseimage-alpine-glibc:latest
+FROM ghcr.io/imagegenius/baseimage-alpine:3.17
 
 # set version label
 ARG BUILD_DATE
@@ -22,8 +22,9 @@ RUN \
     python3-dev && \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
-    openssl-dev \
+    gcompat \
     iputils \
+    openssl-dev \
     py3-pip \
     python3 && \
   pip install --no-cache-dir --upgrade \
