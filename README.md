@@ -31,13 +31,11 @@ This image offers different versions via tags. Be cautious when using unstable o
 
 | Tag | Available | Description |
 | :----: | :----: |--- |
-| latest | ✅ | Latest ESPHome release with an Alpine Base (ESP32 Compiling does not work) |
+| latest | ✅ | Latest ESPHome release with an Alpine Base. |
 | ubuntu | ✅ | Latest ESPHome release with an Ubuntu base. |
 ## Application Setup
 
 Access the webui at `<your-ip>:6052`, for more information check out [ESPHome](https://esphome.io/).
-
-**Compiling for the ESP32 does not currently work on the `latest`/`main`/`alpine` image, please use the `:ubuntu` image instead!**
 
 ## Usage
 
@@ -132,6 +130,7 @@ Instructions for updating containers:
 
 ## Versions
 
+* **14.04.23:** - switch to gcompat
 * **21.03.23:** - Add service checks
 * **20.01.23:** - Add aarch64 support.
 * **02.01.23:** - Initial Release.
