@@ -7,7 +7,7 @@ ajsonrpc                1.2.0                  python
 alpine-baselayout       3.4.0-r0               apk     
 alpine-baselayout-data  3.4.0-r0               apk     
 alpine-keys             2.4-r1                 apk     
-alpine-release          3.17.2-r0              apk     
+alpine-release          3.17.3-r0              apk     
 anyio                   3.6.2                  python  
 apk-tools               2.12.10-r1             apk     
 async-timeout           4.0.2                  python  
@@ -32,9 +32,8 @@ ecdsa                   0.18.0                 python
 esphome                 2023.3.2               python  
 esphome-dashboard       20230214.0             python  
 esptool                 4.5.1                  python  
+gcompat                 1.1.0-r0               apk     
 gdbm                    1.23-r0                apk     
-glibc                   2.35-r5                apk     
-glibc-bin               2.35-r5                apk     
 h11                     0.14.0                 python  
 idna                    3.4                    python  
 ifaddr                  0.2.0                  python  
@@ -46,7 +45,6 @@ libattr                 2.5.1-r2               apk
 libbsd                  0.11.7-r0              apk     
 libbz2                  1.0.8-r4               apk     
 libc-utils              0.7.2-r3               apk     
-libc6-compat            1.2.3-r4               apk     
 libcap2                 2.66-r0                apk     
 libcrypto3              3.0.8-r3               apk     
 libcurl                 7.88.1-r1              apk     
@@ -58,10 +56,12 @@ libmd                   1.0.4-r0               apk
 libproc                 3.3.17-r2              apk     
 libssl3                 3.0.8-r3               apk     
 libstdc++               12.2.1_git20220924-r4  apk     
+libucontext             1.2-r0                 apk     
 linux-pam               1.5.2-r1               apk     
 marshmallow             3.19.0                 python  
 mpdecimal               2.5.1-r1               apk     
 musl                    1.2.3-r4               apk     
+musl-obstack            1.2.3-r0               apk     
 musl-utils              1.2.3-r4               apk     
 ncurses-libs            6.3_p20221119-r0       apk     
 ncurses-terminfo-base   6.3_p20221119-r0       apk     
@@ -107,7 +107,7 @@ starlette               0.23.1                 python
 tabulate                0.9.0                  python  
 tornado                 6.2                    python  
 tzdata                  2023.3                 python  
-tzdata                  2023b-r1               apk     
+tzdata                  2023c-r0               apk     
 tzlocal                 4.2                    python  
 urllib3                 1.26.15                python  
 utmps-libs              0.1.2.0-r1             apk     
