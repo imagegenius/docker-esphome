@@ -164,7 +164,7 @@ netcat-openbsd         1.218-4ubuntu1                           deb
 noiseprotocol          0.3.1                                    python  
 openssh-client         1:8.9p1-3ubuntu0.1                       deb     
 openssl                3.0.2-0ubuntu1.8                         deb     
-packaging              23.0                                     python  
+packaging              23.1                                     python  
 paho-mqtt              1.6.1                                    python  
 passwd                 1:4.8.1-2ubuntu2.1                       deb     
 perl-base              5.34.0-3ubuntu1.1                        deb     
@@ -172,7 +172,7 @@ pinentry-curses        1.1.1-1build2                            deb
 pip                    22.0.2                                   python  
 platformio             6.1.6                                    python  
 procps                 2:3.3.17-6ubuntu2                        deb     
-protobuf               4.22.1                                   python  
+protobuf               4.22.3                                   python  
 publicsuffix           20211207.1025-1                          deb     
 pycparser              2.21                                     python  
 pyelftools             0.29                                     python  
