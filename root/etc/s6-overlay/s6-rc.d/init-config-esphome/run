@@ -1,12 +1,7 @@
 #!/usr/bin/with-contenv bash
 
-# setup pio
-pio_cache_base=/config/.esphome/platformio
-
-mkdir -p "${pio_cache_base}"
-export PLATFORMIO_PLATFORMS_DIR="${pio_cache_base}/platforms"
-export PLATFORMIO_PACKAGES_DIR="${pio_cache_base}/packages"
-export PLATFORMIO_CACHE_DIR="${pio_cache_base}/cache"
+# make folderes
+mkdir -p "${PIO_CACHE_BASE}"
 
 # permissions
 chown -R abc:abc \

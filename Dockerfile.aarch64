@@ -10,8 +10,11 @@ LABEL build_version="ImageGenius Version:- ${VERSION} Build-date:- ${BUILD_DATE}
 LABEL maintainer="hydazz"
 
 # environment settings
-ENV DEBIAN_FRONTEND="noninteractive" \
-  PLATFORMIO_GLOBALLIB_DIR=/piolibs
+ENV PLATFORMIO_GLOBALLIB_DIR="/piolibs" \
+  PIO_CACHE_BASE="/config/.esphome/platformio" \
+  PLATFORMIO_PLATFORMS_DIR="${PIO_CACHE_BASE}/platforms" \
+  PLATFORMIO_PACKAGES_DIR="${PIO_CACHE_BASE}/packages" \
+  PLATFORMIO_CACHE_DIR="${PIO_CACHE_BASE}/cache"
 
 RUN set -xe && \
   echo "**** install runtime packages ****" && \
