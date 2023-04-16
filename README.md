@@ -31,7 +31,7 @@ This image offers different versions via tags. Be cautious when using unstable o
 
 | Tag | Available | Description |
 | :----: | :----: |--- |
-| latest | ✅ | Latest ESPHome release with an Alpine Base (ESP32 Compiling does not work) |
+| latest | ✅ | Latest ESPHome release with an Alpine Base. |
 | ubuntu | ✅ | Latest ESPHome release with an Ubuntu base. |
 ## Application Setup
 
@@ -88,7 +88,7 @@ To configure the container, pass variables at runtime using the format `<externa
 | `-e PUID=1000` | UID for permissions - see below for explanation |
 | `-e PGID=1000` | GID for permissions - see below for explanation |
 | `-e TZ=Etc/UTC` | Specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
-| `-e ESPHOME_DASHBOARD_USE_PING=false` | Use ping rather than mDNS to get device status, set to true if devices are appearing offline |
+| `-e ESPHOME_DASHBOARD_USE_PING=false` | Use ping rather than mDNS to get device status, set to `true` if devices are appearing offline |
 | `-v /config` | Appdata Path |
 
 ## Umask for running applications
