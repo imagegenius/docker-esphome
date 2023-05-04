@@ -6,8 +6,8 @@ aioesphomeapi          13.5.1                                   python
 aiofiles               22.1.0                                   python  
 ajsonrpc               1.2.0                                    python  
 anyio                  3.6.2                                    python  
-apt                    2.4.8                                    deb     
-apt-utils              2.4.8                                    deb     
+apt                    2.4.9                                    deb     
+apt-utils              2.4.9                                    deb     
 async-timeout          4.0.2                                    python  
 base-files             12ubuntu4.3                              deb     
 base-passwd            3.5.52build1                             deb     
@@ -32,7 +32,7 @@ dirmngr                2.2.27-3ubuntu2.1                        deb
 dpkg                   1.21.1ubuntu2.1                          deb     
 e2fsprogs              1.46.5-2ubuntu1.1                        deb     
 ecdsa                  0.18.0                                   python  
-esphome                2023.4.3                                 python  
+esphome                2023.4.4                                 python  
 esphome-dashboard      20230214.0                               python  
 esptool                4.5.1                                    python  
 findutils              4.8.0-1ubuntu3                           deb     
@@ -58,7 +58,7 @@ iputils-ping           3:20211215-1                             deb
 jq                     1.6-2.1ubuntu3                           deb     
 kconfiglib             13.7.1                                   python  
 libacl1                2.3.1-1                                  deb     
-libapt-pkg6.0          2.4.8                                    deb     
+libapt-pkg6.0          2.4.9                                    deb     
 libassuan0             2.5.5-1build1                            deb     
 libattr1               1:2.5.1-1build1                          deb     
 libaudit-common        1:3.0.7-1build1                          deb     
@@ -163,7 +163,7 @@ netcat                 1.218-4ubuntu1                           deb
 netcat-openbsd         1.218-4ubuntu1                           deb     
 noiseprotocol          0.3.1                                    python  
 openssh-client         1:8.9p1-3ubuntu0.1                       deb     
-openssl                3.0.2-0ubuntu1.8                         deb     
+openssl                3.0.2-0ubuntu1.9                         deb     
 packaging              23.1                                     python  
 paho-mqtt              1.6.1                                    python  
 passwd                 1:4.8.1-2ubuntu2.1                       deb     
