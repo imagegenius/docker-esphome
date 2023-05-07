@@ -172,7 +172,7 @@ pinentry-curses        1.1.1-1build2                            deb
 pip                    22.0.2                                   python  
 platformio             6.1.6                                    python  
 procps                 2:3.3.17-6ubuntu2                        deb     
-protobuf               4.22.3                                   python  
+protobuf               4.22.4                                   python  
 publicsuffix           20211207.1025-1                          deb     
 pycparser              2.21                                     python  
 pyelftools             0.29                                     python  
@@ -191,7 +191,7 @@ python3.10-minimal     3.10.6-1~22.04.2ubuntu1                  deb
 pytz-deprecation-shim  0.1.0.post0                              python  
 readline-common        8.1.2-1                                  deb     
 reedsolo               1.6.0                                    python  
-requests               2.29.0                                   python  
+requests               2.30.0                                   python  
 sed                    4.8-1ubuntu2                             deb     
 semantic-version       2.10.0                                   python  
 sensible-utils         0.0.17                                   deb     
@@ -208,7 +208,7 @@ tzdata                 2023.3                                   python
 tzdata                 2023c-0ubuntu0.22.04.0                   deb     
 tzlocal                4.2                                      python  
 ubuntu-keyring         2021.03.26                               deb     
-urllib3                1.26.15                                  python  
+urllib3                2.0.2                                    python  
 usrmerge               25ubuntu2                                deb     
 util-linux             2.37.2-4ubuntu3                          deb     
 uvicorn                0.20.0                                   python  
