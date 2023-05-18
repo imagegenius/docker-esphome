@@ -1,7 +1,7 @@
 NAME                    VERSION                TYPE   
 Pillow                  9.5.0                  python  
 PyYAML                  6.0                    python  
-aioesphomeapi           13.5.1                 python  
+aioesphomeapi           13.7.5                 python  
 aiofiles                22.1.0                 python  
 ajsonrpc                1.2.0                  python  
 alpine-baselayout       3.4.0-r0               apk     
@@ -29,8 +29,8 @@ coreutils               9.1-r0                 apk
 cryptography            3.4.8                  python  
 curl                    8.0.1-r0               apk     
 ecdsa                   0.18.0                 python  
-esphome                 2023.4.4               python  
-esphome-dashboard       20230214.0             python  
+esphome                 2023.5.0               python  
+esphome-dashboard       20230516.0             python  
 esptool                 4.5.1                  python  
 gcompat                 1.1.0-r0               apk     
 gdbm                    1.23-r0                apk     
@@ -45,7 +45,7 @@ libattr                 2.5.1-r2               apk
 libbsd                  0.11.7-r0              apk     
 libbz2                  1.0.8-r4               apk     
 libc-utils              0.7.2-r3               apk     
-libcap2                 2.66-r0                apk     
+libcap2                 2.66-r1                apk     
 libcrypto3              3.0.8-r4               apk     
 libcurl                 8.0.1-r0               apk     
 libexpat                2.5.0-r0               apk     
@@ -76,7 +76,7 @@ pip                     22.3.1                 python
 pkgconf                 1.9.4-r0               apk     
 platformio              6.1.6                  python  
 procps                  3.3.17-r2              apk     
-protobuf                4.23.0                 python  
+protobuf                4.23.1                 python  
 py3-packaging           21.3-r2                apk     
 py3-parsing             3.0.9-r0               apk     
 py3-pip                 22.3.1-r1              apk     
@@ -89,7 +89,6 @@ pyparsing               3.0.9                  python
 pyserial                3.5                    python  
 python                  3.10.11                binary  
 python3                 3.10.11-r0             apk     
-pytz-deprecation-shim   0.1.0.post0            python  
 readline                8.2.0-r0               apk     
 reedsolo                1.6.0                  python  
 requests                2.30.0                 python  
@@ -105,10 +104,10 @@ sqlite-libs             3.40.1-r0              apk
 ssl_client              1.35.0-r29             apk     
 starlette               0.23.1                 python  
 tabulate                0.9.0                  python  
-tornado                 6.2                    python  
+tornado                 6.3.1                  python  
 tzdata                  2023.3                 python  
 tzdata                  2023c-r0               apk     
-tzlocal                 4.2                    python  
+tzlocal                 5.0.1                  python  
 urllib3                 2.0.2                  python  
 utmps-libs              0.1.2.0-r1             apk     
 uvicorn                 0.20.0                 python  
@@ -117,5 +116,5 @@ wheel                   0.40.0                 python
 wsproto                 1.2.0                  python  
 xz                      5.2.9-r0               apk     
 xz-libs                 5.2.9-r0               apk     
-zeroconf                0.56.0                 python  
+zeroconf                0.60.0                 python  
 zlib                    1.2.13-r0              apk     
