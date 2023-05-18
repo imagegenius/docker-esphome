@@ -43,7 +43,7 @@ RUN set -xe && \
   pip install \
     -r requirements.txt \
     -r requirements_optional.txt && \
-  python3 docker/platformio_install_deps.py platformio.ini && \
+  python3 script/platformio_install_deps.py platformio.ini --libraries && \
   pip install \
     esphome=="${ESPHOME_VERSION}" && \
   echo "**** cleanup ****" && \
