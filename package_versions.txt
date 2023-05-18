@@ -2,7 +2,7 @@ NAME                   VERSION                                  TYPE
 Pillow                 9.5.0                                    python  
 PyYAML                 6.0                                      python  
 adduser                3.118ubuntu5                             deb     
-aioesphomeapi          13.5.1                                   python  
+aioesphomeapi          13.7.5                                   python  
 aiofiles               22.1.0                                   python  
 ajsonrpc               1.2.0                                    python  
 anyio                  3.6.2                                    python  
@@ -32,8 +32,8 @@ dirmngr                2.2.27-3ubuntu2.1                        deb
 dpkg                   1.21.1ubuntu2.1                          deb     
 e2fsprogs              1.46.5-2ubuntu1.1                        deb     
 ecdsa                  0.18.0                                   python  
-esphome                2023.4.4                                 python  
-esphome-dashboard      20230214.0                               python  
+esphome                2023.5.0                                 python  
+esphome-dashboard      20230516.0                               python  
 esptool                4.5.1                                    python  
 findutils              4.8.0-1ubuntu3                           deb     
 gcc-12-base            12.1.0-2ubuntu1~22.04                    deb     
@@ -172,10 +172,11 @@ pinentry-curses        1.1.1-1build2                            deb
 pip                    22.0.2                                   python  
 platformio             6.1.6                                    python  
 procps                 2:3.3.17-6ubuntu2                        deb     
-protobuf               4.23.0                                   python  
+protobuf               4.23.1                                   python  
 publicsuffix           20211207.1025-1                          deb     
 pycparser              2.21                                     python  
 pyelftools             0.29                                     python  
+pyparsing              3.0.9                                    python  
 pyserial               3.5                                      python  
 python                 3.10.6                                   binary  
 python3                3.10.6-1~22.04                           deb     
@@ -188,7 +189,6 @@ python3-setuptools     59.6.0-1.2ubuntu0.22.04.1                deb
 python3-wheel          0.37.1-2ubuntu0.22.04.1                  deb     
 python3.10             3.10.6-1~22.04.2ubuntu1                  deb     
 python3.10-minimal     3.10.6-1~22.04.2ubuntu1                  deb     
-pytz-deprecation-shim  0.1.0.post0                              python  
 readline-common        8.1.2-1                                  deb     
 reedsolo               1.6.0                                    python  
 requests               2.30.0                                   python  
@@ -203,10 +203,10 @@ starlette              0.23.1                                   python
 sysvinit-utils         3.01-1ubuntu1                            deb     
 tabulate               0.9.0                                    python  
 tar                    1.34+dfsg-1ubuntu0.1.22.04.1             deb     
-tornado                6.2                                      python  
+tornado                6.3.1                                    python  
 tzdata                 2023.3                                   python  
 tzdata                 2023c-0ubuntu0.22.04.1                   deb     
-tzlocal                4.2                                      python  
+tzlocal                5.0.1                                    python  
 ubuntu-keyring         2021.03.26                               deb     
 urllib3                2.0.2                                    python  
 usrmerge               25ubuntu2                                deb     
@@ -216,5 +216,5 @@ voluptuous             0.13.1                                   python
 wheel                  0.37.1                                   python  
 wheel                  0.40.0                                   python  
 wsproto                1.2.0                                    python  
-zeroconf               0.56.0                                   python  
+zeroconf               0.60.0                                   python  
 zlib1g                 1:1.2.11.dfsg-2ubuntu9.2                 deb     
