@@ -49,7 +49,7 @@ RUN \
   pip install --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ \
     -r requirements.txt \
     -r requirements_optional.txt && \
-  python3 docker/platformio_install_deps.py platformio.ini && \
+  python3 script/platformio_install_deps.py platformio.ini --libraries && \
   pip install --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ \
     esphome=="${ESPHOME_VERSION}" && \
   echo "**** cleanup ****" && \
