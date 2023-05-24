@@ -32,7 +32,7 @@ dirmngr                2.2.27-3ubuntu2.1                        deb
 dpkg                   1.21.1ubuntu2.1                          deb     
 e2fsprogs              1.46.5-2ubuntu1.1                        deb     
 ecdsa                  0.18.0                                   python  
-esphome                2023.5.3                                 python  
+esphome                2023.5.4                                 python  
 esphome-dashboard      20230516.0                               python  
 esptool                4.5.1                                    python  
 findutils              4.8.0-1ubuntu3                           deb     
