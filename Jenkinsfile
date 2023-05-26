@@ -41,7 +41,7 @@ pipeline {
         script{
           env.EXIT_STATUS = ''
           env.IG_RELEASE = sh(
-            script: '''docker run --rm ghcr.io/linuxserver/alexeiled-skopeo sh -c 'skopeo inspect docker://ghcr.io/'${IG_USER}'/'${CONTAINER_NAME}':ubuntu 2>/dev/null' | jq -r '.Labels.build_version' | awk '{print $3}' | grep '\\-ig' || : ''',
+            script: '''docker run --rm quay.io/skopeo/stable:v1 inspect docker://ghcr.io/${IG_USER}/${CONTAINER_NAME}:ubuntu 2>/dev/null | jq -r '.Labels.build_version' | awk '{print $3}' | grep '\\-ig' || : ''',
             returnStdout: true).trim()
           env.IG_RELEASE_NOTES = sh(
             script: '''cat readme-vars.yml | awk -F \\" '/date: "[0-9][0-9].[0-9][0-9].[0-9][0-9]:/ {print $4;exit;}' | sed -E ':a;N;$!ba;s/\\r{0,1}\\n/\\\\n/g' ''',
@@ -302,6 +302,26 @@ pipeline {
         }
       }
     }
+    // If this is a ubuntu build check the S6 service file perms
+    stage("Check S6 Service file Permissions"){
+      when {
+        branch "ubuntu"
+        environment name: 'CHANGE_ID', value: ''
+        environment name: 'EXIT_STATUS', value: ''
+      }
+      steps {
+        script{
+          sh '''#! /bin/bash
+            WRONG_PERM=$(find ./  -path "./.git" -prune -o \\( -name "run" -o -name "finish" -o -name "check" \\) -not -perm -u=x,g=x,o=x -print)
+            if [[ -n "${WRONG_PERM}" ]]; then
+              echo "The following S6 service files are missing the executable bit; canceling the faulty build: ${WRONG_PERM}"
+              exit 1
+            else
+              echo "S6 service file perms look good."
+            fi '''
+        }
+      }
+    }
     /* ###############
        Build Container
        ############### */
@@ -315,20 +335,26 @@ pipeline {
       }
       steps {
         echo "Running on node: ${NODE_NAME}"
-        sh "docker buildx build \
-          --label \"org.opencontainers.image.created=${GITHUB_DATE}\" \
-          --label \"org.opencontainers.image.authors=imagegenius.io\" \
-          --label \"org.opencontainers.image.url=https://github.com/imagegenius/docker-esphome/packages\" \
-          --label \"org.opencontainers.image.source=https://github.com/imagegenius/docker-esphome\" \
-          --label \"org.opencontainers.image.version=${EXT_RELEASE_CLEAN}-ig${IG_TAG_NUMBER}\" \
-          --label \"org.opencontainers.image.revision=${COMMIT_SHA}\" \
-          --label \"org.opencontainers.image.vendor=imagegenius.io\" \
-          --label \"org.opencontainers.image.licenses=GPL-3.0-only\" \
-          --label \"org.opencontainers.image.ref.name=${COMMIT_SHA}\" \
-          --label \"org.opencontainers.image.title=Esphome\" \
-          --label \"org.opencontainers.image.description=ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.\" \
-          --no-cache --pull -t ${GITHUBIMAGE}:${META_TAG} --platform=linux/amd64 \
-          --build-arg ${BUILD_VERSION_ARG}=${EXT_RELEASE} --build-arg VERSION=\"${VERSION_TAG}\" --build-arg BUILD_DATE=${GITHUB_DATE} ."
+        sh '''#! /bin/bash
+              BUILDX_CONTAINER=$(head /dev/urandom | tr -dc 'a-z' | head -c12)
+              docker buildx create --driver=docker-container --name=${BUILDX_CONTAINER}
+              docker buildx build \
+                --label \"org.opencontainers.image.created=${GITHUB_DATE}\" \
+                --label \"org.opencontainers.image.authors=imagegenius.io\" \
+                --label \"org.opencontainers.image.url=https://github.com/imagegenius/docker-esphome/packages\" \
+                --label \"org.opencontainers.image.source=https://github.com/imagegenius/docker-esphome\" \
+                --label \"org.opencontainers.image.version=${EXT_RELEASE_CLEAN}-ig${IG_TAG_NUMBER}\" \
+                --label \"org.opencontainers.image.revision=${COMMIT_SHA}\" \
+                --label \"org.opencontainers.image.vendor=imagegenius.io\" \
+                --label \"org.opencontainers.image.licenses=GPL-3.0-only\" \
+                --label \"org.opencontainers.image.ref.name=${COMMIT_SHA}\" \
+                --label \"org.opencontainers.image.title=Esphome\" \
+                --label \"org.opencontainers.image.description=ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.\" \
+                --no-cache --pull -t ${GITHUBIMAGE}:${META_TAG} --platform=linux/amd64 \
+                --build-arg ${BUILD_VERSION_ARG}=${EXT_RELEASE} --build-arg VERSION=\"${VERSION_TAG}\" --build-arg BUILD_DATE=${GITHUB_DATE} . \
+                --builder=${BUILDX_CONTAINER} --load
+              docker buildx rm ${BUILDX_CONTAINER}
+           '''
       }
     }
     // Build MultiArch Docker containers for push to IG Repo
@@ -344,20 +370,26 @@ pipeline {
         stage('Build X86') {
           steps {
             echo "Running on node: ${NODE_NAME}"
-            sh "docker buildx build \
-              --label \"org.opencontainers.image.created=${GITHUB_DATE}\" \
-              --label \"org.opencontainers.image.authors=imagegenius.io\" \
-              --label \"org.opencontainers.image.url=https://github.com/imagegenius/docker-esphome/packages\" \
-              --label \"org.opencontainers.image.source=https://github.com/imagegenius/docker-esphome\" \
-              --label \"org.opencontainers.image.version=${EXT_RELEASE_CLEAN}-ig${IG_TAG_NUMBER}\" \
-              --label \"org.opencontainers.image.revision=${COMMIT_SHA}\" \
-              --label \"org.opencontainers.image.vendor=imagegenius.io\" \
-              --label \"org.opencontainers.image.licenses=GPL-3.0-only\" \
-              --label \"org.opencontainers.image.ref.name=${COMMIT_SHA}\" \
-              --label \"org.opencontainers.image.title=Esphome\" \
-              --label \"org.opencontainers.image.description=ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.\" \
-              --no-cache --pull -t ${GITHUBIMAGE}:amd64-${META_TAG} --platform=linux/amd64 \
-              --build-arg ${BUILD_VERSION_ARG}=${EXT_RELEASE} --build-arg VERSION=\"${VERSION_TAG}\" --build-arg BUILD_DATE=${GITHUB_DATE} ."
+            sh '''#!/bin/bash
+                  BUILDX_CONTAINER=$(head /dev/urandom | tr -dc 'a-z' | head -c12)
+                  docker buildx create --driver=docker-container --name=${BUILDX_CONTAINER}
+                  docker buildx build \
+                    --label \"org.opencontainers.image.created=${GITHUB_DATE}\" \
+                    --label \"org.opencontainers.image.authors=imagegenius.io\" \
+                    --label \"org.opencontainers.image.url=https://github.com/imagegenius/docker-esphome/packages\" \
+                    --label \"org.opencontainers.image.source=https://github.com/imagegenius/docker-esphome\" \
+                    --label \"org.opencontainers.image.version=${EXT_RELEASE_CLEAN}-ig${IG_TAG_NUMBER}\" \
+                    --label \"org.opencontainers.image.revision=${COMMIT_SHA}\" \
+                    --label \"org.opencontainers.image.vendor=imagegenius.io\" \
+                    --label \"org.opencontainers.image.licenses=GPL-3.0-only\" \
+                    --label \"org.opencontainers.image.ref.name=${COMMIT_SHA}\" \
+                    --label \"org.opencontainers.image.title=Esphome\" \
+                    --label \"org.opencontainers.image.description=ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.\" \
+                    --no-cache --pull -t ${GITHUBIMAGE}:amd64-${META_TAG} --platform=linux/amd64 \
+                    --build-arg ${BUILD_VERSION_ARG}=${EXT_RELEASE} --build-arg VERSION=\"${VERSION_TAG}\" --build-arg BUILD_DATE=${GITHUB_DATE} . \
+                    --builder=${BUILDX_CONTAINER} --load
+                  docker buildx rm ${BUILDX_CONTAINER}
+               '''
           }
         }
         stage('Build ARM64') {
@@ -370,20 +402,26 @@ pipeline {
             sh '''#!/bin/bash
                   echo $GITHUB_TOKEN | docker login ghcr.io -u ImageGeniusCI --password-stdin
                '''
-            sh "docker buildx build \
-              --label \"org.opencontainers.image.created=${GITHUB_DATE}\" \
-              --label \"org.opencontainers.image.authors=imagegenius.io\" \
-              --label \"org.opencontainers.image.url=https://github.com/imagegenius/docker-esphome/packages\" \
-              --label \"org.opencontainers.image.source=https://github.com/imagegenius/docker-esphome\" \
-              --label \"org.opencontainers.image.version=${EXT_RELEASE_CLEAN}-ig${IG_TAG_NUMBER}\" \
-              --label \"org.opencontainers.image.revision=${COMMIT_SHA}\" \
-              --label \"org.opencontainers.image.vendor=imagegenius.io\" \
-              --label \"org.opencontainers.image.licenses=GPL-3.0-only\" \
-              --label \"org.opencontainers.image.ref.name=${COMMIT_SHA}\" \
-              --label \"org.opencontainers.image.title=Esphome\" \
-              --label \"org.opencontainers.image.description=ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.\" \
-              --no-cache --pull -f Dockerfile.aarch64 -t ${GITHUBIMAGE}:arm64v8-${META_TAG} --platform=linux/arm64 \
-              --build-arg ${BUILD_VERSION_ARG}=${EXT_RELEASE} --build-arg VERSION=\"${VERSION_TAG}\" --build-arg BUILD_DATE=${GITHUB_DATE} ."
+            sh '''#! /bin/bash
+                  BUILDX_CONTAINER=$(head /dev/urandom | tr -dc 'a-z' | head -c12)
+                  docker buildx create --driver=docker-container --name=${BUILDX_CONTAINER}
+                  docker buildx build \
+                    --label \"org.opencontainers.image.created=${GITHUB_DATE}\" \
+                    --label \"org.opencontainers.image.authors=imagegenius.io\" \
+                    --label \"org.opencontainers.image.url=https://github.com/imagegenius/docker-esphome/packages\" \
+                    --label \"org.opencontainers.image.source=https://github.com/imagegenius/docker-esphome\" \
+                    --label \"org.opencontainers.image.version=${EXT_RELEASE_CLEAN}-ig${IG_TAG_NUMBER}\" \
+                    --label \"org.opencontainers.image.revision=${COMMIT_SHA}\" \
+                    --label \"org.opencontainers.image.vendor=imagegenius.io\" \
+                    --label \"org.opencontainers.image.licenses=GPL-3.0-only\" \
+                    --label \"org.opencontainers.image.ref.name=${COMMIT_SHA}\" \
+                    --label \"org.opencontainers.image.title=Esphome\" \
+                    --label \"org.opencontainers.image.description=ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.\" \
+                    --no-cache --pull -f Dockerfile.aarch64 -t ${GITHUBIMAGE}:arm64v8-${META_TAG} --platform=linux/arm64 \
+                    --build-arg ${BUILD_VERSION_ARG}=${EXT_RELEASE} --build-arg VERSION=\"${VERSION_TAG}\" --build-arg BUILD_DATE=${GITHUB_DATE} . \
+                    --builder=${BUILDX_CONTAINER} --load
+                  docker buildx rm ${BUILDX_CONTAINER}
+               '''
             sh "docker tag ${GITHUBIMAGE}:arm64v8-${META_TAG} ghcr.io/imagegenius/igdev-buildcache:arm64v8-${COMMIT_SHA}-${BUILD_NUMBER}"
             retry(5) {
               sh "docker push ghcr.io/imagegenius/igdev-buildcache:arm64v8-${COMMIT_SHA}-${BUILD_NUMBER}"
@@ -453,12 +491,12 @@ pipeline {
         environment name: 'EXIT_STATUS', value: ''
       }
       steps {
-        sh '''#!/bin/bash
+        sh '''#! /bin/bash
               echo "Packages were updated. Cleaning up the image and exiting."
               if [ "${MULTIARCH}" == "true" ] && [ "${PACKAGE_CHECK}" == "false" ]; then
-                docker rmi ${GITHUBIMAGE}:amd64-${META_TAG}
+                docker rmi ${GITHUBIMAGE}:amd64-${META_TAG} || :
               else
-                docker rmi ${GITHUBIMAGE}:${META_TAG}
+                docker rmi ${GITHUBIMAGE}:${META_TAG} || :
               fi'''
         script{
           env.EXIT_STATUS = 'ABORTED'
@@ -477,14 +515,13 @@ pipeline {
         }
       }
       steps {
-        sh '''#!/bin/bash
+        sh '''#! /bin/bash
               echo "There are no package updates. Cleaning up the image and exiting."
               if [ "${MULTIARCH}" == "true" ] && [ "${PACKAGE_CHECK}" == "false" ]; then
-                docker rmi ${GITHUBIMAGE}:amd64-${META_TAG}
+                docker rmi ${GITHUBIMAGE}:amd64-${META_TAG} || :
               else
-                docker rmi ${GITHUBIMAGE}:${META_TAG}
-              fi
-           '''
+                docker rmi ${GITHUBIMAGE}:${META_TAG} || :
+              fi'''
         script{
           env.EXIT_STATUS = 'ABORTED'
         }
@@ -506,6 +543,7 @@ pipeline {
         ]) {
           script{
             env.CI_URL = 'https://ci-tests.imagegenius.io/' + env.CONTAINER_NAME + '/' + env.META_TAG + '/index.html'
+            env.CI_JSON_URL = 'https://ci-tests.imagegenius.io/' + env.CONTAINER_NAME + '/' + env.META_TAG + '/report.json'
           }
           sh '''#!/bin/bash
                 set -e
@@ -624,6 +662,9 @@ pipeline {
                   docker manifest create ${GITHUBIMAGE}:${SEMVER} ${GITHUBIMAGE}:amd64-${SEMVER} ${GITHUBIMAGE}:arm64v8-${SEMVER}
                   docker manifest annotate ${GITHUBIMAGE}:${SEMVER} ${GITHUBIMAGE}:arm64v8-${SEMVER} --os linux --arch arm64 --variant v8
                 fi
+                docker manifest push --purge ${GITHUBIMAGE}:arm32v7-ubuntu || :
+                docker manifest create ${GITHUBIMAGE}:arm32v7-ubuntu ${GITHUBIMAGE}:amd64-ubuntu
+                docker manifest push --purge ${GITHUBIMAGE}:arm32v7-ubuntu
                 docker manifest push --purge ${GITHUBIMAGE}:ubuntu
                 docker manifest push --purge ${GITHUBIMAGE}:${META_TAG} 
                 docker manifest push --purge ${GITHUBIMAGE}:${EXT_RELEASE_TAG} 
@@ -684,12 +725,78 @@ pipeline {
     stage('Pull Request Comment') {
       when {
         not {environment name: 'CHANGE_ID', value: ''}
-        environment name: 'CI', value: 'true'
         environment name: 'EXIT_STATUS', value: ''
       }
       steps {
-        sh '''curl -H "Authorization: token ${GITHUB_TOKEN}" -X POST https://api.github.com/repos/${IG_USER}/${IG_REPO}/issues/${PULL_REQUEST}/comments \
-        -d '{"body": "I am a bot, here are the test results for this PR: \\n'${CI_URL}'"}' '''
+        sh '''#! /bin/bash
+            # Function to retrieve JSON data from URL
+            get_json() {
+              local url="$1"
+              local response=$(curl -s "$url")
+              if [ $? -ne 0 ]; then
+                echo "Failed to retrieve JSON data from $url"
+                return 1
+              fi
+              local json=$(echo "$response" | jq .)
+              if [ $? -ne 0 ]; then
+                echo "Failed to parse JSON data from $url"
+                return 1
+              fi
+              echo "$json"
+            }
+
+            build_table() {
+              local data="$1"
+
+              # Get the keys in the JSON data
+              local keys=$(echo "$data" | jq -r 'to_entries | map(.key) | .[]')
+
+              # Check if keys are empty
+              if [ -z "$keys" ]; then
+                echo "JSON report data does not contain any keys or the report does not exist."
+                return 1
+              fi
+
+              # Build table header
+              local header="| Tag | Passed |\\n| --- | --- |\\n"
+
+              # Loop through the JSON data to build the table rows
+              local rows=""
+              for build in $keys; do
+                local status=$(echo "$data" | jq -r ".[\\"$build\\"].test_success")
+                if [ "$status" = "true" ]; then
+                  status="✅"
+                else
+                  status="❌"
+                fi
+                local row="| "$build" | "$status" |\\n"
+                rows="${rows}${row}"
+              done
+
+              local table="${header}${rows}"
+              local escaped_table=$(echo "$table" | sed 's/\"/\\\\"/g')
+              echo "$escaped_table"
+            }
+
+            if [[ "${CI}" = "true" ]]; then
+              # Retrieve JSON data from URL
+              data=$(get_json "$CI_JSON_URL")
+              # Create table from JSON data
+              table=$(build_table "$data")
+              echo -e "$table"
+
+              curl -X POST -H "Authorization: token $GITHUB_TOKEN" \
+                -H "Accept: application/vnd.github.v3+json" \
+                "https://api.github.com/repos/$IG_USER/$IG_REPO/issues/$PULL_REQUEST/comments" \
+                -d "{\\"body\\": \\"I am a bot, here are the test results for this PR: \\n${CI_URL}\\n${table}\\"}"
+            else
+              curl -X POST -H "Authorization: token $GITHUB_TOKEN" \
+                -H "Accept: application/vnd.github.v3+json" \
+                "https://api.github.com/repos/$IG_USER/$IG_REPO/issues/$PULL_REQUEST/comments" \
+                -d "{\\"body\\": \\"I am a bot, here is the pushed image/manifest for this PR: \\n\\n\\`${IMAGE}:${META_TAG}\\`\\"}"
+            fi
+            '''
+
       }
     }
   }
@@ -711,6 +818,14 @@ pipeline {
           sh ''' curl -X POST -H "Content-Type: application/json" --data '{"avatar_url": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jenkins-avatar.png","embeds": [{"color": 16711680,\
                  "description": "**'${IG_REPO}' Build '${BUILD_NUMBER}' Failed! (ubuntu)**\\n**CI Results:**  '${CI_URL}'\\n**Job:** '${RUN_DISPLAY_URL}'\\n**Change:** '${CODE_URL}'\\n**External Release:** '${RELEASE_LINK}'\\n"}],\
                  "username": "Jenkins"}' ${BUILDS_DISCORD} '''
+          // Clean up images if CI tests fail
+          sh ''' if [ "${MULTIARCH}" == "true" ] && [ "${PACKAGE_CHECK}" == "false" ]; then
+                   docker rmi ${GITHUBIMAGE}:amd64-${META_TAG} || :
+                   docker rmi ghcr.io/imagegenius/igdev-buildcache:arm64v8-${COMMIT_SHA}-${BUILD_NUMBER} || :
+                   docker rmi ${GITHUBIMAGE}:arm64v8-${META_TAG} || :
+                 else
+                   docker rmi ${GITHUBIMAGE}:${META_TAG} || :
+                 fi'''
         }
       }
     }
