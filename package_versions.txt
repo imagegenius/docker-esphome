@@ -5,7 +5,7 @@ adduser                3.118ubuntu5                             deb
 aioesphomeapi          13.7.5                                   python  
 aiofiles               22.1.0                                   python  
 ajsonrpc               1.2.0                                    python  
-anyio                  3.6.2                                    python  
+anyio                  3.7.0                                    python  
 apt                    2.4.9                                    deb     
 apt-utils              2.4.9                                    deb     
 async-timeout          4.0.2                                    python  
@@ -35,6 +35,7 @@ ecdsa                  0.18.0                                   python
 esphome                2023.5.4                                 python  
 esphome-dashboard      20230516.0                               python  
 esptool                4.5.1                                    python  
+exceptiongroup         1.1.1                                    python  
 findutils              4.8.0-1ubuntu3                           deb     
 gcc-12-base            12.1.0-2ubuntu1~22.04                    deb     
 gnupg                  2.2.27-3ubuntu2.1                        deb     
@@ -172,7 +173,7 @@ pinentry-curses        1.1.1-1build2                            deb
 pip                    22.0.2                                   python  
 platformio             6.1.6                                    python  
 procps                 2:3.3.17-6ubuntu2                        deb     
-protobuf               4.23.1                                   python  
+protobuf               4.23.2                                   python  
 publicsuffix           20211207.1025-1                          deb     
 pycparser              2.21                                     python  
 pyelftools             0.29                                     python  
