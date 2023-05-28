@@ -29,7 +29,7 @@ coreutils               9.1-r0                 apk
 cryptography            3.4.8                  python  
 curl                    8.1.0-r1               apk     
 ecdsa                   0.18.0                 python  
-esphome                 2023.5.4               python  
+esphome                 2023.5.5               python  
 esphome-dashboard       20230516.0             python  
 esptool                 4.5.1                  python  
 exceptiongroup          1.1.1                  python  
