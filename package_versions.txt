@@ -83,7 +83,7 @@ pip                     23.1.2                  python
 pkgconf                 1.9.5-r0                apk     
 platformio              6.1.6                   python  
 procps-ng               4.0.3-r1                apk     
-protobuf                4.23.2                  python  
+protobuf                4.23.3                  python  
 py3-packaging           23.1-r1                 apk     
 py3-packaging-pyc       23.1-r1                 apk     
 py3-parsing             3.0.9-r2                apk     
