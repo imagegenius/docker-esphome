@@ -33,7 +33,7 @@ cssselect2              0.7.0                   python
 curl                    8.1.2-r0                apk     
 defusedxml              0.7.1                   python  
 ecdsa                   0.18.0                  python  
-esphome                 2023.6.2                python  
+esphome                 2023.6.3                python  
 esphome-dashboard       20230621.0              python  
 esptool                 4.6                     python  
 gcompat                 1.1.0-r1                apk     
