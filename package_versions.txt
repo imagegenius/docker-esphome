@@ -1,6 +1,6 @@
 NAME                   VERSION                                  TYPE   
 CairoSVG               2.7.0                                    python  
-Pillow                 9.5.0                                    python  
+Pillow                 10.0.0                                   python  
 PyYAML                 6.0                                      python  
 adduser                3.118ubuntu5                             deb     
 aioesphomeapi          14.0.0                                   python  
@@ -75,7 +75,7 @@ libbz2-1.0             1.0.8-5build1                            deb
 libc-bin               2.35-0ubuntu3.1                          deb     
 libc6                  2.35-0ubuntu3.1                          deb     
 libcap-ng0             0.7.9-2.2build3                          deb     
-libcap2                1:2.44-1build3                           deb     
+libcap2                1:2.44-1ubuntu0.22.04.1                  deb     
 libcap2-bin            1:2.44-1ubuntu0.22.04.1                  deb     
 libcbor0.8             0.8.0-2ubuntu1                           deb     
 libcom-err2            1.46.5-2ubuntu1.1                        deb     
