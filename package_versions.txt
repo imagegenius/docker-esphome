@@ -1,8 +1,8 @@
 NAME                    VERSION                 TYPE   
 CairoSVG                2.7.0                   python  
-Pillow                  10.0.0                  python  
-PyYAML                  6.0                     python  
-aioesphomeapi           14.0.0                  python  
+Pillow                  9.5.0                   python  
+PyYAML                  6.0.1                   python  
+aioesphomeapi           15.0.0                  python  
 aiofiles                23.1.0                  python  
 ajsonrpc                1.2.0                   python  
 alpine-baselayout       3.4.3-r1                apk     
@@ -33,9 +33,9 @@ cssselect2              0.7.0                   python
 curl                    8.1.2-r0                apk     
 defusedxml              0.7.1                   python  
 ecdsa                   0.18.0                  python  
-esphome                 2023.6.5                python  
-esphome-dashboard       20230621.0              python  
-esptool                 4.6                     python  
+esphome                 2023.7.0                python  
+esphome-dashboard       20230711.0              python  
+esptool                 4.6.2                   python  
 gcompat                 1.1.0-r1                apk     
 gdbm                    1.23-r1                 apk     
 h11                     0.14.0                  python  
@@ -132,5 +132,5 @@ webencodings            0.5.1                   python
 wheel                   0.40.0                  python  
 wsproto                 1.2.0                   python  
 xz-libs                 5.4.3-r0                apk     
-zeroconf                0.63.0                  python  
+zeroconf                0.69.0                  python  
 zlib                    1.2.13-r1               apk     
