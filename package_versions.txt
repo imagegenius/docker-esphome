@@ -1,9 +1,9 @@
 NAME                   VERSION                                  TYPE   
 CairoSVG               2.7.0                                    python  
-Pillow                 10.0.0                                   python  
-PyYAML                 6.0                                      python  
+Pillow                 9.5.0                                    python  
+PyYAML                 6.0.1                                    python  
 adduser                3.118ubuntu5                             deb     
-aioesphomeapi          14.0.0                                   python  
+aioesphomeapi          15.0.0                                   python  
 aiofiles               23.1.0                                   python  
 ajsonrpc               1.2.0                                    python  
 anyio                  3.7.1                                    python  
@@ -36,9 +36,9 @@ dirmngr                2.2.27-3ubuntu2.1                        deb
 dpkg                   1.21.1ubuntu2.2                          deb     
 e2fsprogs              1.46.5-2ubuntu1.1                        deb     
 ecdsa                  0.18.0                                   python  
-esphome                2023.6.5                                 python  
-esphome-dashboard      20230621.0                               python  
-esptool                4.6                                      python  
+esphome                2023.7.0                                 python  
+esphome-dashboard      20230711.0                               python  
+esptool                4.6.2                                    python  
 exceptiongroup         1.1.2                                    python  
 findutils              4.8.0-1ubuntu3                           deb     
 gcc-12-base            12.1.0-2ubuntu1~22.04                    deb     
@@ -223,5 +223,5 @@ webencodings           0.5.1                                    python
 wheel                  0.37.1                                   python  
 wheel                  0.40.0                                   python  
 wsproto                1.2.0                                    python  
-zeroconf               0.63.0                                   python  
+zeroconf               0.69.0                                   python  
 zlib1g                 1:1.2.11.dfsg-2ubuntu9.2                 deb     
