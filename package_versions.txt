@@ -1,5 +1,5 @@
 NAME                   VERSION                                  TYPE   
-CairoSVG               2.7.0                                    python  
+CairoSVG               2.7.1                                    python  
 Pillow                 9.5.0                                    python  
 PyYAML                 6.0.1                                    python  
 adduser                3.118ubuntu5                             deb     
@@ -26,7 +26,7 @@ colorama               0.4.6                                    python
 coreutils              8.32-4.1ubuntu1                          deb     
 cryptography           3.4.8                                    python  
 cssselect2             0.7.0                                    python  
-curl                   7.81.0-1ubuntu1.10                       deb     
+curl                   7.81.0-1ubuntu1.13                       deb     
 dash                   0.5.11+git20210903+057cd650a4ed-3build1  deb     
 debconf                1.5.79ubuntu1                            deb     
 debianutils            5.5-1ubuntu2                             deb     
@@ -80,7 +80,7 @@ libcap2-bin            1:2.44-1ubuntu0.22.04.1                  deb
 libcbor0.8             0.8.0-2ubuntu1                           deb     
 libcom-err2            1.46.5-2ubuntu1.1                        deb     
 libcrypt1              1:4.4.27-1                               deb     
-libcurl4               7.81.0-1ubuntu1.10                       deb     
+libcurl4               7.81.0-1ubuntu1.13                       deb     
 libdb5.3               5.3.28+dfsg1-0.8ubuntu3                  deb     
 libdebconfclient0      0.261ubuntu1                             deb     
 libedit2               3.1-20210910-1build1                     deb     
@@ -221,7 +221,7 @@ uvicorn                0.22.0                                   python
 voluptuous             0.13.1                                   python  
 webencodings           0.5.1                                    python  
 wheel                  0.37.1                                   python  
-wheel                  0.41.0                                   python  
+wheel                  0.41.1                                   python  
 wsproto                1.2.0                                    python  
 zeroconf               0.69.0                                   python  
 zlib1g                 1:1.2.11.dfsg-2ubuntu9.2                 deb     
