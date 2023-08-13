@@ -12,7 +12,7 @@ alpine-keys                 2.4-r1                  apk
 alpine-release              3.18.2-r0               apk     
 anyio                       3.7.1                   python  
 apk-tools                   2.14.0-r2               apk     
-async-timeout               4.0.2                   python  
+async-timeout               4.0.3                   python  
 bash                        5.2.15-r5               apk     
 bitstring                   4.0.2                   python  
 bottle                      0.12.25                 python  
@@ -88,7 +88,7 @@ pip                         23.1.2                  python
 pkgconf                     1.9.5-r0                apk     
 platformio                  6.1.7                   python  
 procps-ng                   4.0.3-r1                apk     
-protobuf                    4.23.4                  python  
+protobuf                    4.24.0                  python  
 py3-packaging               23.1-r1                 apk     
 py3-packaging-pyc           23.1-r1                 apk     
 py3-parsing                 3.0.9-r2                apk     
