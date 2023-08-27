@@ -7,14 +7,14 @@ aioesphomeapi          15.0.0                                   python
 aiofiles               23.2.1                                   python  
 ajsonrpc               1.2.0                                    python  
 anyio                  3.7.1                                    python  
-apt                    2.4.9                                    deb     
-apt-utils              2.4.9                                    deb     
+apt                    2.4.10                                   deb     
+apt-utils              2.4.10                                   deb     
 async-timeout          4.0.3                                    python  
 base-files             12ubuntu4.3                              deb     
 base-passwd            3.5.52build1                             deb     
 bash                   5.1-6ubuntu1                             deb     
-bitarray               2.8.0                                    python  
-bitstring              4.1.0                                    python  
+bitarray               2.8.1                                    python  
+bitstring              4.1.1                                    python  
 bottle                 0.12.25                                  python  
 bsdutils               1:2.37.2-4ubuntu3                        deb     
 ca-certificates        20230311ubuntu0.22.04.1                  deb     
@@ -64,7 +64,7 @@ iputils-ping           3:20211215-1                             deb
 jq                     1.6-2.1ubuntu3                           deb     
 kconfiglib             13.7.1                                   python  
 libacl1                2.3.1-1                                  deb     
-libapt-pkg6.0          2.4.9                                    deb     
+libapt-pkg6.0          2.4.10                                   deb     
 libassuan0             2.5.5-1build1                            deb     
 libattr1               1:2.5.1-1build1                          deb     
 libaudit-common        1:3.0.7-1build1                          deb     
@@ -103,8 +103,8 @@ libkeyutils1           1.6.1-2ubuntu3                           deb
 libkrb5-3              1.19.2-2ubuntu0.2                        deb     
 libkrb5support0        1.19.2-2ubuntu0.2                        deb     
 libksba8               1.6.0-2ubuntu0.2                         deb     
-libldap-2.5-0          2.5.15+dfsg-0ubuntu0.22.04.1             deb     
-libldap-common         2.5.15+dfsg-0ubuntu0.22.04.1             deb     
+libldap-2.5-0          2.5.16+dfsg-0ubuntu0.22.04.1             deb     
+libldap-common         2.5.16+dfsg-0ubuntu0.22.04.1             deb     
 liblz4-1               1.9.3-2build2                            deb     
 liblzma5               5.2.5-2ubuntu1                           deb     
 libmd0                 1.0.4-1build1                            deb     
@@ -178,7 +178,7 @@ pinentry-curses        1.1.1-1build2                            deb
 pip                    22.0.2                                   python  
 platformio             6.1.9                                    python  
 procps                 2:3.3.17-6ubuntu2                        deb     
-protobuf               4.24.1                                   python  
+protobuf               4.24.2                                   python  
 publicsuffix           20211207.1025-1                          deb     
 pycparser              2.21                                     python  
 pyelftools             0.29                                     python  
@@ -221,7 +221,7 @@ uvicorn                0.22.0                                   python
 voluptuous             0.13.1                                   python  
 webencodings           0.5.1                                    python  
 wheel                  0.37.1                                   python  
-wheel                  0.41.1                                   python  
+wheel                  0.41.2                                   python  
 wsproto                1.2.0                                    python  
 zeroconf               0.80.0                                   python  
 zlib1g                 1:1.2.11.dfsg-2ubuntu9.2                 deb     
