@@ -14,8 +14,8 @@ anyio                       3.7.1                   python
 apk-tools                   2.14.0-r2               apk     
 async-timeout               4.0.3                   python  
 bash                        5.2.15-r5               apk     
-bitarray                    2.8.0                   python  
-bitstring                   4.1.0                   python  
+bitarray                    2.8.1                   python  
+bitstring                   4.1.1                   python  
 bottle                      0.12.25                 python  
 brotli-libs                 1.0.9-r14               apk     
 busybox                     1.36.1-r2               apk     
@@ -88,7 +88,7 @@ pip                         23.1.2                  python
 pkgconf                     1.9.5-r0                apk     
 platformio                  6.1.9                   python  
 procps-ng                   4.0.3-r1                apk     
-protobuf                    4.24.1                  python  
+protobuf                    4.24.2                  python  
 py3-packaging               23.1-r1                 apk     
 py3-packaging-pyc           23.1-r1                 apk     
 py3-parsing                 3.0.9-r2                apk     
@@ -102,9 +102,9 @@ pycparser                   2.21                    python
 pyelftools                  0.29                    python  
 pyparsing                   3.0.9                   python  
 pyserial                    3.5                     python  
-python3                     3.11.4-r0               apk     
-python3-pyc                 3.11.4-r0               apk     
-python3-pycache-pyc0        3.11.4-r0               apk     
+python3                     3.11.5-r0               apk     
+python3-pyc                 3.11.5-r0               apk     
+python3-pycache-pyc0        3.11.5-r0               apk     
 readline                    8.2.1-r1                apk     
 reedsolo                    1.7.0                   python  
 requests                    2.31.0                  python  
@@ -129,7 +129,7 @@ utmps-libs                  0.1.2.1-r1              apk
 uvicorn                     0.22.0                  python  
 voluptuous                  0.13.1                  python  
 webencodings                0.5.1                   python  
-wheel                       0.41.1                  python  
+wheel                       0.41.2                  python  
 wsproto                     1.2.0                   python  
 xz-libs                     5.4.3-r0                apk     
 zeroconf                    0.80.0                  python  
