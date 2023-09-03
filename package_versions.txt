@@ -6,13 +6,14 @@ adduser                3.118ubuntu5                             deb
 aioesphomeapi          15.0.0                                   python  
 aiofiles               23.2.1                                   python  
 ajsonrpc               1.2.0                                    python  
-anyio                  3.7.1                                    python  
+anyio                  4.0.0                                    python  
 apt                    2.4.10                                   deb     
 apt-utils              2.4.10                                   deb     
 async-timeout          4.0.3                                    python  
 base-files             12ubuntu4.3                              deb     
 base-passwd            3.5.52build1                             deb     
 bash                   5.1-6ubuntu1                             deb     
+bash                   5.1.16                                   binary  
 bitarray               2.8.1                                    python  
 bitstring              4.1.1                                    python  
 bottle                 0.12.25                                  python  
