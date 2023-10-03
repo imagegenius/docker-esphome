@@ -33,7 +33,7 @@ cssselect2                  0.7.0                   python
 curl                        8.3.0-r0                apk     
 defusedxml                  0.7.1                   python  
 ecdsa                       0.18.0                  python  
-esphome                     2023.9.2                python  
+esphome                     2023.9.3                python  
 esphome-dashboard           20230904.0              python  
 esptool                     4.6.2                   python  
 gcompat                     1.1.0-r1                apk     
@@ -123,7 +123,7 @@ tornado                     6.3.3                   python
 tzdata                      2023.3                  python  
 tzdata                      2023c-r1                apk     
 tzlocal                     5.0.1                   python  
-urllib3                     2.0.5                   python  
+urllib3                     2.0.6                   python  
 utmps-libs                  0.1.2.1-r1              apk     
 uvicorn                     0.23.2                  python  
 voluptuous                  0.13.1                  python  
@@ -131,5 +131,5 @@ webencodings                0.5.1                   python
 wheel                       0.41.2                  python  
 wsproto                     1.2.0                   python  
 xz-libs                     5.4.3-r0                apk     
-zeroconf                    0.112.0                 python  
+zeroconf                    0.115.1                 python  
 zlib                        1.2.13-r1               apk     
