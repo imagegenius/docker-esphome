@@ -13,7 +13,7 @@ base-files             12ubuntu4.3                              deb
 base-passwd            3.5.52build1                             deb     
 bash                   5.1-6ubuntu1                             deb     
 bash                   5.1.16                                   binary  
-bitarray               2.8.1                                    python  
+bitarray               2.8.2                                    python  
 bitstring              4.1.2                                    python  
 bottle                 0.12.25                                  python  
 bsdutils               1:2.37.2-4ubuntu3                        deb     
@@ -178,7 +178,7 @@ pinentry-curses        1.1.1-1build2                            deb
 pip                    22.0.2                                   python  
 platformio             6.1.11                                   python  
 procps                 2:3.3.17-6ubuntu2                        deb     
-protobuf               4.24.3                                   python  
+protobuf               4.24.4                                   python  
 publicsuffix           20211207.1025-1                          deb     
 pycparser              2.21                                     python  
 pyelftools             0.29                                     python  
