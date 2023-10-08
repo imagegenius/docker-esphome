@@ -8,12 +8,12 @@ ajsonrpc                    1.2.0                   python
 alpine-baselayout           3.4.3-r1                apk     
 alpine-baselayout-data      3.4.3-r1                apk     
 alpine-keys                 2.4-r1                  apk     
-alpine-release              3.18.3-r0               apk     
+alpine-release              3.18.4-r0               apk     
 anyio                       4.0.0                   python  
 apk-tools                   2.14.0-r2               apk     
 async-timeout               4.0.3                   python  
 bash                        5.2.15-r5               apk     
-bitarray                    2.8.1                   python  
+bitarray                    2.8.2                   python  
 bitstring                   4.1.2                   python  
 bottle                      0.12.25                 python  
 brotli-libs                 1.0.9-r14               apk     
@@ -72,7 +72,7 @@ libunistring                1.1-r1                  apk
 linux-pam                   1.5.2-r10               apk     
 marshmallow                 3.20.1                  python  
 mpdecimal                   2.5.1-r2                apk     
-musl                        1.2.4-r1                apk     
+musl                        1.2.4-r2                apk     
 musl-obstack                1.2.3-r2                apk     
 musl-utils                  1.2.4-r1                apk     
 ncurses-terminfo-base       6.4_p20230506-r0        apk     
@@ -87,7 +87,7 @@ pip                         23.1.2                  python
 pkgconf                     1.9.5-r0                apk     
 platformio                  6.1.11                  python  
 procps-ng                   4.0.4-r0                apk     
-protobuf                    4.24.3                  python  
+protobuf                    4.24.4                  python  
 py3-packaging               23.1-r1                 apk     
 py3-packaging-pyc           23.1-r1                 apk     
 py3-parsing                 3.0.9-r2                apk     
@@ -101,9 +101,9 @@ pycparser                   2.21                    python
 pyelftools                  0.29                    python  
 pyparsing                   3.0.9                   python  
 pyserial                    3.5                     python  
-python3                     3.11.5-r0               apk     
-python3-pyc                 3.11.5-r0               apk     
-python3-pycache-pyc0        3.11.5-r0               apk     
+python3                     3.11.6-r0               apk     
+python3-pyc                 3.11.6-r0               apk     
+python3-pycache-pyc0        3.11.6-r0               apk     
 readline                    8.2.1-r1                apk     
 reedsolo                    1.7.0                   python  
 requests                    2.31.0                  python  
