@@ -24,7 +24,7 @@ ca-certificates-bundle      20230506-r0             apk
 cairocffi                   1.6.1                   python  
 certifi                     2023.7.22               python  
 cffi                        1.16.0                  python  
-charset-normalizer          3.3.1                   python  
+charset-normalizer          3.3.2                   python  
 click                       8.1.7                   python  
 colorama                    0.4.6                   python  
 coreutils                   9.3-r1                  apk     
@@ -33,7 +33,7 @@ cssselect2                  0.7.0                   python
 curl                        8.4.0-r0                apk     
 defusedxml                  0.7.1                   python  
 ecdsa                       0.18.0                  python  
-esphome                     2023.10.5               python  
+esphome                     2023.10.6               python  
 esphome-dashboard           20230904.0              python  
 esptool                     4.6.2                   python  
 gcompat                     1.1.0-r1                apk     
@@ -87,7 +87,7 @@ pip                         23.1.2                  python
 pkgconf                     1.9.5-r0                apk     
 platformio                  6.1.11                  python  
 procps-ng                   4.0.4-r0                apk     
-protobuf                    4.24.4                  python  
+protobuf                    4.25.0                  python  
 py3-packaging               23.1-r1                 apk     
 py3-packaging-pyc           23.1-r1                 apk     
 py3-parsing                 3.0.9-r2                apk     
