@@ -13,7 +13,7 @@ base-files             12ubuntu4.3                              deb
 base-passwd            3.5.52build1                             deb     
 bash                   5.1-6ubuntu1                             deb     
 bash                   5.1.16                                   binary  
-bitarray               2.8.2                                    python  
+bitarray               2.8.3                                    python  
 bitstring              4.1.2                                    python  
 bottle                 0.12.25                                  python  
 bsdutils               1:2.37.2-4ubuntu3                        deb     
@@ -25,6 +25,7 @@ charset-normalizer     3.3.2                                    python
 click                  8.1.7                                    python  
 colorama               0.4.6                                    python  
 coreutils              8.32-4.1ubuntu1                          deb     
+cron                   3.0pl1-137ubuntu3                        deb     
 cryptography           3.4.8                                    python  
 cssselect2             0.7.0                                    python  
 curl                   7.81.0-1ubuntu1.14                       deb     
