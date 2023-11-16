@@ -34,7 +34,7 @@ cssselect2                  0.7.0                   python
 curl                        8.4.0-r0                apk     
 defusedxml                  0.7.1                   python  
 ecdsa                       0.18.0                  python  
-esphome                     2023.11.0               python  
+esphome                     2023.11.1               python  
 esphome-dashboard           20231107.0              python  
 esptool                     4.6.2                   python  
 gcompat                     1.1.0-r1                apk     
@@ -88,7 +88,7 @@ pip                         23.1.2                  python
 pkgconf                     1.9.5-r0                apk     
 platformio                  6.1.11                  python  
 procps-ng                   4.0.4-r0                apk     
-protobuf                    4.25.0                  python  
+protobuf                    4.25.1                  python  
 py3-packaging               23.1-r1                 apk     
 py3-packaging-pyc           23.1-r1                 apk     
 py3-parsing                 3.0.9-r2                apk     
