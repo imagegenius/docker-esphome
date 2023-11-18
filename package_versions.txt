@@ -3,7 +3,7 @@ CairoSVG                    2.7.1                                    python
 Pillow                      10.0.1                                   python  
 PyYAML                      6.0.1                                    python  
 adduser                     3.118ubuntu5                             deb     
-aioesphomeapi               18.4.0                                   python  
+aioesphomeapi               18.5.2                                   python  
 ajsonrpc                    1.2.0                                    python  
 anyio                       4.0.0                                    python  
 apt                         2.4.10                                   deb     
@@ -20,7 +20,7 @@ bottle                      0.12.25                                  python
 bsdutils                    1:2.37.2-4ubuntu3                        deb     
 ca-certificates             20230311ubuntu0.22.04.1                  deb     
 cairocffi                   1.6.1                                    python  
-certifi                     2023.7.22                                python  
+certifi                     2023.11.17                               python  
 cffi                        1.16.0                                   python  
 chacha20poly1305-reuseable  0.11.0                                   python  
 charset-normalizer          3.3.2                                    python  
@@ -40,7 +40,7 @@ dirmngr                     2.2.27-3ubuntu2.1                        deb
 dpkg                        1.21.1ubuntu2.2                          deb     
 e2fsprogs                   1.46.5-2ubuntu1.1                        deb     
 ecdsa                       0.18.0                                   python  
-esphome                     2023.11.1                                python  
+esphome                     2023.11.2                                python  
 esphome-dashboard           20231107.0                               python  
 esptool                     4.6.2                                    python  
 exceptiongroup              1.1.3                                    python  
