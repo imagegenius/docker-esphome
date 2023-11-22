@@ -34,7 +34,7 @@ cssselect2                  0.7.0                   python
 curl                        8.4.0-r0                apk     
 defusedxml                  0.7.1                   python  
 ecdsa                       0.18.0                  python  
-esphome                     2023.11.2               python  
+esphome                     2023.11.3               python  
 esphome-dashboard           20231107.0              python  
 esptool                     4.6.2                   python  
 gcompat                     1.1.0-r1                apk     
@@ -110,7 +110,7 @@ reedsolo                    1.7.0                   python
 requests                    2.31.0                  python  
 scanelf                     1.3.7-r1                apk     
 semantic-version            2.10.0                  python  
-setuptools                  68.2.2                  python  
+setuptools                  69.0.2                  python  
 shadow                      4.13-r4                 apk     
 six                         1.16.0                  python  
 skalibs                     2.13.1.1-r1             apk     
