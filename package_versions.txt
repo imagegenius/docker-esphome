@@ -6,8 +6,8 @@ adduser                     3.118ubuntu5                             deb
 aioesphomeapi               18.5.2                                   python  
 ajsonrpc                    1.2.0                                    python  
 anyio                       4.0.0                                    python  
-apt                         2.4.10                                   deb     
-apt-utils                   2.4.10                                   deb     
+apt                         2.4.11                                   deb     
+apt-utils                   2.4.11                                   deb     
 argcomplete                 3.1.6                                    python  
 async-timeout               4.0.3                                    python  
 base-files                  12ubuntu4.3                              deb     
@@ -40,10 +40,10 @@ dirmngr                     2.2.27-3ubuntu2.1                        deb
 dpkg                        1.21.1ubuntu2.2                          deb     
 e2fsprogs                   1.46.5-2ubuntu1.1                        deb     
 ecdsa                       0.18.0                                   python  
-esphome                     2023.11.2                                python  
+esphome                     2023.11.3                                python  
 esphome-dashboard           20231107.0                               python  
 esptool                     4.6.2                                    python  
-exceptiongroup              1.1.3                                    python  
+exceptiongroup              1.2.0                                    python  
 findutils                   4.8.0-1ubuntu3                           deb     
 gcc-12-base                 12.1.0-2ubuntu1~22.04                    deb     
 gnupg                       2.2.27-3ubuntu2.1                        deb     
@@ -67,7 +67,7 @@ iputils-ping                3:20211215-1                             deb
 jq                          1.6-2.1ubuntu3                           deb     
 kconfiglib                  13.7.1                                   python  
 libacl1                     2.3.1-1                                  deb     
-libapt-pkg6.0               2.4.10                                   deb     
+libapt-pkg6.0               2.4.11                                   deb     
 libassuan0                  2.5.5-1build1                            deb     
 libattr1                    1:2.5.1-1build1                          deb     
 libaudit-common             1:3.0.7-1build1                          deb     
@@ -204,7 +204,7 @@ sed                         4.8-1ubuntu2                             deb
 semantic-version            2.10.0                                   python  
 sensible-utils              0.0.17                                   deb     
 setuptools                  59.6.0                                   python  
-setuptools                  68.2.2                                   python  
+setuptools                  69.0.2                                   python  
 six                         1.16.0                                   python  
 sniffio                     1.3.0                                    python  
 starlette                   0.31.1                                   python  
