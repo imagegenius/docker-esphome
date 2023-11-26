@@ -40,7 +40,7 @@ esptool                     4.6.2                   python
 gcompat                     1.1.0-r1                apk     
 gdbm                        1.23-r1                 apk     
 h11                         0.14.0                  python  
-idna                        3.4                     python  
+idna                        3.6                     python  
 ifaddr                      0.2.0                   python  
 iputils                     20221126-r2             apk     
 iputils-arping              20221126-r2             apk     
