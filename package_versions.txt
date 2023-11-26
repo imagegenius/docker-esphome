@@ -60,7 +60,7 @@ grep                        3.7-1build1                              deb
 gzip                        1.10-4ubuntu4.1                          deb     
 h11                         0.14.0                                   python  
 hostname                    3.23ubuntu2                              deb     
-idna                        3.4                                      python  
+idna                        3.6                                      python  
 ifaddr                      0.2.0                                    python  
 init-system-helpers         1.62                                     deb     
 iputils-ping                3:20211215-1                             deb     
