@@ -34,7 +34,7 @@ cssselect2                  0.7.0                   python
 curl                        8.4.0-r0                apk     
 defusedxml                  0.7.1                   python  
 ecdsa                       0.18.0                  python  
-esphome                     2023.11.4               python  
+esphome                     2023.11.6               python  
 esphome-dashboard           20231107.0              python  
 esptool                     4.6.2                   python  
 gcompat                     1.1.0-r1                apk     
@@ -130,7 +130,7 @@ utmps-libs                  0.1.2.1-r1              apk
 uvicorn                     0.23.2                  python  
 voluptuous                  0.13.1                  python  
 webencodings                0.5.1                   python  
-wheel                       0.41.3                  python  
+wheel                       0.42.0                  python  
 wsproto                     1.2.0                   python  
 xz-libs                     5.4.3-r0                apk     
 zeroconf                    0.123.0                 python  
