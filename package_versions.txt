@@ -8,13 +8,13 @@ ajsonrpc                    1.2.0                                    python
 anyio                       4.1.0                                    python  
 apt                         2.4.11                                   deb     
 apt-utils                   2.4.11                                   deb     
-argcomplete                 3.1.6                                    python  
+argcomplete                 3.2.0                                    python  
 async-timeout               4.0.3                                    python  
 base-files                  12ubuntu4.3                              deb     
 base-passwd                 3.5.52build1                             deb     
 bash                        5.1-6ubuntu1                             deb     
 bash                        5.1.16                                   binary  
-bitarray                    2.8.3                                    python  
+bitarray                    2.8.5                                    python  
 bitstring                   4.1.4                                    python  
 bottle                      0.12.25                                  python  
 bsdutils                    1:2.37.2-4ubuntu3                        deb     
@@ -22,7 +22,7 @@ ca-certificates             20230311ubuntu0.22.04.1                  deb
 cairocffi                   1.6.1                                    python  
 certifi                     2023.11.17                               python  
 cffi                        1.16.0                                   python  
-chacha20poly1305-reuseable  0.11.0                                   python  
+chacha20poly1305-reuseable  0.12.0                                   python  
 charset-normalizer          3.3.2                                    python  
 click                       8.1.7                                    python  
 colorama                    0.4.6                                    python  
@@ -116,7 +116,7 @@ libmpdec3                   2.5.1-2build2                            deb
 libncurses6                 6.3-2ubuntu0.1                           deb     
 libncursesw6                6.3-2ubuntu0.1                           deb     
 libnettle8                  3.7.3-1build2                            deb     
-libnghttp2-14               1.43.0-1build3                           deb     
+libnghttp2-14               1.43.0-1ubuntu0.1                        deb     
 libnpth0                    1.6-3build2                              deb     
 libnsl2                     1.3.0-2build2                            deb     
 libonig5                    6.9.7.1-2build1                          deb     
@@ -214,7 +214,7 @@ tabulate                    0.9.0                                    python
 tar                         1.34+dfsg-1ubuntu0.1.22.04.1             deb     
 tinycss2                    1.2.1                                    python  
 tornado                     6.3.3                                    python  
-typing_extensions           4.8.0                                    python  
+typing_extensions           4.9.0                                    python  
 tzdata                      2023.3                                   python  
 tzdata                      2023c-0ubuntu0.22.04.2                   deb     
 tzlocal                     5.2                                      python  
