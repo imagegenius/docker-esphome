@@ -5,10 +5,10 @@ PyYAML                      6.0.1                                    python
 adduser                     3.118ubuntu5                             deb     
 aioesphomeapi               18.5.2                                   python  
 ajsonrpc                    1.2.0                                    python  
-anyio                       4.1.0                                    python  
+anyio                       4.2.0                                    python  
 apt                         2.4.11                                   deb     
 apt-utils                   2.4.11                                   deb     
-argcomplete                 3.2.0                                    python  
+argcomplete                 3.2.1                                    python  
 async-timeout               4.0.3                                    python  
 base-files                  12ubuntu4.3                              deb     
 base-passwd                 3.5.52build1                             deb     
