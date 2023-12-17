@@ -9,9 +9,9 @@ alpine-baselayout           3.4.3-r1                apk
 alpine-baselayout-data      3.4.3-r1                apk     
 alpine-keys                 2.4-r1                  apk     
 alpine-release              3.18.5-r0               apk     
-anyio                       4.1.0                   python  
+anyio                       4.2.0                   python  
 apk-tools                   2.14.0-r2               apk     
-argcomplete                 3.2.0                   python  
+argcomplete                 3.2.1                   python  
 bash                        5.2.15-r5               apk     
 bitarray                    2.8.5                   python  
 bitstring                   4.1.4                   python  
@@ -47,7 +47,7 @@ iputils-arping              20221126-r2             apk
 iputils-clockdiff           20221126-r2             apk     
 iputils-ping                20221126-r2             apk     
 iputils-tracepath           20221126-r2             apk     
-jq                          1.6-r3                  apk     
+jq                          1.6-r4                  apk     
 kconfiglib                  13.7.1                  python  
 libacl                      2.3.1-r3                apk     
 libattr                     2.5.1-r4                apk     
