@@ -2,7 +2,7 @@ NAME                        VERSION                 TYPE
 CairoSVG                    2.7.1                   python  
 Pillow                      10.1.0                  python  
 PyYAML                      6.0.1                   python  
-SimpleLauncherExecutable    1.1.0.14                dotnet  
+Simple Launcher             1.1.0.14                dotnet  
 aioesphomeapi               21.0.1                  python  
 aiohappyeyeballs            2.3.1                   python  
 ajsonrpc                    1.2.0                   python  
@@ -35,7 +35,7 @@ cssselect2                  0.7.0                   python
 curl                        8.5.0-r0                apk     
 defusedxml                  0.7.1                   python  
 ecdsa                       0.18.0                  python  
-esphome                     2023.12.1               python  
+esphome                     2023.12.2               python  
 esphome-dashboard           20231107.0              python  
 esptool                     4.6.2                   python  
 gcompat                     1.1.0-r1                apk     
