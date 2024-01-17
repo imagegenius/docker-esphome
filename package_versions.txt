@@ -41,7 +41,7 @@ dirmngr                     2.2.27-3ubuntu2.1                        deb
 dpkg                        1.21.1ubuntu2.2                          deb     
 e2fsprogs                   1.46.5-2ubuntu1.1                        deb     
 ecdsa                       0.18.0                                   python  
-esphome                     2023.12.6                                python  
+esphome                     2023.12.7                                python  
 esphome-dashboard           20231107.0                               python  
 esptool                     4.6.2                                    python  
 exceptiongroup              1.2.0                                    python  
@@ -144,7 +144,7 @@ libsemanage-common          3.3-1build2                              deb
 libsemanage2                3.3-1build2                              deb     
 libsepol2                   3.3-1build1                              deb     
 libsmartcols1               2.37.2-4ubuntu3                          deb     
-libsqlite3-0                3.37.2-2ubuntu0.1                        deb     
+libsqlite3-0                3.37.2-2ubuntu0.3                        deb     
 libss2                      1.46.5-2ubuntu1.1                        deb     
 libssh-4                    0.9.6-2ubuntu0.22.04.2                   deb     
 libssl3                     3.0.2-0ubuntu1.10                        deb     
