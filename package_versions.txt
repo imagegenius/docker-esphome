@@ -21,7 +21,7 @@ bottle                      0.12.25                                  python
 bsdutils                    1:2.37.2-4ubuntu3                        deb     
 ca-certificates             20230311ubuntu0.22.04.1                  deb     
 cairocffi                   1.6.1                                    python  
-certifi                     2023.11.17                               python  
+certifi                     2024.2.2                                 python  
 cffi                        1.16.0                                   python  
 chacha20poly1305-reuseable  0.12.0                                   python  
 charset-normalizer          3.3.2                                    python  
@@ -146,7 +146,7 @@ libsepol2                   3.3-1build1                              deb
 libsmartcols1               2.37.2-4ubuntu3                          deb     
 libsqlite3-0                3.37.2-2ubuntu0.3                        deb     
 libss2                      1.46.5-2ubuntu1.1                        deb     
-libssh-4                    0.9.6-2ubuntu0.22.04.2                   deb     
+libssh-4                    0.9.6-2ubuntu0.22.04.3                   deb     
 libssl3                     3.0.2-0ubuntu1.10                        deb     
 libstdc++6                  12.1.0-2ubuntu1~22.04                    deb     
 libsystemd0                 249.11-0ubuntu3.9                        deb     
@@ -159,7 +159,7 @@ libunistring2               1.0-1                                    deb
 libuuid1                    2.37.2-4ubuntu3                          deb     
 libxxhash0                  0.8.1-1                                  deb     
 libzstd1                    1.4.8+dfsg-3build1                       deb     
-locales                     2.35-0ubuntu3.5                          deb     
+locales                     2.35-0ubuntu3.6                          deb     
 login                       1:4.8.1-2ubuntu2.1                       deb     
 logsave                     1.46.5-2ubuntu1.1                        deb     
 lsb-base                    11.1.0ubuntu4                            deb     
@@ -217,10 +217,10 @@ tinycss2                    1.2.1                                    python
 tornado                     6.4                                      python  
 typing_extensions           4.9.0                                    python  
 tzdata                      2023.4                                   python  
-tzdata                      2023c-0ubuntu0.22.04.2                   deb     
+tzdata                      2023d-0ubuntu0.22.04                     deb     
 tzlocal                     5.2                                      python  
 ubuntu-keyring              2021.03.26                               deb     
-urllib3                     2.1.0                                    python  
+urllib3                     2.2.0                                    python  
 usrmerge                    25ubuntu2                                deb     
 util-linux                  2.37.2-4ubuntu3                          deb     
 uvicorn                     0.23.2                                   python  
