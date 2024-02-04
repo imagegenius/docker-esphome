@@ -23,7 +23,7 @@ busybox-binsh               1.36.1-r5               apk
 ca-certificates             20230506-r0             apk     
 ca-certificates-bundle      20230506-r0             apk     
 cairocffi                   1.6.1                   python  
-certifi                     2023.11.17              python  
+certifi                     2024.2.2                python  
 cffi                        1.16.0                  python  
 chacha20poly1305-reuseable  0.12.0                  python  
 charset-normalizer          3.3.2                   python  
@@ -126,7 +126,7 @@ tornado                     6.4                     python
 tzdata                      2023.4                  python  
 tzdata                      2023d-r0                apk     
 tzlocal                     5.2                     python  
-urllib3                     2.1.0                   python  
+urllib3                     2.2.0                   python  
 utmps-libs                  0.1.2.1-r1              apk     
 uvicorn                     0.23.2                  python  
 voluptuous                  0.14.1                  python  
