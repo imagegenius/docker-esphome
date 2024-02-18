@@ -173,7 +173,7 @@ netcat                      1.218-4ubuntu1                           deb
 netcat-openbsd              1.218-4ubuntu1                           deb     
 noiseprotocol               0.3.1                                    python  
 openssh-client              1:8.9p1-3ubuntu0.6                       deb     
-openssl                     3.0.2-0ubuntu1.13                        deb     
+openssl                     3.0.2-0ubuntu1.14                        deb     
 packaging                   23.2                                     python  
 paho-mqtt                   1.6.1                                    python  
 passwd                      1:4.8.1-2ubuntu2.1                       deb     
@@ -182,7 +182,7 @@ pinentry-curses             1.1.1-1build2                            deb
 pip                         22.0.2                                   python  
 platformio                  6.1.11                                   python  
 procps                      2:3.3.17-6ubuntu2                        deb     
-protobuf                    4.25.2                                   python  
+protobuf                    4.25.3                                   python  
 publicsuffix                20211207.1025-1                          deb     
 pycparser                   2.21                                     python  
 pyelftools                  0.29                                     python  
@@ -206,7 +206,7 @@ sed                         4.8-1ubuntu2                             deb
 semantic-version            2.10.0                                   python  
 sensible-utils              0.0.17                                   deb     
 setuptools                  59.6.0                                   python  
-setuptools                  69.0.3                                   python  
+setuptools                  69.1.0                                   python  
 six                         1.16.0                                   python  
 sniffio                     1.3.0                                    python  
 starlette                   0.31.1                                   python  
@@ -216,11 +216,11 @@ tar                         1.34+dfsg-1ubuntu0.1.22.04.1             deb
 tinycss2                    1.2.1                                    python  
 tornado                     6.4                                      python  
 typing_extensions           4.9.0                                    python  
-tzdata                      2023.4                                   python  
 tzdata                      2023d-0ubuntu0.22.04                     deb     
+tzdata                      2024.1                                   python  
 tzlocal                     5.2                                      python  
 ubuntu-keyring              2021.03.26                               deb     
-urllib3                     2.2.0                                    python  
+urllib3                     2.2.1                                    python  
 usrmerge                    25ubuntu2                                deb     
 util-linux                  2.37.2-4ubuntu3                          deb     
 uvicorn                     0.23.2                                   python  
