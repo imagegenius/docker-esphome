@@ -8,7 +8,7 @@ ajsonrpc                    1.2.0                                    python
 anyio                       4.3.0                                    python    
 apt                         2.4.11                                   deb       
 apt-utils                   2.4.11                                   deb       
-argcomplete                 3.2.2                                    python    
+argcomplete                 3.2.3                                    python    
 async-timeout               4.0.3                                    python    
 base-files                  12ubuntu4.3                              deb       
 base-passwd                 3.5.52build1                             deb       
@@ -174,7 +174,7 @@ netcat                      1.218-4ubuntu1                           deb
 netcat-openbsd              1.218-4ubuntu1                           deb       
 noiseprotocol               0.3.1                                    python    
 openssh-client              1:8.9p1-3ubuntu0.6                       deb       
-openssl                     3.0.2-0ubuntu1.14                        deb       
+openssl                     3.0.2-0ubuntu1.15                        deb       
 packaging                   23.2                                     python    
 paho-mqtt                   1.6.1                                    python    
 passwd                      1:4.8.1-2ubuntu2.1                       deb       
@@ -188,7 +188,7 @@ protobuf                    4.25.3                                   python
 publicsuffix                20211207.1025-1                          deb       
 pycparser                   2.21                                     python    
 pyelftools                  0.30                                     python    
-pyparsing                   3.1.1                                    python    
+pyparsing                   3.1.2                                    python    
 pyserial                    3.5                                      python    
 python-magic                0.4.27                                   python    
 python3                     3.10.6-1~22.04                           deb       
