@@ -59,7 +59,7 @@ libc-utils                  0.7.2-r5                apk
 libcap2                     2.69-r0                 apk                      
 libcrypto3                  3.1.4-r5                apk                      
 libcurl                     8.5.0-r0                apk                      
-libexpat                    2.6.0-r0                apk                      
+libexpat                    2.6.2-r0                apk                      
 libffi                      3.4.4-r2                apk                      
 libgcc                      12.2.1_git20220924-r10  apk                      
 libidn2                     2.3.4-r1                apk                      
@@ -91,7 +91,7 @@ pip                         23.1.2                  python
 pkgconf                     1.9.5-r0                apk                      
 platformio                  6.1.13                  python                   
 procps-ng                   4.0.4-r0                apk                      
-protobuf                    4.25.3                  python                   
+protobuf                    5.26.0                  python                   
 py3-packaging               23.1-r1                 apk                      
 py3-packaging-pyc           23.1-r1                 apk                      
 py3-parsing                 3.0.9-r2                apk                      
@@ -114,7 +114,7 @@ reedsolo                    1.7.0                   python
 requests                    2.31.0                  python                   
 scanelf                     1.3.7-r1                apk                      
 semantic-version            2.10.0                  python                   
-setuptools                  69.1.1                  python                   
+setuptools                  69.2.0                  python                   
 shadow                      4.13-r4                 apk                      
 six                         1.16.0                  python                   
 skalibs                     2.13.1.1-r1             apk                      
@@ -133,7 +133,7 @@ utmps-libs                  0.1.2.1-r1              apk
 uvicorn                     0.25.0                  python                   
 voluptuous                  0.14.1                  python                   
 webencodings                0.5.1                   python                   
-wheel                       0.42.0                  python                   
+wheel                       0.43.0                  python                   
 wsproto                     1.2.0                   python                   
 xz-libs                     5.4.3-r0                apk                      
 zeroconf                    0.131.0                 python                   
