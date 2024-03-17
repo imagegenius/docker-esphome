@@ -90,7 +90,7 @@ libcurl4                    7.81.0-1ubuntu1.15                       deb
 libdb5.3                    5.3.28+dfsg1-0.8ubuntu3                  deb       
 libdebconfclient0           0.261ubuntu1                             deb       
 libedit2                    3.1-20210910-1build1                     deb       
-libexpat1                   2.4.7-1ubuntu0.2                         deb       
+libexpat1                   2.4.7-1ubuntu0.3                         deb       
 libext2fs2                  1.46.5-2ubuntu1.1                        deb       
 libffi8                     3.4.2-4                                  deb       
 libfido2-1                  1.10.0-1                                 deb       
@@ -175,7 +175,7 @@ netcat-openbsd              1.218-4ubuntu1                           deb
 noiseprotocol               0.3.1                                    python    
 openssh-client              1:8.9p1-3ubuntu0.6                       deb       
 openssl                     3.0.2-0ubuntu1.15                        deb       
-packaging                   23.2                                     python    
+packaging                   24.0                                     python    
 paho-mqtt                   1.6.1                                    python    
 passwd                      1:4.8.1-2ubuntu2.1                       deb       
 perl-base                   5.34.0-3ubuntu1.2                        deb       
@@ -184,7 +184,7 @@ pinentry-curses             1.1.1-1build2                            deb
 pip                         22.0.2                                   python    
 platformio                  6.1.13                                   python    
 procps                      2:3.3.17-6ubuntu2                        deb       
-protobuf                    4.25.3                                   python    
+protobuf                    5.26.0                                   python    
 publicsuffix                20211207.1025-1                          deb       
 pycparser                   2.21                                     python    
 pyelftools                  0.30                                     python    
@@ -208,7 +208,7 @@ sed                         4.8-1ubuntu2                             deb
 semantic-version            2.10.0                                   python    
 sensible-utils              0.0.17                                   deb       
 setuptools                  59.6.0                                   python    
-setuptools                  69.1.1                                   python    
+setuptools                  69.2.0                                   python    
 six                         1.16.0                                   python    
 sniffio                     1.3.1                                    python    
 starlette                   0.35.1                                   python    
@@ -218,8 +218,8 @@ tar                         1.34+dfsg-1ubuntu0.1.22.04.1             deb
 tinycss2                    1.2.1                                    python    
 tornado                     6.4                                      python    
 typing_extensions           4.10.0                                   python    
-tzdata                      2023d-0ubuntu0.22.04                     deb       
 tzdata                      2024.1                                   python    
+tzdata                      2024a-0ubuntu0.22.04                     deb       
 tzlocal                     5.2                                      python    
 ubuntu-keyring              2021.03.26                               deb       
 urllib3                     2.2.1                                    python    
@@ -229,7 +229,7 @@ uvicorn                     0.25.0                                   python
 voluptuous                  0.14.1                                   python    
 webencodings                0.5.1                                    python    
 wheel                       0.37.1                                   python    
-wheel                       0.42.0                                   python    
+wheel                       0.43.0                                   python    
 wsproto                     1.2.0                                    python    
 zeroconf                    0.131.0                                  python    
 zlib1g                      1:1.2.11.dfsg-2ubuntu9.2                 deb       
