@@ -20,8 +20,8 @@ bottle                      0.12.25                 python
 brotli-libs                 1.0.9-r14               apk                      
 busybox                     1.36.1-r5               apk                      
 busybox-binsh               1.36.1-r5               apk                      
-ca-certificates             20230506-r0             apk                      
-ca-certificates-bundle      20230506-r0             apk                      
+ca-certificates             20240226-r0             apk                      
+ca-certificates-bundle      20240226-r0             apk                      
 cairocffi                   1.6.1                   python                   
 certifi                     2024.2.2                python                   
 cffi                        1.16.0                  python                   
