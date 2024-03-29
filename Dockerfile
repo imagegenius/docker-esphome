@@ -19,6 +19,7 @@ RUN \
     g++ \
     gcc \
     libffi-dev \
+    libc-dev \
     python3-dev && \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
@@ -27,10 +28,12 @@ RUN \
     openssl-dev \
     py3-pip \
     python3 && \
-  pip install --no-cache-dir --upgrade \
+  pip install --break-system-packages --no-cache-dir --upgrade \
     reedsolo \
     setuptools \
     wheel && \
+  pip install --break-system-packages --no-binary :all: \
+    protobuf && \
   echo "**** install esphome ****" && \
   mkdir -p \
     /tmp/esphome \
@@ -46,11 +49,11 @@ RUN \
     /tmp/esphome.tar.gz -C \
     /tmp/esphome --strip-components=1 && \
   cd /tmp/esphome && \
-  pip install --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ \
+  pip install --break-system-packages --no-cache-dir \
     -r requirements.txt \
     -r requirements_optional.txt && \
   python3 script/platformio_install_deps.py platformio.ini --libraries && \
-  pip install --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ \
+  pip install --break-system-packages --no-cache-dir \
     esphome=="${ESPHOME_VERSION}" && \
   echo "**** cleanup ****" && \
   apk del --purge \
