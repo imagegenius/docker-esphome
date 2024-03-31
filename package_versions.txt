@@ -185,9 +185,9 @@ pinentry-curses             1.1.1-1build2                            deb
 pip                         22.0.2                                   python    
 platformio                  6.1.13                                   python    
 procps                      2:3.3.17-6ubuntu2.1                      deb       
-protobuf                    5.26.0                                   python    
+protobuf                    5.26.1                                   python    
 publicsuffix                20211207.1025-1                          deb       
-pycparser                   2.21                                     python    
+pycparser                   2.22                                     python    
 pyelftools                  0.30                                     python    
 pyparsing                   3.1.2                                    python    
 pyserial                    3.5                                      python    
