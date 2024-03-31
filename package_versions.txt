@@ -92,7 +92,7 @@ pip                         23.1.2                  python
 pkgconf                     1.9.5-r0                apk                      
 platformio                  6.1.13                  python                   
 procps-ng                   4.0.4-r0                apk                      
-protobuf                    5.26.0                  python                   
+protobuf                    5.26.1                  python                   
 py3-packaging               23.1-r1                 apk                      
 py3-packaging-pyc           23.1-r1                 apk                      
 py3-parsing                 3.0.9-r2                apk                      
@@ -102,7 +102,7 @@ py3-pip-pyc                 23.1.2-r0               apk
 py3-setuptools              67.7.2-r0               apk                      
 py3-setuptools-pyc          67.7.2-r0               apk                      
 pyc                         0.1-r0                  apk                      
-pycparser                   2.21                    python                   
+pycparser                   2.22                    python                   
 pyelftools                  0.30                    python                   
 pyparsing                   3.0.9                   python                   
 pyserial                    3.5                     python                   
