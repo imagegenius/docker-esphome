@@ -2,13 +2,13 @@ NAME                        VERSION                                  TYPE
 CairoSVG                    2.7.1                                    python    
 PyYAML                      6.0.1                                    python    
 adduser                     3.118ubuntu5                             deb       
-aioesphomeapi               23.1.1                                   python    
+aioesphomeapi               23.2.0                                   python    
 aiohappyeyeballs            2.3.2                                    python    
 ajsonrpc                    1.2.0                                    python    
 anyio                       4.3.0                                    python    
 apt                         2.4.12                                   deb       
 apt-utils                   2.4.12                                   deb       
-argcomplete                 3.2.3                                    python    
+argcomplete                 3.3.0                                    python    
 async-interrupt             1.1.1                                    python    
 async-timeout               4.0.3                                    python    
 base-files                  12ubuntu4.6                              deb       
@@ -41,8 +41,8 @@ dirmngr                     2.2.27-3ubuntu2.1                        deb
 dpkg                        1.21.1ubuntu2.3                          deb       
 e2fsprogs                   1.46.5-2ubuntu1.1                        deb       
 ecdsa                       0.19.0                                   python    
-esphome                     2024.3.2                                 python    
-esphome-dashboard           20240319.0                               python    
+esphome                     2024.4.0                                 python    
+esphome-dashboard           20240412.0                               python    
 esptool                     4.7.0                                    python    
 exceptiongroup              1.2.0                                    python    
 findutils                   4.8.0-1ubuntu3                           deb       
