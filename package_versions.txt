@@ -15,7 +15,7 @@ argcomplete                 3.3.0                   python
 async-interrupt             1.1.1                   python                   
 bash                        5.2.15-r5               apk                      
 bitarray                    2.9.2                   python                   
-bitstring                   4.1.4                   python                   
+bitstring                   4.2.0                   python                   
 bottle                      0.12.25                 python                   
 brotli-libs                 1.0.9-r14               apk                      
 busybox                     1.36.1-r5               apk                      
@@ -35,7 +35,7 @@ cssselect2                  0.7.0                   python
 curl                        8.5.0-r0                apk                      
 defusedxml                  0.7.1                   python                   
 ecdsa                       0.19.0                  python                   
-esphome                     2024.4.0                python                   
+esphome                     2024.4.1                python                   
 esphome-dashboard           20240412.0              python                   
 esptool                     4.7.0                   python                   
 findutils                   4.9.0-r5                apk                      
