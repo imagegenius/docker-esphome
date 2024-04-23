@@ -251,7 +251,7 @@ pipeline {
       }
       steps {
         sh '''#! /bin/bash
-              set -e
+              set -ex
               TEMPDIR=$(mktemp -d)
               docker pull ghcr.io/imagegenius/jenkins-builder:latest
               mkdir -p ${TEMPDIR}/source
