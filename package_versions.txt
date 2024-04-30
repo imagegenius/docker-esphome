@@ -16,11 +16,11 @@ base-passwd                 3.5.52build1                             deb
 bash                        5.1-6ubuntu1.1                           deb       
 bash                        5.1.16                                   binary    
 bitarray                    2.9.2                                    python    
-bitstring                   4.2.0                                    python    
+bitstring                   4.2.1                                    python    
 bottle                      0.12.25                                  python    
-bsdutils                    1:2.37.2-4ubuntu3.3                      deb       
+bsdutils                    1:2.37.2-4ubuntu3.4                      deb       
 ca-certificates             20230311ubuntu0.22.04.1                  deb       
-cairocffi                   1.6.1                                    python    
+cairocffi                   1.7.0                                    python    
 certifi                     2024.2.2                                 python    
 cffi                        1.16.0                                   python    
 chacha20poly1305-reuseable  0.12.1                                   python    
@@ -41,7 +41,7 @@ dirmngr                     2.2.27-3ubuntu2.1                        deb
 dpkg                        1.21.1ubuntu2.3                          deb       
 e2fsprogs                   1.46.5-2ubuntu1.1                        deb       
 ecdsa                       0.19.0                                   python    
-esphome                     2024.4.1                                 python    
+esphome                     2024.4.2                                 python    
 esphome-dashboard           20240412.0                               python    
 esptool                     4.7.0                                    python    
 exceptiongroup              1.2.1                                    python    
@@ -75,7 +75,7 @@ libassuan0                  2.5.5-1build1                            deb
 libattr1                    1:2.5.1-1build1                          deb       
 libaudit-common             1:3.0.7-1build1                          deb       
 libaudit1                   1:3.0.7-1build1                          deb       
-libblkid1                   2.37.2-4ubuntu3.3                        deb       
+libblkid1                   2.37.2-4ubuntu3.4                        deb       
 libbrotli1                  1.0.9-2build6                            deb       
 libbsd0                     0.11.5-1                                 deb       
 libbz2-1.0                  1.0.8-5build1                            deb       
@@ -98,7 +98,7 @@ libfido2-1                  1.10.0-1                                 deb
 libgcc-s1                   12.3.0-1ubuntu1~22.04                    deb       
 libgcrypt20                 1.9.4-3ubuntu3                           deb       
 libgmp10                    2:6.2.1+dfsg-3ubuntu1                    deb       
-libgnutls30                 3.7.3-4ubuntu1.4                         deb       
+libgnutls30                 3.7.3-4ubuntu1.5                         deb       
 libgpg-error0               1.43-3                                   deb       
 libgssapi-krb5-2            1.19.2-2ubuntu0.3                        deb       
 libhogweed6                 3.7.3-1build2                            deb       
@@ -114,7 +114,7 @@ libldap-common              2.5.17+dfsg-0ubuntu0.22.04.1             deb
 liblz4-1                    1.9.3-2build2                            deb       
 liblzma5                    5.2.5-2ubuntu1                           deb       
 libmd0                      1.0.4-1build1                            deb       
-libmount1                   2.37.2-4ubuntu3.3                        deb       
+libmount1                   2.37.2-4ubuntu3.4                        deb       
 libmpdec3                   2.5.1-2build2                            deb       
 libncurses6                 6.3-2ubuntu0.1                           deb       
 libncursesw6                6.3-2ubuntu0.1                           deb       
@@ -145,7 +145,7 @@ libselinux1                 3.3-1build2                              deb
 libsemanage-common          3.3-1build2                              deb       
 libsemanage2                3.3-1build2                              deb       
 libsepol2                   3.3-1build1                              deb       
-libsmartcols1               2.37.2-4ubuntu3.3                        deb       
+libsmartcols1               2.37.2-4ubuntu3.4                        deb       
 libsqlite3-0                3.37.2-2ubuntu0.3                        deb       
 libss2                      1.46.5-2ubuntu1.1                        deb       
 libssh-4                    0.9.6-2ubuntu0.22.04.3                   deb       
@@ -158,7 +158,7 @@ libtirpc-common             1.3.2-2ubuntu0.1                         deb
 libtirpc3                   1.3.2-2ubuntu0.1                         deb       
 libudev1                    249.11-0ubuntu3.12                       deb       
 libunistring2               1.0-1                                    deb       
-libuuid1                    2.37.2-4ubuntu3.3                        deb       
+libuuid1                    2.37.2-4ubuntu3.4                        deb       
 libxxhash0                  0.8.1-1                                  deb       
 libzstd1                    1.4.8+dfsg-3build1                       deb       
 locales                     2.35-0ubuntu3.6                          deb       
@@ -168,7 +168,7 @@ lsb-base                    11.1.0ubuntu4                            deb
 marshmallow                 3.21.1                                   python    
 mawk                        1.3.4.20200120-3                         deb       
 media-types                 7.0.0                                    deb       
-mount                       2.37.2-4ubuntu3.3                        deb       
+mount                       2.37.2-4ubuntu3.4                        deb       
 ncurses-base                6.3-2ubuntu0.1                           deb       
 ncurses-bin                 6.3-2ubuntu0.1                           deb       
 netcat                      1.218-4ubuntu1                           deb       
@@ -218,7 +218,7 @@ starlette                   0.35.1                                   python
 sysvinit-utils              3.01-1ubuntu1                            deb       
 tabulate                    0.9.0                                    python    
 tar                         1.34+dfsg-1ubuntu0.1.22.04.2             deb       
-tinycss2                    1.2.1                                    python    
+tinycss2                    1.3.0                                    python    
 tornado                     6.4                                      python    
 typing_extensions           4.11.0                                   python    
 tzdata                      2024.1                                   python    
@@ -227,7 +227,7 @@ tzlocal                     5.2                                      python
 ubuntu-keyring              2021.03.26                               deb       
 urllib3                     2.2.1                                    python    
 usrmerge                    25ubuntu2                                deb       
-util-linux                  2.37.2-4ubuntu3.3                        deb       
+util-linux                  2.37.2-4ubuntu3.4                        deb       
 uvicorn                     0.25.0                                   python    
 voluptuous                  0.14.2                                   python    
 webencodings                0.5.1                                    python    
