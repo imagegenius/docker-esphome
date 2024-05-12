@@ -14,9 +14,8 @@ async-timeout               4.0.3                                    python
 base-files                  12ubuntu4.6                              deb       
 base-passwd                 3.5.52build1                             deb       
 bash                        5.1-6ubuntu1.1                           deb       
-bash                        5.1.16                                   binary    
 bitarray                    2.9.2                                    python    
-bitstring                   4.2.1                                    python    
+bitstring                   4.2.2                                    python    
 bottle                      0.12.25                                  python    
 bsdutils                    1:2.37.2-4ubuntu3.4                      deb       
 ca-certificates             20230311ubuntu0.22.04.1                  deb       
@@ -119,7 +118,7 @@ libmpdec3                   2.5.1-2build2                            deb
 libncurses6                 6.3-2ubuntu0.1                           deb       
 libncursesw6                6.3-2ubuntu0.1                           deb       
 libnettle8                  3.7.3-1build2                            deb       
-libnghttp2-14               1.43.0-1ubuntu0.1                        deb       
+libnghttp2-14               1.43.0-1ubuntu0.2                        deb       
 libnpth0                    1.6-3build2                              deb       
 libnsl2                     1.3.0-2build2                            deb       
 libonig5                    6.9.7.1-2build1                          deb       
