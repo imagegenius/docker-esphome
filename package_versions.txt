@@ -41,7 +41,7 @@ dirmngr                     2.2.27-3ubuntu2.1                        deb
 dpkg                        1.21.1ubuntu2.3                          deb       
 e2fsprogs                   1.46.5-2ubuntu1.1                        deb       
 ecdsa                       0.19.0                                   python    
-esphome                     2024.5.1                                 python    
+esphome                     2024.5.2                                 python    
 esphome-dashboard           20240412.0                               python    
 esptool                     4.7.0                                    python    
 exceptiongroup              1.2.1                                    python    
@@ -204,7 +204,7 @@ python3.10                  3.10.12-1~22.04.3                        deb
 python3.10-minimal          3.10.12-1~22.04.3                        deb       
 readline-common             8.1.2-1                                  deb       
 reedsolo                    1.7.0                                    python    
-requests                    2.31.0                                   python    
+requests                    2.32.1                                   python    
 ruamel.yaml                 0.18.6                                   python    
 ruamel.yaml.clib            0.2.8                                    python    
 sed                         4.8-1ubuntu2                             deb       
