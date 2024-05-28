@@ -5,7 +5,7 @@ adduser                     3.118ubuntu5                             deb
 aioesphomeapi               24.3.0                                   python    
 aiohappyeyeballs            2.3.2                                    python    
 ajsonrpc                    1.2.0                                    python    
-anyio                       4.3.0                                    python    
+anyio                       4.4.0                                    python    
 apt                         2.4.12                                   deb       
 apt-utils                   2.4.12                                   deb       
 argcomplete                 3.3.0                                    python    
@@ -15,7 +15,7 @@ base-files                  12ubuntu4.6                              deb
 base-passwd                 3.5.52build1                             deb       
 bash                        5.1-6ubuntu1.1                           deb       
 bitarray                    2.9.2                                    python    
-bitstring                   4.2.2                                    python    
+bitstring                   4.2.3                                    python    
 bottle                      0.12.25                                  python    
 bsdutils                    1:2.37.2-4ubuntu3.4                      deb       
 ca-certificates             20230311ubuntu0.22.04.1                  deb       
@@ -41,7 +41,7 @@ dirmngr                     2.2.27-3ubuntu2.1                        deb
 dpkg                        1.21.1ubuntu2.3                          deb       
 e2fsprogs                   1.46.5-2ubuntu1.1                        deb       
 ecdsa                       0.19.0                                   python    
-esphome                     2024.5.3                                 python    
+esphome                     2024.5.4                                 python    
 esphome-dashboard           20240412.0                               python    
 esptool                     4.7.0                                    python    
 exceptiongroup              1.2.1                                    python    
