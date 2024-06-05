@@ -21,7 +21,7 @@ bsdutils                    1:2.37.2-4ubuntu3.4                      deb
 ca-certificates             20230311ubuntu0.22.04.1                  deb       
 cairocffi                   1.7.0                                    python    
 catatonit                   0.1.7-1                                  deb       
-certifi                     2024.2.2                                 python    
+certifi                     2024.6.2                                 python    
 cffi                        1.16.0                                   python    
 chacha20poly1305-reuseable  0.12.1                                   python    
 charset-normalizer          3.3.2                                    python    
@@ -41,7 +41,7 @@ dirmngr                     2.2.27-3ubuntu2.1                        deb
 dpkg                        1.21.1ubuntu2.3                          deb       
 e2fsprogs                   1.46.5-2ubuntu1.1                        deb       
 ecdsa                       0.19.0                                   python    
-esphome                     2024.5.4                                 python    
+esphome                     2024.5.5                                 python    
 esphome-dashboard           20240412.0                               python    
 esptool                     4.7.0                                    python    
 exceptiongroup              1.2.1                                    python    
@@ -204,7 +204,7 @@ python3.10                  3.10.12-1~22.04.3                        deb
 python3.10-minimal          3.10.12-1~22.04.3                        deb       
 readline-common             8.1.2-1                                  deb       
 reedsolo                    1.7.0                                    python    
-requests                    2.32.2                                   python    
+requests                    2.32.3                                   python    
 ruamel.yaml                 0.18.6                                   python    
 ruamel.yaml.clib            0.2.8                                    python    
 sed                         4.8-1ubuntu2                             deb       
@@ -220,7 +220,7 @@ tabulate                    0.9.0                                    python
 tar                         1.34+dfsg-1ubuntu0.1.22.04.2             deb       
 tinycss2                    1.3.0                                    python    
 tornado                     6.4                                      python    
-typing_extensions           4.12.0                                   python    
+typing_extensions           4.12.1                                   python    
 tzdata                      2024.1                                   python    
 tzdata                      2024a-0ubuntu0.22.04                     deb       
 tzlocal                     5.2                                      python    
