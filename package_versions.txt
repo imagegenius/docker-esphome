@@ -76,7 +76,7 @@ libstdc++                   12.2.1_git20220924-r10  apk
 libucontext                 1.2-r2                  apk                      
 libunistring                1.1-r1                  apk                      
 linux-pam                   1.5.2-r10               apk                      
-marshmallow                 3.21.2                  python                   
+marshmallow                 3.21.3                  python                   
 mpdecimal                   2.5.1-r2                apk                      
 musl                        1.2.4-r2                apk                      
 musl-obstack                1.2.3-r2                apk                      
@@ -94,7 +94,7 @@ pip                         23.1.2                  python
 pkgconf                     1.9.5-r0                apk                      
 platformio                  6.1.15                  python                   
 procps-ng                   4.0.4-r0                apk                      
-protobuf                    5.27.0                  python                   
+protobuf                    5.27.1                  python                   
 py3-packaging               23.1-r1                 apk                      
 py3-packaging-pyc           23.1-r1                 apk                      
 py3-parsing                 3.0.9-r2                apk                      
