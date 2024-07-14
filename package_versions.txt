@@ -119,7 +119,7 @@ ruamel.yaml                 0.18.6                  python
 ruamel.yaml.clib            0.2.8                   python                   
 scanelf                     1.3.7-r1                apk                      
 semantic-version            2.10.0                  python                   
-setuptools                  70.2.0                  python                   
+setuptools                  70.3.0                  python                   
 shadow                      4.13-r4                 apk                      
 six                         1.16.0                  python                   
 skalibs                     2.13.1.1-r1             apk                      
