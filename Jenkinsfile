@@ -43,8 +43,7 @@ pipeline {
               if [[ -n "${containers}" ]]; then
                 docker stop ${containers}
               fi
-              docker system prune -af --volumes || :
-           '''
+              docker system prune -af --volumes || : '''
         script{
           env.EXIT_STATUS = ''
           env.IG_RELEASE = sh(
@@ -96,7 +95,7 @@ pipeline {
       steps{
         script{
           env.PACKAGE_TAG = sh(
-            script: '''#! /bin/bash
+            script: '''#!/bin/bash
                        if [ -e package_versions.txt ] ; then
                          cat package_versions.txt | md5sum | cut -c1-8
                        else
@@ -204,10 +203,10 @@ pipeline {
           if (env.MULTIARCH == 'true') {
             env.CI_TAGS = 'amd64-ubuntu-' + env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-dev-' + env.COMMIT_SHA + '-pr-' + env.PULL_REQUEST + '|arm64v8-ubuntu-' + env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-dev-' + env.COMMIT_SHA + '-pr-' + env.PULL_REQUEST
           } else {
-            env.CI_TAGS = 'ubuntu-' + env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-pr-' + env.PULL_REQUEST
+            env.CI_TAGS = 'ubuntu-' + env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-dev-' + env.COMMIT_SHA + '-pr-' + env.PULL_REQUEST
           }
-          env.VERSION_TAG = env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-pr-' + env.PULL_REQUEST
-          env.META_TAG = 'ubuntu-' + env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-pr-' + env.PULL_REQUEST
+          env.VERSION_TAG = env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-dev-' + env.COMMIT_SHA + '-pr-' + env.PULL_REQUEST
+          env.META_TAG = 'ubuntu-' + env.EXT_RELEASE_CLEAN + '-pkg-' + env.PACKAGE_TAG + '-dev-' + env.COMMIT_SHA + '-pr-' + env.PULL_REQUEST
           env.EXT_RELEASE_TAG = 'ubuntu-version-' + env.EXT_RELEASE_CLEAN
           env.CODE_URL = 'https://github.com/' + env.IG_USER + '/' + env.IG_REPO + '/pull/' + env.PULL_REQUEST
         }
