@@ -1,12 +1,12 @@
 NAME                        VERSION                                  TYPE                   
 adduser                     3.118ubuntu5                             deb                     
 aioesphomeapi               24.3.0                                   python                  
-aiohappyeyeballs            2.3.4                                    python                  
+aiohappyeyeballs            2.3.5                                    python                  
 ajsonrpc                    1.2.0                                    python                  
 anyio                       4.4.0                                    python                  
 apt                         2.4.12                                   deb                     
 apt-utils                   2.4.12                                   deb                     
-argcomplete                 3.4.0                                    python                  
+argcomplete                 3.5.0                                    python                  
 async-interrupt             1.1.2                                    python                  
 async-timeout               4.0.3                                    python                  
 autocommand                 2.2.2                                    python                  
@@ -23,7 +23,7 @@ cairocffi                   1.7.1                                    python
 cairosvg                    2.7.1                                    python                  
 catatonit                   0.1.7-1                                  deb                     
 certifi                     2024.7.4                                 python                  
-cffi                        1.16.0                                   python                  
+cffi                        1.17.0                                   python                  
 chacha20poly1305-reuseable  0.12.2                                   python                  
 charset-normalizer          3.3.2                                    python                  
 click                       8.1.7                                    python                  
@@ -116,8 +116,8 @@ libkeyutils1                1.6.1-2ubuntu3                           deb
 libkrb5-3                   1.19.2-2ubuntu0.3                        deb                     
 libkrb5support0             1.19.2-2ubuntu0.3                        deb                     
 libksba8                    1.6.0-2ubuntu0.2                         deb                     
-libldap-2.5-0               2.5.18+dfsg-0ubuntu0.22.04.1             deb                     
-libldap-common              2.5.18+dfsg-0ubuntu0.22.04.1             deb                     
+libldap-2.5-0               2.5.18+dfsg-0ubuntu0.22.04.2             deb                     
+libldap-common              2.5.18+dfsg-0ubuntu0.22.04.2             deb                     
 liblz4-1                    1.9.3-2build2                            deb                     
 liblzma5                    5.2.5-2ubuntu1                           deb                     
 libmd0                      1.0.4-1build1                            deb                     
@@ -246,7 +246,8 @@ uvicorn                     0.29.0                                   python
 voluptuous                  0.14.2                                   python                  
 webencodings                0.5.1                                    python                  
 wheel                       0.37.1                                   python                  
-wheel                       0.43.0                                   python  (+1 duplicate)  
+wheel                       0.43.0                                   python                  
+wheel                       0.44.0                                   python                  
 wsproto                     1.2.0                                    python                  
 zeroconf                    0.132.2                                  python                  
 zipp                        3.19.2                                   python                  
