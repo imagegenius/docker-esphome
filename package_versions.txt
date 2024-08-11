@@ -1,7 +1,7 @@
 NAME                        VERSION                 TYPE                    
 Simple Launcher             1.1.0.14                dotnet  (+5 duplicates)  
 aioesphomeapi               24.3.0                  python                   
-aiohappyeyeballs            2.3.4                   python                   
+aiohappyeyeballs            2.3.5                   python                   
 ajsonrpc                    1.2.0                   python                   
 alpine-baselayout           3.4.3-r1                apk                      
 alpine-baselayout-data      3.4.3-r1                apk                      
@@ -9,7 +9,7 @@ alpine-keys                 2.4-r1                  apk
 alpine-release              3.18.7-r0               apk                      
 anyio                       4.4.0                   python                   
 apk-tools                   2.14.4-r0               apk                      
-argcomplete                 3.4.0                   python                   
+argcomplete                 3.5.0                   python                   
 async-interrupt             1.1.2                   python                   
 autocommand                 2.2.2                   python                   
 backports-tarfile           1.2.0                   python                   
@@ -26,7 +26,7 @@ cairocffi                   1.7.1                   python
 cairosvg                    2.7.1                   python                   
 catatonit                   0.1.7-r0                apk                      
 certifi                     2024.7.4                python                   
-cffi                        1.16.0                  python                   
+cffi                        1.17.0                  python                   
 chacha20poly1305-reuseable  0.12.2                  python                   
 charset-normalizer          3.3.2                   python                   
 click                       8.1.7                   python                   
@@ -154,7 +154,8 @@ utmps-libs                  0.1.2.1-r1              apk
 uvicorn                     0.29.0                  python                   
 voluptuous                  0.14.2                  python                   
 webencodings                0.5.1                   python                   
-wheel                       0.43.0                  python  (+1 duplicate)   
+wheel                       0.43.0                  python                   
+wheel                       0.44.0                  python                   
 wsproto                     1.2.0                   python                   
 xz-libs                     5.4.3-r0                apk                      
 zeroconf                    0.132.2                 python                   
