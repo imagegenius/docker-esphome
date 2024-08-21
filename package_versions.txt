@@ -1,7 +1,7 @@
 NAME                        VERSION                 TYPE                    
 Simple Launcher             1.1.0.14                dotnet  (+5 duplicates)  
-aioesphomeapi               24.3.0                  python                   
-aiohappyeyeballs            2.3.7                   python                   
+aioesphomeapi               24.6.2                  python                   
+aiohappyeyeballs            2.4.0                   python                   
 ajsonrpc                    1.2.0                   python                   
 alpine-baselayout           3.4.3-r1                apk                      
 alpine-baselayout-data      3.4.3-r1                apk                      
@@ -27,17 +27,17 @@ cairosvg                    2.7.1                   python
 catatonit                   0.1.7-r0                apk                      
 certifi                     2024.7.4                python                   
 cffi                        1.17.0                  python                   
-chacha20poly1305-reuseable  0.12.2                  python                   
+chacha20poly1305-reuseable  0.13.2                  python                   
 charset-normalizer          3.3.2                   python                   
 click                       8.1.7                   python                   
 colorama                    0.4.6                   python                   
 coreutils                   9.3-r2                  apk                      
-cryptography                42.0.2                  python                   
+cryptography                43.0.0                  python                   
 cssselect2                  0.7.0                   python                   
 curl                        8.5.0-r0                apk                      
 defusedxml                  0.7.1                   python                   
 ecdsa                       0.19.0                  python                   
-esphome                     2024.7.3                python                   
+esphome                     2024.8.0                python                   
 esphome-dashboard           20240620.0              python                   
 esptool                     4.7.0                   python                   
 findutils                   4.9.0-r5                apk                      
@@ -83,7 +83,7 @@ libstdc++                   12.2.1_git20220924-r10  apk
 libucontext                 1.2-r2                  apk                      
 libunistring                1.1-r1                  apk                      
 linux-pam                   1.5.2-r10               apk                      
-marshmallow                 3.21.3                  python                   
+marshmallow                 3.22.0                  python                   
 more-itertools              10.3.0                  python                   
 mpdecimal                   2.5.1-r2                apk                      
 musl                        1.2.4-r2                apk                      
@@ -96,7 +96,6 @@ nghttp2-libs                1.57.0-r0               apk
 noiseprotocol               0.3.1                   python                   
 oniguruma                   6.9.8-r1                apk                      
 openssl-dev                 3.1.6-r0                apk                      
-ordered-set                 4.1.0                   python                   
 packaging                   23.1                    python                   
 packaging                   24.1                    python                   
 paho-mqtt                   1.6.1                   python                   
@@ -132,7 +131,7 @@ ruamel-yaml                 0.18.6                  python
 ruamel-yaml-clib            0.2.8                   python                   
 scanelf                     1.3.7-r1                apk                      
 semantic-version            2.10.0                  python                   
-setuptools                  72.2.0                  python                   
+setuptools                  73.0.1                  python                   
 shadow                      4.13-r4                 apk                      
 six                         1.16.0                  python                   
 skalibs                     2.13.1.1-r1             apk                      
