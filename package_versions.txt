@@ -10,7 +10,7 @@ alpine-release              3.18.7-r0               apk
 anyio                       4.4.0                   python                   
 apk-tools                   2.14.4-r0               apk                      
 argcomplete                 3.5.0                   python                   
-async-interrupt             1.1.2                   python                   
+async-interrupt             1.2.0                   python                   
 autocommand                 2.2.2                   python                   
 backports-tarfile           1.2.0                   python                   
 bash                        5.2.15-r5               apk                      
@@ -45,7 +45,7 @@ gcompat                     1.1.0-r1                apk
 gdbm                        1.23-r1                 apk                      
 h11                         0.14.0                  python                   
 icmplib                     3.0.4                   python                   
-idna                        3.7                     python                   
+idna                        3.8                     python                   
 ifaddr                      0.2.0                   python                   
 importlib-metadata          8.0.0                   python                   
 importlib-resources         6.4.0                   python                   
