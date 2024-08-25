@@ -7,7 +7,7 @@ anyio                       4.4.0                                    python
 apt                         2.4.12                                   deb                     
 apt-utils                   2.4.12                                   deb                     
 argcomplete                 3.5.0                                    python                  
-async-interrupt             1.1.2                                    python                  
+async-interrupt             1.2.0                                    python                  
 async-timeout               4.0.3                                    python                  
 autocommand                 2.2.2                                    python                  
 backports-tarfile           1.2.0                                    python                  
@@ -63,7 +63,7 @@ gzip                        1.10-4ubuntu4.1                          deb
 h11                         0.14.0                                   python                  
 hostname                    3.23ubuntu2                              deb                     
 icmplib                     3.0.4                                    python                  
-idna                        3.7                                      python                  
+idna                        3.8                                      python                  
 ifaddr                      0.2.0                                    python                  
 importlib-metadata          8.0.0                                    python                  
 importlib-resources         6.4.0                                    python                  
@@ -139,7 +139,7 @@ libpcre2-8-0                10.39-3ubuntu0.1                         deb
 libpcre3                    2:8.39-13ubuntu0.22.04.1                 deb                     
 libprocps8                  2:3.3.17-6ubuntu2.1                      deb                     
 libpsl5                     0.21.0-1.2build2                         deb                     
-libpython3-stdlib           3.10.6-1~22.04                           deb                     
+libpython3-stdlib           3.10.6-1~22.04.1                         deb                     
 libpython3.10-minimal       3.10.12-1~22.04.5                        deb                     
 libpython3.10-stdlib        3.10.12-1~22.04.5                        deb                     
 libreadline8                8.1.2-1                                  deb                     
@@ -199,13 +199,13 @@ protobuf                    5.27.3                                   python
 publicsuffix                20211207.1025-1                          deb                     
 pycparser                   2.22                                     python                  
 pyelftools                  0.31                                     python                  
-pyparsing                   3.1.2                                    python                  
+pyparsing                   3.1.3                                    python                  
 pyserial                    3.5                                      python                  
 python-magic                0.4.27                                   python                  
-python3                     3.10.6-1~22.04                           deb                     
+python3                     3.10.6-1~22.04.1                         deb                     
 python3-distutils           3.10.8-1~22.04                           deb                     
 python3-lib2to3             3.10.8-1~22.04                           deb                     
-python3-minimal             3.10.6-1~22.04                           deb                     
+python3-minimal             3.10.6-1~22.04.1                         deb                     
 python3-pip                 22.0.2+dfsg-1ubuntu0.4                   deb                     
 python3-pkg-resources       59.6.0-1.2ubuntu0.22.04.1                deb                     
 python3-setuptools          59.6.0-1.2ubuntu0.22.04.1                deb                     
