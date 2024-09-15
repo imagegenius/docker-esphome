@@ -63,7 +63,7 @@ gzip                        1.10-4ubuntu4.1                          deb
 h11                         0.14.0                                   python                  
 hostname                    3.23ubuntu2                              deb                     
 icmplib                     3.0.4                                    python                  
-idna                        3.8                                      python                  
+idna                        3.9                                      python                  
 ifaddr                      0.2.0                                    python                  
 importlib-metadata          8.0.0                                    python                  
 importlib-resources         6.4.0                                    python                  
@@ -156,7 +156,7 @@ libsmartcols1               2.37.2-4ubuntu3.4                        deb
 libsqlite3-0                3.37.2-2ubuntu0.3                        deb                     
 libss2                      1.46.5-2ubuntu1.2                        deb                     
 libssh-4                    0.9.6-2ubuntu0.22.04.3                   deb                     
-libssl3                     3.0.2-0ubuntu1.17                        deb                     
+libssl3                     3.0.2-0ubuntu1.18                        deb                     
 libstdc++6                  12.3.0-1ubuntu1~22.04                    deb                     
 libsystemd0                 249.11-0ubuntu3.12                       deb                     
 libtasn1-6                  4.18.0-4build1                           deb                     
@@ -184,7 +184,7 @@ netcat                      1.218-4ubuntu1                           deb
 netcat-openbsd              1.218-4ubuntu1                           deb                     
 noiseprotocol               0.3.1                                    python                  
 openssh-client              1:8.9p1-3ubuntu0.10                      deb                     
-openssl                     3.0.2-0ubuntu1.17                        deb                     
+openssl                     3.0.2-0ubuntu1.18                        deb                     
 packaging                   24.1                                     python  (+1 duplicate)  
 paho-mqtt                   1.6.1                                    python                  
 passwd                      1:4.8.1-2ubuntu2.2                       deb                     
@@ -195,7 +195,7 @@ pip                         22.0.2                                   python
 platformdirs                4.2.2                                    python                  
 platformio                  6.1.15                                   python                  
 procps                      2:3.3.17-6ubuntu2.1                      deb                     
-protobuf                    5.28.0                                   python                  
+protobuf                    5.28.1                                   python                  
 publicsuffix                20211207.1025-1                          deb                     
 pycparser                   2.22                                     python                  
 pyelftools                  0.31                                     python                  
@@ -207,8 +207,8 @@ python3-distutils           3.10.8-1~22.04                           deb
 python3-lib2to3             3.10.8-1~22.04                           deb                     
 python3-minimal             3.10.6-1~22.04.1                         deb                     
 python3-pip                 22.0.2+dfsg-1ubuntu0.4                   deb                     
-python3-pkg-resources       59.6.0-1.2ubuntu0.22.04.1                deb                     
-python3-setuptools          59.6.0-1.2ubuntu0.22.04.1                deb                     
+python3-pkg-resources       59.6.0-1.2ubuntu0.22.04.2                deb                     
+python3-setuptools          59.6.0-1.2ubuntu0.22.04.2                deb                     
 python3-wheel               0.37.1-2ubuntu0.22.04.1                  deb                     
 python3.10                  3.10.12-1~22.04.5                        deb                     
 python3.10-minimal          3.10.12-1~22.04.5                        deb                     
@@ -238,7 +238,7 @@ tzdata                      2024.1                                   python
 tzdata                      2024a-0ubuntu0.22.04.1                   deb                     
 tzlocal                     5.2                                      python                  
 ubuntu-keyring              2021.03.26                               deb                     
-urllib3                     2.2.2                                    python                  
+urllib3                     2.2.3                                    python                  
 usrmerge                    25ubuntu2                                deb                     
 util-linux                  2.37.2-4ubuntu3.4                        deb                     
 uvicorn                     0.29.0                                   python                  
