@@ -7,7 +7,7 @@ alpine-baselayout           3.4.3-r1                apk
 alpine-baselayout-data      3.4.3-r1                apk                      
 alpine-keys                 2.4-r1                  apk                      
 alpine-release              3.18.7-r0               apk                      
-anyio                       4.6.0                   python                   
+anyio                       4.6.2.post1             python                   
 apk-tools                   2.14.4-r0               apk                      
 argcomplete                 3.5.1                   python                   
 async-interrupt             1.2.0                   python                   
@@ -37,7 +37,7 @@ cssselect2                  0.7.0                   python
 curl                        8.5.0-r0                apk                      
 defusedxml                  0.7.1                   python                   
 ecdsa                       0.19.0                  python                   
-esphome                     2024.9.2                python                   
+esphome                     2024.10.0               python                   
 esphome-dashboard           20240620.0              python                   
 esptool                     4.7.0                   python                   
 findutils                   4.9.0-r5                apk                      
@@ -107,6 +107,7 @@ platformdirs                4.2.2                   python
 platformio                  6.1.15                  python                   
 procps-ng                   4.0.4-r0                apk                      
 protobuf                    5.28.2                  python                   
+puremagic                   1.27                    python                   
 py3-packaging               23.1-r1                 apk                      
 py3-packaging-pyc           23.1-r1                 apk                      
 py3-parsing                 3.0.9-r2                apk                      
@@ -120,7 +121,6 @@ pycparser                   2.22                    python
 pyelftools                  0.31                    python                   
 pyparsing                   3.0.9                   python                   
 pyserial                    3.5                     python                   
-python-magic                0.4.27                  python                   
 python3                     3.11.10-r1              apk                      
 python3-pyc                 3.11.10-r1              apk                      
 python3-pycache-pyc0        3.11.10-r1              apk                      
