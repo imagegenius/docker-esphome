@@ -3,7 +3,7 @@ adduser                     3.118ubuntu5                             deb
 aioesphomeapi               24.6.2                                   python                  
 aiohappyeyeballs            2.4.3                                    python                  
 ajsonrpc                    1.2.0                                    python                  
-anyio                       4.6.0                                    python                  
+anyio                       4.6.2.post1                              python                  
 apt                         2.4.13                                   deb                     
 apt-utils                   2.4.13                                   deb                     
 argcomplete                 3.5.1                                    python                  
@@ -42,7 +42,7 @@ dirmngr                     2.2.27-3ubuntu2.1                        deb
 dpkg                        1.21.1ubuntu2.3                          deb                     
 e2fsprogs                   1.46.5-2ubuntu1.2                        deb                     
 ecdsa                       0.19.0                                   python                  
-esphome                     2024.9.2                                 python                  
+esphome                     2024.10.0                                python                  
 esphome-dashboard           20240620.0                               python                  
 esptool                     4.7.0                                    python                  
 exceptiongroup              1.2.2                                    python                  
@@ -198,11 +198,11 @@ platformio                  6.1.15                                   python
 procps                      2:3.3.17-6ubuntu2.1                      deb                     
 protobuf                    5.28.2                                   python                  
 publicsuffix                20211207.1025-1                          deb                     
+puremagic                   1.27                                     python                  
 pycparser                   2.22                                     python                  
 pyelftools                  0.31                                     python                  
-pyparsing                   3.1.4                                    python                  
+pyparsing                   3.2.0                                    python                  
 pyserial                    3.5                                      python                  
-python-magic                0.4.27                                   python                  
 python3                     3.10.6-1~22.04.1                         deb                     
 python3-distutils           3.10.8-1~22.04                           deb                     
 python3-lib2to3             3.10.8-1~22.04                           deb                     
