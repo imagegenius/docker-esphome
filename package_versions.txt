@@ -43,6 +43,7 @@ esptool                     4.7.0                   python
 findutils                   4.9.0-r5                apk                      
 gcompat                     1.1.0-r1                apk                      
 gdbm                        1.23-r1                 apk                      
+git                         2.40.3-r0               apk                      
 h11                         0.14.0                  python                   
 icmplib                     3.0.4                   python                   
 idna                        3.10                    python                   
@@ -100,6 +101,7 @@ openssl-dev                 3.1.7-r1                apk
 packaging                   23.1                    python                   
 packaging                   24.1                    python                   
 paho-mqtt                   1.6.1                   python                   
+pcre2                       10.42-r1                apk                      
 pillow                      10.2.0                  python                   
 pip                         23.1.2                  python                   
 pkgconf                     1.9.5-r0                apk                      
