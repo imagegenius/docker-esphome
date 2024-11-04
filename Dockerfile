@@ -24,6 +24,7 @@ RUN \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
     gcompat \
+    git \
     iputils \
     openssl-dev \
     py3-pip \
