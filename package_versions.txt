@@ -42,7 +42,7 @@ dirmngr                     2.2.27-3ubuntu2.1                        deb
 dpkg                        1.21.1ubuntu2.3                          deb                     
 e2fsprogs                   1.46.5-2ubuntu1.2                        deb                     
 ecdsa                       0.19.0                                   python                  
-esphome                     2024.10.2                                python                  
+esphome                     2024.10.3                                python                  
 esphome-dashboard           20240620.0                               python                  
 esptool                     4.7.0                                    python                  
 exceptiongroup              1.2.2                                    python                  
@@ -186,7 +186,8 @@ netcat-openbsd              1.218-4ubuntu1                           deb
 noiseprotocol               0.3.1                                    python                  
 openssh-client              1:8.9p1-3ubuntu0.10                      deb                     
 openssl                     3.0.2-0ubuntu1.18                        deb                     
-packaging                   24.1                                     python  (+1 duplicate)  
+packaging                   24.1                                     python                  
+packaging                   24.2                                     python                  
 paho-mqtt                   1.6.1                                    python                  
 passwd                      1:4.8.1-2ubuntu2.2                       deb                     
 perl-base                   5.34.0-3ubuntu1.3                        deb                     
