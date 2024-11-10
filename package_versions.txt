@@ -157,7 +157,7 @@ uvicorn                     0.29.0                  python
 voluptuous                  0.14.2                  python                   
 webencodings                0.5.1                   python                   
 wheel                       0.43.0                  python                   
-wheel                       0.44.0                  python                   
+wheel                       0.45.0                  python                   
 wsproto                     1.2.0                   python                   
 xz-libs                     5.4.3-r0                apk                      
 zeroconf                    0.132.2                 python                   
