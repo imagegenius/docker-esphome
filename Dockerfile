@@ -25,6 +25,7 @@ RUN \
   apk add --no-cache \
     gcompat \
     git \
+    mpfr-dev \
     iputils \
     openssl-dev \
     py3-pip \
