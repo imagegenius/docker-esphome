@@ -163,7 +163,7 @@ typing-extensions           4.12.2                  python
 tzdata                      2024.2                  python                   
 tzdata                      2024a-r0                apk                      
 tzlocal                     5.2                     python                   
-ufolib2                     0.16.1                  python                   
+ufolib2                     0.17.0                  python                   
 unicodedata2                15.1.0                  python                   
 urllib3                     2.2.3                   python                   
 utmps-libs                  0.1.2.1-r1              apk                      
@@ -171,7 +171,7 @@ uvicorn                     0.30.6                  python
 voluptuous                  0.14.2                  python                   
 webencodings                0.5.1                   python                   
 wheel                       0.43.0                  python                   
-wheel                       0.45.0                  python                   
+wheel                       0.45.1                  python                   
 wsproto                     1.2.0                   python                   
 xz-libs                     5.4.3-r0                apk                      
 zeroconf                    0.132.2                 python                   
