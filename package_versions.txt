@@ -248,7 +248,7 @@ tzdata                      2024.2                                   python
 tzdata                      2024a-0ubuntu0.22.04.1                   deb                     
 tzlocal                     5.2                                      python                  
 ubuntu-keyring              2021.03.26                               deb                     
-ufolib2                     0.16.1                                   python                  
+ufolib2                     0.17.0                                   python                  
 unicodedata2                15.1.0                                   python                  
 urllib3                     2.2.3                                    python                  
 usrmerge                    25ubuntu2                                deb                     
@@ -258,7 +258,7 @@ voluptuous                  0.14.2                                   python
 webencodings                0.5.1                                    python                  
 wheel                       0.37.1                                   python                  
 wheel                       0.43.0                                   python                  
-wheel                       0.45.0                                   python                  
+wheel                       0.45.1                                   python                  
 wsproto                     1.2.0                                    python                  
 zeroconf                    0.132.2                                  python                  
 zipp                        3.19.2                                   python                  
