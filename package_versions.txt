@@ -1,7 +1,7 @@
 NAME                        VERSION                 TYPE                    
 Simple Launcher             1.1.0.14                dotnet  (+5 duplicates)  
 aioesphomeapi               24.6.2                  python                   
-aiohappyeyeballs            2.4.3                   python                   
+aiohappyeyeballs            2.4.4                   python                   
 ajsonrpc                    1.2.0                   python                   
 alpine-baselayout           3.4.3-r1                apk                      
 alpine-baselayout-data      3.4.3-r1                apk                      
