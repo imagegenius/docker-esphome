@@ -7,7 +7,7 @@ anyio                       4.7.0                                    python
 appdirs                     1.4.4                                    python                  
 apt                         2.4.13                                   deb                     
 apt-utils                   2.4.13                                   deb                     
-argcomplete                 3.5.1                                    python                  
+argcomplete                 3.5.2                                    python                  
 async-interrupt             1.2.0                                    python                  
 async-timeout               4.0.3                                    python                  
 attrs                       24.2.0                                   python                  
