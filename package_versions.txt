@@ -44,7 +44,7 @@ esphome                     2024.11.3               python
 esphome-dashboard           20241120.0              python                   
 esptool                     4.7.0                   python                   
 findutils                   4.9.0-r5                apk                      
-fonttools                   4.55.2                  python                   
+fonttools                   4.55.3                  python                   
 freetype-py                 2.5.1                   python                   
 fs                          2.4.16                  python                   
 gcompat                     1.1.0-r1                apk                      
