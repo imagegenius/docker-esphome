@@ -50,7 +50,7 @@ esphome-dashboard           20241120.0                               python
 esptool                     4.7.0                                    python                  
 exceptiongroup              1.2.2                                    python                  
 findutils                   4.8.0-1ubuntu3                           deb                     
-fonttools                   4.55.2                                   python                  
+fonttools                   4.55.3                                   python                  
 freetype-py                 2.5.1                                    python                  
 fs                          2.4.16                                   python                  
 gcc-12-base                 12.3.0-1ubuntu1~22.04                    deb                     
@@ -107,7 +107,7 @@ libcurl4                    7.81.0-1ubuntu1.18                       deb
 libdb5.3                    5.3.28+dfsg1-0.8ubuntu3                  deb                     
 libdebconfclient0           0.261ubuntu1                             deb                     
 libedit2                    3.1-20210910-1build1                     deb                     
-libexpat1                   2.4.7-1ubuntu0.4                         deb                     
+libexpat1                   2.4.7-1ubuntu0.5                         deb                     
 libext2fs2                  1.46.5-2ubuntu1.2                        deb                     
 libffi8                     3.4.2-4                                  deb                     
 libfido2-1                  1.10.0-1                                 deb                     
