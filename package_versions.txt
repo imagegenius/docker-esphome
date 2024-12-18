@@ -10,7 +10,7 @@ apt-utils                   2.4.13                                   deb
 argcomplete                 3.5.2                                    python                  
 async-interrupt             1.2.0                                    python                  
 async-timeout               4.0.3                                    python                  
-attrs                       24.2.0                                   python                  
+attrs                       24.3.0                                   python                  
 autocommand                 2.2.2                                    python                  
 backports-tarfile           1.2.0                                    python                  
 base-files                  12ubuntu4.7                              deb                     
@@ -45,8 +45,8 @@ dirmngr                     2.2.27-3ubuntu2.1                        deb
 dpkg                        1.21.1ubuntu2.3                          deb                     
 e2fsprogs                   1.46.5-2ubuntu1.2                        deb                     
 ecdsa                       0.19.0                                   python                  
-esphome                     2024.11.3                                python                  
-esphome-dashboard           20241120.0                               python                  
+esphome                     2024.12.0                                python                  
+esphome-dashboard           20241217.1                               python                  
 esptool                     4.7.0                                    python                  
 exceptiongroup              1.2.2                                    python                  
 findutils                   4.8.0-1ubuntu3                           deb                     
