@@ -40,7 +40,7 @@ curl                        8.5.0-r0                apk
 defcon                      0.10.3                  python                   
 defusedxml                  0.7.1                   python                   
 ecdsa                       0.19.0                  python                   
-esphome                     2024.12.1               python                   
+esphome                     2024.12.2               python                   
 esphome-dashboard           20241217.1              python                   
 esptool                     4.7.0                   python                   
 findutils                   4.9.0-r5                apk                      
