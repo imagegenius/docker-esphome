@@ -40,7 +40,7 @@ curl                        8.5.0-r0                apk
 defcon                      0.10.3                  python                   
 defusedxml                  0.7.1                   python                   
 ecdsa                       0.19.0                  python                   
-esphome                     2024.12.2               python                   
+esphome                     2024.12.4               python                   
 esphome-dashboard           20241217.1              python                   
 esptool                     4.7.0                   python                   
 findutils                   4.9.0-r5                apk                      
@@ -49,8 +49,8 @@ freetype-py                 2.5.1                   python
 fs                          2.4.16                  python                   
 gcompat                     1.1.0-r1                apk                      
 gdbm                        1.23-r1                 apk                      
-gflanguages                 0.7.1                   python                   
-git                         2.40.3-r0               apk                      
+gflanguages                 0.7.2                   python                   
+git                         2.40.4-r0               apk                      
 glyphsets                   1.0.0                   python                   
 glyphslib                   6.9.5                   python                   
 gmp                         6.2.1-r3                apk                      
