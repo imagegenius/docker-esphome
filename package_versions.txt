@@ -45,7 +45,7 @@ dirmngr                     2.2.27-3ubuntu2.1                        deb
 dpkg                        1.21.1ubuntu2.3                          deb                     
 e2fsprogs                   1.46.5-2ubuntu1.2                        deb                     
 ecdsa                       0.19.0                                   python                  
-esphome                     2024.12.2                                python                  
+esphome                     2024.12.4                                python                  
 esphome-dashboard           20241217.1                               python                  
 esptool                     4.7.0                                    python                  
 exceptiongroup              1.2.2                                    python                  
@@ -54,7 +54,7 @@ fonttools                   4.55.3                                   python
 freetype-py                 2.5.1                                    python                  
 fs                          2.4.16                                   python                  
 gcc-12-base                 12.3.0-1ubuntu1~22.04                    deb                     
-gflanguages                 0.7.1                                    python                  
+gflanguages                 0.7.2                                    python                  
 glyphsets                   1.0.0                                    python                  
 glyphslib                   6.9.5                                    python                  
 gnupg                       2.2.27-3ubuntu2.1                        deb                     
