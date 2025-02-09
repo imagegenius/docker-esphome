@@ -1,7 +1,7 @@
 NAME                        VERSION                 TYPE                    
 Simple Launcher             1.1.0.14                dotnet  (+5 duplicates)  
 aioesphomeapi               24.6.2                  python                   
-aiohappyeyeballs            2.4.4                   python                   
+aiohappyeyeballs            2.4.6                   python                   
 ajsonrpc                    1.2.0                   python                   
 alpine-baselayout           3.4.3-r1                apk                      
 alpine-baselayout-data      3.4.3-r1                apk                      
@@ -11,7 +11,7 @@ anyio                       4.8.0                   python
 apk-tools                   2.14.4-r0               apk                      
 appdirs                     1.4.4                   python                   
 argcomplete                 3.5.3                   python                   
-async-interrupt             1.2.0                   python                   
+async-interrupt             1.2.1                   python                   
 attrs                       25.1.0                  python                   
 autocommand                 2.2.2                   python                   
 backports-tarfile           1.2.0                   python                   
@@ -44,12 +44,12 @@ esphome                     2024.12.4               python
 esphome-dashboard           20241217.1              python                   
 esptool                     4.7.0                   python                   
 findutils                   4.9.0-r5                apk                      
-fonttools                   4.55.8                  python                   
+fonttools                   4.56.0                  python                   
 freetype-py                 2.5.1                   python                   
 fs                          2.4.16                  python                   
 gcompat                     1.1.0-r1                apk                      
 gdbm                        1.23-r1                 apk                      
-gflanguages                 0.7.2                   python                   
+gflanguages                 0.7.3                   python                   
 git                         2.40.4-r0               apk                      
 glyphsets                   1.0.0                   python                   
 glyphslib                   6.10.1                  python                   
@@ -94,7 +94,7 @@ libstdc++                   12.2.1_git20220924-r10  apk
 libucontext                 1.2-r2                  apk                      
 libunistring                1.1-r1                  apk                      
 linux-pam                   1.5.2-r10               apk                      
-marshmallow                 3.26.0                  python                   
+marshmallow                 3.26.1                  python                   
 more-itertools              10.3.0                  python                   
 mpdecimal                   2.5.1-r2                apk                      
 mpfr-dev                    4.2.0_p12-r0            apk                      
