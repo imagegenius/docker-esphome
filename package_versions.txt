@@ -244,7 +244,7 @@ tomli                       2.0.1                                    python
 tornado                     6.4                                      python                  
 typeguard                   4.3.0                                    python                  
 typing-extensions           4.12.2                                   python  (+1 duplicate)  
-tzdata                      2024a-0ubuntu0.22.04.1                   deb                     
+tzdata                      2024b-0ubuntu0.22.04                     deb                     
 tzdata                      2025.1                                   python                  
 tzlocal                     5.2                                      python                  
 ubuntu-keyring              2021.03.26                               deb                     
