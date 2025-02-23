@@ -10,7 +10,7 @@ alpine-release              3.18.7-r0               apk
 anyio                       4.8.0                   python                   
 apk-tools                   2.14.4-r0               apk                      
 argcomplete                 3.5.3                   python                   
-async-interrupt             1.2.1                   python                   
+async-interrupt             1.2.2                   python                   
 autocommand                 2.2.2                   python                   
 backports-tarfile           1.2.0                   python                   
 bash                        5.2.15-r5               apk                      
@@ -124,7 +124,7 @@ py3-setuptools              70.3.0-r0               apk
 py3-setuptools-pyc          70.3.0-r0               apk                      
 pyc                         0.1-r0                  apk                      
 pycparser                   2.22                    python                   
-pyelftools                  0.31                    python                   
+pyelftools                  0.32                    python                   
 pyparsing                   3.0.9                   python                   
 pyserial                    3.5                     python                   
 python3                     3.11.11-r0              apk                      
