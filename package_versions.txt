@@ -1,6 +1,6 @@
 NAME                        VERSION                 TYPE                    
 Simple Launcher             1.1.0.14                dotnet  (+5 duplicates)  
-aioesphomeapi               29.1.1                  python                   
+aioesphomeapi               29.3.2                  python                   
 aiohappyeyeballs            2.4.6                   python                   
 ajsonrpc                    1.2.0                   python                   
 alpine-baselayout           3.4.3-r1                apk                      
@@ -37,7 +37,7 @@ cssselect2                  0.7.0                   python
 curl                        8.5.0-r0                apk                      
 defusedxml                  0.7.1                   python                   
 ecdsa                       0.19.0                  python                   
-esphome                     2025.2.1                python                   
+esphome                     2025.2.2                python                   
 esphome-dashboard           20250212.0              python                   
 esphome-glyphsets           0.1.0                   python                   
 esptool                     4.7.0                   python                   
