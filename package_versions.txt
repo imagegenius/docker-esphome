@@ -1,7 +1,7 @@
 NAME                        VERSION                 TYPE                    
 Simple Launcher             1.1.0.14                dotnet  (+5 duplicates)  
 aioesphomeapi               29.3.2                  python                   
-aiohappyeyeballs            2.4.6                   python                   
+aiohappyeyeballs            2.5.0                   python                   
 ajsonrpc                    1.2.0                   python                   
 alpine-baselayout           3.4.3-r1                apk                      
 alpine-baselayout-data      3.4.3-r1                apk                      
@@ -9,7 +9,7 @@ alpine-keys                 2.4-r1                  apk
 alpine-release              3.18.7-r0               apk                      
 anyio                       4.8.0                   python                   
 apk-tools                   2.14.4-r0               apk                      
-argcomplete                 3.5.3                   python                   
+argcomplete                 3.6.0                   python                   
 async-interrupt             1.2.2                   python                   
 autocommand                 2.2.2                   python                   
 backports-tarfile           1.2.0                   python                   
@@ -33,7 +33,7 @@ click                       8.1.7                   python
 colorama                    0.4.6                   python                   
 coreutils                   9.3-r2                  apk                      
 cryptography                43.0.0                  python                   
-cssselect2                  0.7.0                   python                   
+cssselect2                  0.8.0                   python                   
 curl                        8.5.0-r0                apk                      
 defusedxml                  0.7.1                   python                   
 ecdsa                       0.19.0                  python                   
@@ -112,7 +112,7 @@ pkgconf                     1.9.5-r0                apk
 platformdirs                4.2.2                   python                   
 platformio                  6.1.16                  python                   
 procps-ng                   4.0.4-r0                apk                      
-protobuf                    5.29.3                  python                   
+protobuf                    6.30.0                  python                   
 puremagic                   1.27                    python                   
 py3-packaging               23.1-r1                 apk                      
 py3-packaging-pyc           23.1-r1                 apk                      
@@ -138,7 +138,7 @@ ruamel-yaml                 0.18.6                  python
 ruamel-yaml-clib            0.2.12                  python                   
 scanelf                     1.3.7-r1                apk                      
 semantic-version            2.10.0                  python                   
-setuptools                  75.8.2                  python                   
+setuptools                  75.9.1                  python                   
 shadow                      4.13-r4                 apk                      
 six                         1.17.0                  python                   
 skalibs                     2.13.1.1-r1             apk                      
