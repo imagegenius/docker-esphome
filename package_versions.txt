@@ -1,13 +1,13 @@
 NAME                        VERSION                 TYPE                    
 Simple Launcher             1.1.0.14                dotnet  (+5 duplicates)  
-aioesphomeapi               29.3.2                  python                   
+aioesphomeapi               29.6.0                  python                   
 aiohappyeyeballs            2.6.1                   python                   
 ajsonrpc                    1.2.0                   python                   
 alpine-baselayout           3.4.3-r1                apk                      
 alpine-baselayout-data      3.4.3-r1                apk                      
 alpine-keys                 2.4-r1                  apk                      
 alpine-release              3.18.7-r0               apk                      
-anyio                       4.8.0                   python                   
+anyio                       4.9.0                   python                   
 apk-tools                   2.14.4-r0               apk                      
 argcomplete                 3.6.0                   python                   
 async-interrupt             1.2.2                   python                   
@@ -32,15 +32,15 @@ charset-normalizer          3.4.1                   python
 click                       8.1.7                   python                   
 colorama                    0.4.6                   python                   
 coreutils                   9.3-r2                  apk                      
-cryptography                43.0.0                  python                   
+cryptography                44.0.2                  python                   
 cssselect2                  0.8.0                   python                   
 curl                        8.5.0-r0                apk                      
 defusedxml                  0.7.1                   python                   
 ecdsa                       0.19.1                  python                   
-esphome                     2025.2.2                python                   
+esphome                     2025.3.0                python                   
 esphome-dashboard           20250212.0              python                   
 esphome-glyphsets           0.1.0                   python                   
-esptool                     4.7.0                   python                   
+esptool                     4.8.1                   python                   
 findutils                   4.9.0-r5                apk                      
 freetype-py                 2.5.1                   python                   
 gcompat                     1.1.0-r1                apk                      
@@ -73,7 +73,7 @@ libc-utils                  0.7.2-r5                apk
 libcap2                     2.69-r0                 apk                      
 libcrypto3                  3.1.8-r0                apk                      
 libcurl                     8.5.0-r0                apk                      
-libexpat                    2.6.4-r0                apk                      
+libexpat                    2.7.0-r0                apk                      
 libffi                      3.4.4-r2                apk                      
 libgcc                      12.2.1_git20220924-r10  apk                      
 libidn2                     2.3.4-r1                apk                      
@@ -138,7 +138,7 @@ ruamel-yaml                 0.18.6                  python
 ruamel-yaml-clib            0.2.12                  python                   
 scanelf                     1.3.7-r1                apk                      
 semantic-version            2.10.0                  python                   
-setuptools                  76.0.0                  python                   
+setuptools                  77.0.3                  python                   
 shadow                      4.13-r4                 apk                      
 six                         1.17.0                  python                   
 skalibs                     2.13.1.1-r1             apk                      
@@ -149,7 +149,7 @@ starlette                   0.39.2                  python
 tabulate                    0.9.0                   python                   
 tinycss2                    1.4.0                   python                   
 tomli                       2.0.1                   python                   
-tornado                     6.4                     python                   
+tornado                     6.4.2                   python                   
 typeguard                   4.3.0                   python                   
 typing-extensions           4.12.2                  python  (+1 duplicate)   
 tzdata                      2024a-r0                apk                      
@@ -160,10 +160,9 @@ utmps-libs                  0.1.2.1-r1              apk
 uvicorn                     0.30.6                  python                   
 voluptuous                  0.14.2                  python                   
 webencodings                0.5.1                   python                   
-wheel                       0.43.0                  python                   
-wheel                       0.45.1                  python                   
+wheel                       0.45.1                  python  (+1 duplicate)   
 wsproto                     1.2.0                   python                   
 xz-libs                     5.4.3-r0                apk                      
-zeroconf                    0.145.1                 python                   
+zeroconf                    0.146.1                 python                   
 zipp                        3.19.2                  python                   
 zlib                        1.2.13-r1               apk                      
