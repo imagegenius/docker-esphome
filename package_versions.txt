@@ -37,7 +37,7 @@ cssselect2                  0.8.0                   python
 curl                        8.5.0-r0                apk                      
 defusedxml                  0.7.1                   python                   
 ecdsa                       0.19.1                  python                   
-esphome                     2025.3.1                python                   
+esphome                     2025.3.2                python                   
 esphome-dashboard           20250212.0              python                   
 esphome-glyphsets           0.1.0                   python                   
 esptool                     4.8.1                   python                   
@@ -138,7 +138,7 @@ ruamel-yaml                 0.18.6                  python
 ruamel-yaml-clib            0.2.12                  python                   
 scanelf                     1.3.7-r1                apk                      
 semantic-version            2.10.0                  python                   
-setuptools                  77.0.3                  python                   
+setuptools                  78.1.0                  python                   
 shadow                      4.13-r4                 apk                      
 six                         1.17.0                  python                   
 skalibs                     2.13.1.1-r1             apk                      
@@ -153,7 +153,7 @@ tornado                     6.4.2                   python
 typeguard                   4.3.0                   python                   
 typing-extensions           4.12.2                  python  (+1 duplicate)   
 tzdata                      2024a-r0                apk                      
-tzdata                      2025.1                  python                   
+tzdata                      2025.2                  python                   
 tzlocal                     5.2                     python                   
 urllib3                     2.3.0                   python                   
 utmps-libs                  0.1.2.1-r1              apk                      
