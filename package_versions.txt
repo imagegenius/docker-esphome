@@ -112,7 +112,7 @@ pkgconf                     1.9.5-r0                apk
 platformdirs                4.2.2                   python                   
 platformio                  6.1.16                  python                   
 procps-ng                   4.0.4-r0                apk                      
-protobuf                    6.30.1                  python                   
+protobuf                    6.30.2                  python                   
 puremagic                   1.27                    python                   
 py3-packaging               23.1-r1                 apk                      
 py3-packaging-pyc           23.1-r1                 apk                      
@@ -151,7 +151,8 @@ tinycss2                    1.4.0                   python
 tomli                       2.0.1                   python                   
 tornado                     6.4.2                   python                   
 typeguard                   4.3.0                   python                   
-typing-extensions           4.12.2                  python  (+1 duplicate)   
+typing-extensions           4.12.2                  python                   
+typing-extensions           4.13.0                  python                   
 tzdata                      2024a-r0                apk                      
 tzdata                      2025.2                  python                   
 tzlocal                     5.2                     python                   
