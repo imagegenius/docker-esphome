@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/imagegenius/baseimage-ubuntu:jammy
+FROM ghcr.io/imagegenius/baseimage-ubuntu:noble
 
 # set version label
 ARG BUILD_DATE
@@ -21,10 +21,9 @@ RUN set -xe && \
     openssh-client \
     python3 \
     python3-pip && \
-  pip install --upgrade \
+  pip install --upgrade --break-system-packages \
     reedsolo \
-    setuptools \
-    wheel && \
+    setuptools && \
   echo "**** install esphome ****" && \
   mkdir -p \
     /tmp/esphome \
@@ -40,11 +39,11 @@ RUN set -xe && \
     /tmp/esphome.tar.gz -C \
     /tmp/esphome --strip-components=1 && \
   cd /tmp/esphome && \
-  pip install \
+  pip install --break-system-packages \
     -r requirements.txt \
     -r requirements_optional.txt && \
   python3 script/platformio_install_deps.py platformio.ini --libraries && \
-  pip install \
+  pip install --break-system-packages \
     esphome=="${ESPHOME_VERSION}" && \
   echo "**** cleanup ****" && \
   for cleanfiles in *.pyc *.pyo; do \
