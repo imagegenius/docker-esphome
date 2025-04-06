@@ -13,7 +13,7 @@ async-interrupt             1.2.2                   python
 autocommand                 2.2.2                   python                  
 backports-tarfile           1.2.0                   python                  
 bash                        5.2.15-r5               apk                     
-bitarray                    3.3.0                   python                  
+bitarray                    3.3.1                   python                  
 bitstring                   4.3.1                   python                  
 bottle                      0.13.2                  python                  
 brotli-libs                 1.0.9-r14               apk                     
@@ -151,7 +151,7 @@ tomli                       2.0.1                   python
 tornado                     6.4.2                   python                  
 typeguard                   4.3.0                   python                  
 typing-extensions           4.12.2                  python                  
-typing-extensions           4.13.0                  python                  
+typing-extensions           4.13.1                  python                  
 tzdata                      2024a-r0                apk                     
 tzdata                      2025.2                  python                  
 tzlocal                     5.2                     python                  
