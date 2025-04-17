@@ -1,5 +1,5 @@
 NAME                        VERSION                 TYPE                   
-aioesphomeapi               29.6.0                  python                  
+aioesphomeapi               29.10.0                 python                  
 aiohappyeyeballs            2.6.1                   python                  
 ajsonrpc                    1.2.0                   python                  
 alpine-baselayout           3.4.3-r1                apk                     
@@ -36,9 +36,9 @@ cssselect2                  0.8.0                   python
 curl                        8.5.0-r0                apk                     
 defusedxml                  0.7.1                   python                  
 ecdsa                       0.19.1                  python                  
-esphome                     2025.3.3                python                  
-esphome-dashboard           20250212.0              python                  
-esphome-glyphsets           0.1.0                   python                  
+esphome                     2025.4.0                python                  
+esphome-dashboard           20250415.0              python                  
+esphome-glyphsets           0.2.0                   python                  
 esptool                     4.8.1                   python                  
 findutils                   4.9.0-r5                apk                     
 freetype-py                 2.5.1                   python                  
@@ -109,10 +109,10 @@ pillow                      10.4.0                  python
 pip                         23.1.2                  python                  
 pkgconf                     1.9.5-r0                apk                     
 platformdirs                4.2.2                   python                  
-platformio                  6.1.16                  python                  
+platformio                  6.1.18                  python                  
 procps-ng                   4.0.4-r0                apk                     
 protobuf                    6.30.2                  python                  
-puremagic                   1.27                    python                  
+puremagic                   1.28                    python                  
 py3-packaging               23.1-r1                 apk                     
 py3-packaging-pyc           23.1-r1                 apk                     
 py3-parsing                 3.0.9-r2                apk                     
@@ -133,7 +133,7 @@ pyyaml                      6.0.2                   python
 readline                    8.2.1-r1                apk                     
 reedsolo                    1.7.0                   python                  
 requests                    2.32.3                  python                  
-ruamel-yaml                 0.18.6                  python                  
+ruamel-yaml                 0.18.10                 python                  
 ruamel-yaml-clib            0.2.12                  python                  
 scanelf                     1.3.7-r1                apk                     
 semantic-version            2.10.0                  python                  
@@ -144,7 +144,7 @@ skalibs                     2.13.1.1-r1             apk
 sniffio                     1.3.1                   python                  
 sqlite-libs                 3.41.2-r3               apk                     
 ssl_client                  1.36.1-r7               apk                     
-starlette                   0.39.2                  python                  
+starlette                   0.46.2                  python                  
 tabulate                    0.9.0                   python                  
 tinycss2                    1.4.0                   python                  
 tomli                       2.0.1                   python                  
@@ -154,15 +154,15 @@ typing-extensions           4.12.2                  python
 typing-extensions           4.13.2                  python                  
 tzdata                      2024a-r0                apk                     
 tzdata                      2025.2                  python                  
-tzlocal                     5.2                     python                  
+tzlocal                     5.3.1                   python                  
 urllib3                     2.4.0                   python                  
 utmps-libs                  0.1.2.1-r1              apk                     
-uvicorn                     0.30.6                  python                  
-voluptuous                  0.14.2                  python                  
+uvicorn                     0.34.1                  python                  
+voluptuous                  0.15.2                  python                  
 webencodings                0.5.1                   python                  
 wheel                       0.45.1                  python  (+1 duplicate)  
 wsproto                     1.2.0                   python                  
 xz-libs                     5.4.3-r1                apk                     
-zeroconf                    0.146.1                 python                  
+zeroconf                    0.146.5                 python                  
 zipp                        3.19.2                  python                  
 zlib                        1.2.13-r1               apk                     
