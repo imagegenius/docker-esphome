@@ -42,7 +42,7 @@ dirmngr                      2.4.4-2ubuntu17.2                  deb
 dpkg                         1.22.6ubuntu6.1                    deb       
 e2fsprogs                    1.47.0-2.4~exp1ubuntu4.1           deb       
 ecdsa                        0.19.1                             python    
-esphome                      2025.4.0                           python    
+esphome                      2025.4.1                           python    
 esphome-dashboard            20250415.0                         python    
 esphome-glyphsets            0.2.0                              python    
 esptool                      4.8.1                              python    
@@ -215,7 +215,7 @@ ruamel-yaml-clib             0.2.12                             python
 sed                          4.9-2build1                        deb       
 semantic-version             2.10.0                             python    
 sensible-utils               0.0.22                             deb       
-setuptools                   79.0.1                             python    
+setuptools                   80.0.0                             python    
 six                          1.17.0                             python    
 sniffio                      1.3.1                              python    
 starlette                    0.46.2                             python    
