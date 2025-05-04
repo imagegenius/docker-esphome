@@ -13,7 +13,7 @@ async-interrupt             1.2.2                   python
 autocommand                 2.2.2                   python                  
 backports-tarfile           1.2.0                   python                  
 bash                        5.2.15-r5               apk                     
-bitarray                    3.3.1                   python                  
+bitarray                    3.3.2                   python                  
 bitstring                   4.3.1                   python                  
 bottle                      0.13.3                  python                  
 brotli-libs                 1.0.9-r14               apk                     
@@ -27,7 +27,7 @@ catatonit                   0.1.7-r0                apk
 certifi                     2025.4.26               python                  
 cffi                        1.17.1                  python                  
 chacha20poly1305-reuseable  0.13.2                  python                  
-charset-normalizer          3.4.1                   python                  
+charset-normalizer          3.4.2                   python                  
 click                       8.1.7                   python                  
 colorama                    0.4.6                   python                  
 coreutils                   9.3-r2                  apk                     
@@ -137,7 +137,7 @@ ruamel-yaml                 0.18.10                 python
 ruamel-yaml-clib            0.2.12                  python                  
 scanelf                     1.3.7-r1                apk                     
 semantic-version            2.10.0                  python                  
-setuptools                  80.0.0                  python                  
+setuptools                  80.3.0                  python                  
 shadow                      4.13-r4                 apk                     
 six                         1.17.0                  python                  
 skalibs                     2.13.1.1-r1             apk                     
