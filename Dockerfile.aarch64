@@ -40,8 +40,7 @@ RUN set -xe && \
     /tmp/esphome --strip-components=1 && \
   cd /tmp/esphome && \
   pip install --break-system-packages \
-    -r requirements.txt \
-    -r requirements_optional.txt && \
+    -r requirements.txt && \
   python3 script/platformio_install_deps.py platformio.ini --libraries && \
   pip install --break-system-packages \
     esphome=="${ESPHOME_VERSION}" && \
