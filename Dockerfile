@@ -52,8 +52,7 @@ RUN \
     /tmp/esphome --strip-components=1 && \
   cd /tmp/esphome && \
   pip install --break-system-packages --no-cache-dir \
-    -r requirements.txt \
-    -r requirements_optional.txt && \
+    -r requirements.txt && \
   python3 script/platformio_install_deps.py platformio.ini --libraries && \
   pip install --break-system-packages --no-cache-dir \
     esphome=="${ESPHOME_VERSION}" && \
