@@ -46,7 +46,7 @@ dirmngr                      2.4.4-2ubuntu17.2                  deb
 dpkg                         1.22.6ubuntu6.1                    deb       
 e2fsprogs                    1.47.0-2.4~exp1ubuntu4.1           deb       
 ecdsa                        0.19.1                             python    
-esphome                      2025.6.0                           python    
+esphome                      2025.6.1                           python    
 esphome-dashboard            20250514.0                         python    
 esphome-glyphsets            0.2.0                              python    
 esptool                      4.8.1                              python    
