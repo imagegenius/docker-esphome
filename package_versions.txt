@@ -1,5 +1,5 @@
 NAME                        VERSION                 TYPE                   
-aioesphomeapi               32.2.3                  python                  
+aioesphomeapi               34.2.1                  python                  
 aiohappyeyeballs            2.6.1                   python                  
 ajsonrpc                    1.2.0                   python                  
 alpine-baselayout           3.4.3-r1                apk                     
@@ -13,7 +13,7 @@ async-interrupt             1.2.2                   python
 autocommand                 2.2.2                   python                  
 backports-tarfile           1.2.0                   python                  
 bash                        5.2.15-r5               apk                     
-bitarray                    3.5.0                   python                  
+bitarray                    3.5.1                   python                  
 bitstring                   4.3.1                   python                  
 bottle                      0.13.4                  python                  
 brotli-libs                 1.0.9-r14               apk                     
@@ -24,7 +24,7 @@ ca-certificates-bundle      20240226-r0             apk
 cairocffi                   1.7.1                   python                  
 cairosvg                    2.8.2                   python                  
 catatonit                   0.1.7-r0                apk                     
-certifi                     2025.7.9                python                  
+certifi                     2025.7.14               python                  
 cffi                        1.17.1                  python                  
 chacha20poly1305-reuseable  0.13.2                  python                  
 charset-normalizer          3.4.2                   python                  
@@ -40,10 +40,10 @@ cssselect2                  0.8.0                   python
 curl                        8.5.0-r0                apk                     
 defusedxml                  0.7.1                   python                  
 ecdsa                       0.19.1                  python                  
-esphome                     2025.6.3                python                  
+esphome                     2025.7.0                python                  
 esphome-dashboard           20250514.0              python                  
 esphome-glyphsets           0.2.0                   python                  
-esptool                     4.8.1                   python                  
+esptool                     4.9.0                   python                  
 findutils                   4.9.0-r5                apk                     
 freetype-py                 2.5.1                   python                  
 gcompat                     1.1.0-r1                apk                     
@@ -70,6 +70,7 @@ jaraco-collections          5.1.0                   python
 jaraco-context              5.3.0                   python                  
 jaraco-functools            4.0.1                   python                  
 jaraco-text                 3.12.1                  python                  
+jinja2                      3.1.6                   python                  
 jq                          1.6-r4                  apk                     
 kconfiglib                  13.7.1                  python                  
 libacl                      2.3.1-r3                apk                     
@@ -94,6 +95,7 @@ libstdc++                   12.2.1_git20220924-r10  apk
 libucontext                 1.2-r2                  apk                     
 libunistring                1.1-r1                  apk                     
 linux-pam                   1.5.2-r10               apk                     
+markupsafe                  3.0.2                   python                  
 marshmallow                 3.26.1                  python                  
 more-itertools              10.3.0                  python                  
 mpdecimal                   2.5.1-r2                apk                     
@@ -120,7 +122,7 @@ platformdirs                4.2.2                   python
 platformio                  6.1.18                  python                  
 procps-ng                   4.0.4-r0                apk                     
 protobuf                    6.31.1                  python                  
-puremagic                   1.29                    python                  
+puremagic                   1.30                    python                  
 py3-packaging               23.1-r1                 apk                     
 py3-packaging-pyc           23.1-r1                 apk                     
 py3-parsing                 3.0.9-r2                apk                     
