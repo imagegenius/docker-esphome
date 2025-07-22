@@ -13,7 +13,7 @@ async-interrupt             1.2.2                   python
 autocommand                 2.2.2                   python                  
 backports-tarfile           1.2.0                   python                  
 bash                        5.2.15-r5               apk                     
-bitarray                    3.5.1                   python                  
+bitarray                    3.5.2                   python                  
 bitstring                   4.3.1                   python                  
 bottle                      0.13.4                  python                  
 brotli-libs                 1.0.9-r14               apk                     
@@ -40,7 +40,7 @@ cssselect2                  0.8.0                   python
 curl                        8.5.0-r0                apk                     
 defusedxml                  0.7.1                   python                  
 ecdsa                       0.19.1                  python                  
-esphome                     2025.7.2                python                  
+esphome                     2025.7.3                python                  
 esphome-dashboard           20250514.0              python                  
 esphome-glyphsets           0.2.0                   python                  
 esptool                     4.9.0                   python                  
