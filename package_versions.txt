@@ -13,7 +13,7 @@ backports-tarfile            1.2.0                              python
 base-files                   13ubuntu10.2                       deb       
 base-passwd                  3.6.3build1                        deb       
 bash                         5.2.21-2ubuntu4                    deb       
-bitarray                     3.5.1                              python    
+bitarray                     3.5.2                              python    
 bitstring                    4.3.1                              python    
 bottle                       0.13.4                             python    
 bsdutils                     1:2.39.3-9ubuntu6.3                deb       
@@ -46,7 +46,7 @@ dirmngr                      2.4.4-2ubuntu17.3                  deb
 dpkg                         1.22.6ubuntu6.1                    deb       
 e2fsprogs                    1.47.0-2.4~exp1ubuntu4.1           deb       
 ecdsa                        0.19.1                             python    
-esphome                      2025.7.2                           python    
+esphome                      2025.7.3                           python    
 esphome-dashboard            20250514.0                         python    
 esphome-glyphsets            0.2.0                              python    
 esptool                      4.9.0                              python    
