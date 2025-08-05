@@ -6,7 +6,7 @@ alpine-baselayout           3.4.3-r1                apk
 alpine-baselayout-data      3.4.3-r1                apk                     
 alpine-keys                 2.4-r1                  apk                     
 alpine-release              3.18.7-r0               apk                     
-anyio                       4.9.0                   python                  
+anyio                       4.10.0                  python                  
 apk-tools                   2.14.4-r0               apk                     
 argcomplete                 3.6.2                   python                  
 async-interrupt             1.2.2                   python                  
@@ -40,7 +40,7 @@ cssselect2                  0.8.0                   python
 curl                        8.5.0-r0                apk                     
 defusedxml                  0.7.1                   python                  
 ecdsa                       0.19.1                  python                  
-esphome                     2025.7.4                python                  
+esphome                     2025.7.5                python                  
 esphome-dashboard           20250514.0              python                  
 esphome-glyphsets           0.2.0                   python                  
 esptool                     4.9.0                   python                  
