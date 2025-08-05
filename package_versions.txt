@@ -3,7 +3,7 @@ adduser                      3.137ubuntu1                       deb
 aioesphomeapi                34.2.1                             python    
 aiohappyeyeballs             2.6.1                              python    
 ajsonrpc                     1.2.0                              python    
-anyio                        4.9.0                              python    
+anyio                        4.10.0                             python    
 apt                          2.8.3                              deb       
 apt-utils                    2.8.3                              deb       
 argcomplete                  3.6.2                              python    
@@ -46,7 +46,7 @@ dirmngr                      2.4.4-2ubuntu17.3                  deb
 dpkg                         1.22.6ubuntu6.1                    deb       
 e2fsprogs                    1.47.0-2.4~exp1ubuntu4.1           deb       
 ecdsa                        0.19.1                             python    
-esphome                      2025.7.4                           python    
+esphome                      2025.7.5                           python    
 esphome-dashboard            20250514.0                         python    
 esphome-glyphsets            0.2.0                              python    
 esptool                      4.9.0                              python    
