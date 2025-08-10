@@ -24,7 +24,7 @@ catatonit                    0.1.7-1                            deb
 certifi                      2025.8.3                           python    
 cffi                         1.17.1                             python    
 chacha20poly1305-reuseable   0.13.2                             python    
-charset-normalizer           3.4.2                              python    
+charset-normalizer           3.4.3                              python    
 cli                          UNKNOWN                            binary    
 cli-32                       UNKNOWN                            binary    
 cli-64                       UNKNOWN                            binary    
@@ -160,7 +160,7 @@ libsemanage-common           3.5-1build5                        deb
 libsemanage2                 3.5-1build5                        deb       
 libsepol2                    3.5-2build1                        deb       
 libsmartcols1                2.39.3-9ubuntu6.3                  deb       
-libsqlite3-0                 3.45.1-1ubuntu2.3                  deb       
+libsqlite3-0                 3.45.1-1ubuntu2.4                  deb       
 libss2                       1.47.0-2.4~exp1ubuntu4.1           deb       
 libssh-4                     0.10.6-2ubuntu0.1                  deb       
 libssl3t64                   3.0.13-0ubuntu3.5                  deb       
@@ -194,7 +194,7 @@ packaging                    24.2                               python
 packaging                    25.0                               python    
 paho-mqtt                    1.6.1                              python    
 passwd                       1:4.13+dfsg1-4ubuntu3.2            deb       
-perl-base                    5.38.2-3.2ubuntu0.1                deb       
+perl-base                    5.38.2-3.2ubuntu0.2                deb       
 pillow                       10.4.0                             python    
 pinentry-curses              1.2.1-3ubuntu5                     deb       
 pip                          24.0                               python    
