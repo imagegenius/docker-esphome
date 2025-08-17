@@ -13,7 +13,7 @@ async-interrupt             1.2.2                   python
 autocommand                 2.2.2                   python                  
 backports-tarfile           1.2.0                   python                  
 bash                        5.2.15-r5               apk                     
-bitarray                    3.6.0                   python                  
+bitarray                    3.6.1                   python                  
 bitstring                   4.3.1                   python                  
 bottle                      0.13.4                  python                  
 brotli-libs                 1.0.9-r14               apk                     
@@ -121,7 +121,7 @@ pkgconf                     1.9.5-r0                apk
 platformdirs                4.2.2                   python                  
 platformio                  6.1.18                  python                  
 procps-ng                   4.0.4-r0                apk                     
-protobuf                    6.31.1                  python                  
+protobuf                    6.32.0                  python                  
 puremagic                   1.30                    python                  
 py3-packaging               23.1-r1                 apk                     
 py3-packaging-pyc           23.1-r1                 apk                     
