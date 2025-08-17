@@ -10,10 +10,10 @@ argcomplete                  3.6.2                              python
 async-interrupt              1.2.2                              python    
 autocommand                  2.2.2                              python    
 backports-tarfile            1.2.0                              python    
-base-files                   13ubuntu10.2                       deb       
+base-files                   13ubuntu10.3                       deb       
 base-passwd                  3.6.3build1                        deb       
 bash                         5.2.21-2ubuntu4                    deb       
-bitarray                     3.6.0                              python    
+bitarray                     3.6.1                              python    
 bitstring                    4.3.1                              python    
 bottle                       0.13.4                             python    
 bsdutils                     1:2.39.3-9ubuntu6.3                deb       
@@ -201,7 +201,7 @@ pip                          24.0                               python
 platformdirs                 4.2.2                              python    
 platformio                   6.1.18                             python    
 procps                       2:4.0.4-4ubuntu3.2                 deb       
-protobuf                     6.31.1                             python    
+protobuf                     6.32.0                             python    
 publicsuffix                 20231001.0357-0.1                  deb       
 puremagic                    1.30                               python    
 pycparser                    2.22                               python    
