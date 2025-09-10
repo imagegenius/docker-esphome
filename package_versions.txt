@@ -25,7 +25,7 @@ cairocffi                   1.7.1                   python
 cairosvg                    2.8.2                   python                  
 catatonit                   0.1.7-r0                apk                     
 certifi                     2025.8.3                python                  
-cffi                        1.17.1                  python                  
+cffi                        2.0.0                   python                  
 chacha20poly1305-reuseable  0.13.2                  python                  
 charset-normalizer          3.4.3                   python                  
 cli                         UNKNOWN                 binary                  
@@ -39,7 +39,7 @@ cryptography                45.0.1                  python
 cssselect2                  0.8.0                   python                  
 curl                        8.5.0-r0                apk                     
 defusedxml                  0.7.1                   python                  
-esphome                     2025.8.3                python                  
+esphome                     2025.8.4                python                  
 esphome-dashboard           20250814.0              python                  
 esphome-glyphsets           0.2.0                   python                  
 esptool                     5.0.2                   python                  
@@ -133,7 +133,7 @@ py3-pip-pyc                 23.1.2-r0               apk
 py3-setuptools              70.3.0-r0               apk                     
 py3-setuptools-pyc          70.3.0-r0               apk                     
 pyc                         0.1-r0                  apk                     
-pycparser                   2.22                    python                  
+pycparser                   2.23                    python                  
 pyelftools                  0.32                    python                  
 pygments                    2.19.2                  python                  
 pyparsing                   3.0.9                   python                  
