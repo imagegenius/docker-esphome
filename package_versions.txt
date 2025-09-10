@@ -22,7 +22,7 @@ cairocffi                    1.7.1                              python
 cairosvg                     2.8.2                              python    
 catatonit                    0.1.7-1                            deb       
 certifi                      2025.8.3                           python    
-cffi                         1.17.1                             python    
+cffi                         2.0.0                              python    
 chacha20poly1305-reuseable   0.13.2                             python    
 charset-normalizer           3.4.3                              python    
 cli                          UNKNOWN                            binary    
@@ -45,7 +45,7 @@ diffutils                    1:3.10-1build1                     deb
 dirmngr                      2.4.4-2ubuntu17.3                  deb       
 dpkg                         1.22.6ubuntu6.1                    deb       
 e2fsprogs                    1.47.0-2.4~exp1ubuntu4.1           deb       
-esphome                      2025.8.3                           python    
+esphome                      2025.8.4                           python    
 esphome-dashboard            20250814.0                         python    
 esphome-glyphsets            0.2.0                              python    
 esptool                      5.0.2                              python    
@@ -189,7 +189,7 @@ ncurses-bin                  6.4+20240113-1ubuntu2              deb
 netbase                      6.4                                deb       
 netcat-openbsd               1.226-1ubuntu2                     deb       
 noiseprotocol                0.3.1                              python    
-openssh-client               1:9.6p1-3ubuntu13.13               deb       
+openssh-client               1:9.6p1-3ubuntu13.14               deb       
 openssl                      3.0.13-0ubuntu3.5                  deb       
 packaging                    24.2                               python    
 packaging                    25.0                               python    
@@ -205,7 +205,7 @@ procps                       2:4.0.4-4ubuntu3.2                 deb
 protobuf                     6.32.0                             python    
 publicsuffix                 20231001.0357-0.1                  deb       
 puremagic                    1.30                               python    
-pycparser                    2.22                               python    
+pycparser                    2.23                               python    
 pyelftools                   0.32                               python    
 pygments                     2.19.2                             python    
 pyparsing                    3.2.3                              python    
