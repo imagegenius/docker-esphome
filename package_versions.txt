@@ -202,13 +202,13 @@ pip                          24.0                               python
 platformdirs                 4.2.2                              python    
 platformio                   6.1.18                             python    
 procps                       2:4.0.4-4ubuntu3.2                 deb       
-protobuf                     6.32.0                             python    
+protobuf                     6.32.1                             python    
 publicsuffix                 20231001.0357-0.1                  deb       
 puremagic                    1.30                               python    
 pycparser                    2.23                               python    
 pyelftools                   0.32                               python    
 pygments                     2.19.2                             python    
-pyparsing                    3.2.3                              python    
+pyparsing                    3.2.4                              python    
 pyserial                     3.5                                python    
 python3                      3.12.3-0ubuntu2                    deb       
 python3-minimal              3.12.3-0ubuntu2                    deb       
