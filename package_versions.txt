@@ -122,7 +122,7 @@ pkgconf                     1.9.5-r0                apk
 platformdirs                4.2.2                   python                  
 platformio                  6.1.18                  python                  
 procps-ng                   4.0.4-r0                apk                     
-protobuf                    6.32.0                  python                  
+protobuf                    6.32.1                  python                  
 puremagic                   1.30                    python                  
 py3-packaging               23.1-r1                 apk                     
 py3-packaging-pyc           23.1-r1                 apk                     
