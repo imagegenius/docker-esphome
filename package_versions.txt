@@ -39,7 +39,7 @@ cryptography                45.0.1                  python
 cssselect2                  0.8.0                   python                  
 curl                        8.5.0-r0                apk                     
 defusedxml                  0.7.1                   python                  
-esphome                     2025.9.2                python                  
+esphome                     2025.9.3                python                  
 esphome-dashboard           20250904.0              python                  
 esphome-glyphsets           0.2.0                   python                  
 esptool                     5.0.2                   python                  
