@@ -24,7 +24,7 @@ ca-certificates-bundle      20240226-r0             apk
 cairocffi                   1.7.1                   python                  
 cairosvg                    2.8.2                   python                  
 catatonit                   0.1.7-r0                apk                     
-certifi                     2025.8.3                python                  
+certifi                     2025.10.5               python                  
 cffi                        2.0.0                   python                  
 chacha20poly1305-reuseable  0.13.2                  python                  
 charset-normalizer          3.4.3                   python                  
@@ -146,7 +146,7 @@ readline                    8.2.1-r1                apk
 reedsolo                    1.7.0                   python                  
 requests                    2.32.5                  python                  
 rich                        14.1.0                  python                  
-rich-click                  1.9.1                   python                  
+rich-click                  1.9.2                   python                  
 ruamel-yaml                 0.18.15                 python                  
 ruamel-yaml-clib            0.2.14                  python                  
 scanelf                     1.3.7-r1                apk                     
