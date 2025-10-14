@@ -13,7 +13,7 @@ async-interrupt             1.2.2                   python
 autocommand                 2.2.2                   python                  
 backports-tarfile           1.2.0                   python                  
 bash                        5.2.15-r5               apk                     
-bitarray                    3.7.1                   python                  
+bitarray                    3.7.2                   python                  
 bitstring                   4.3.1                   python                  
 bottle                      0.13.4                  python                  
 brotli-libs                 1.0.9-r14               apk                     
@@ -27,7 +27,7 @@ catatonit                   0.1.7-r0                apk
 certifi                     2025.10.5               python                  
 cffi                        2.0.0                   python                  
 chacha20poly1305-reuseable  0.13.2                  python                  
-charset-normalizer          3.4.3                   python                  
+charset-normalizer          3.4.4                   python                  
 cli                         UNKNOWN                 binary                  
 cli-32                      UNKNOWN                 binary                  
 cli-64                      UNKNOWN                 binary                  
@@ -55,7 +55,7 @@ gui-64                      UNKNOWN                 binary
 gui-arm64                   UNKNOWN                 binary                  
 h11                         0.16.0                  python                  
 icmplib                     3.0.4                   python                  
-idna                        3.10                    python                  
+idna                        3.11                    python                  
 ifaddr                      0.2.0                   python                  
 importlib-metadata          8.0.0                   python                  
 inflect                     7.3.1                   python                  
@@ -145,8 +145,8 @@ pyyaml                      6.0.2                   python
 readline                    8.2.1-r1                apk                     
 reedsolo                    1.7.0                   python                  
 requests                    2.32.5                  python                  
-rich                        14.1.0                  python                  
-rich-click                  1.9.2                   python                  
+rich                        14.2.0                  python                  
+rich-click                  1.9.3                   python                  
 ruamel-yaml                 0.18.15                 python                  
 ruamel-yaml-clib            0.2.14                  python                  
 scanelf                     1.3.7-r1                apk                     
