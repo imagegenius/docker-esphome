@@ -1,5 +1,5 @@
 NAME                        VERSION                 TYPE                   
-aioesphomeapi               40.2.1                  python                  
+aioesphomeapi               41.16.1                 python                  
 aiohappyeyeballs            2.6.1                   python                  
 ajsonrpc                    1.2.0                   python                  
 alpine-baselayout           3.4.3-r1                apk                     
@@ -39,10 +39,10 @@ cryptography                45.0.1                  python
 cssselect2                  0.8.0                   python                  
 curl                        8.5.0-r0                apk                     
 defusedxml                  0.7.1                   python                  
-esphome                     2025.9.3                python                  
-esphome-dashboard           20250904.0              python                  
+esphome                     2025.10.0               python                  
+esphome-dashboard           20251013.0              python                  
 esphome-glyphsets           0.2.0                   python                  
-esptool                     5.0.2                   python                  
+esptool                     5.1.0                   python                  
 findutils                   4.9.0-r5                apk                     
 freetype-py                 2.5.1                   python                  
 gcompat                     1.1.0-r1                apk                     
@@ -141,14 +141,14 @@ pyserial                    3.5                     python
 python3                     3.11.12-r1              apk                     
 python3-pyc                 3.11.12-r1              apk                     
 python3-pycache-pyc0        3.11.12-r1              apk                     
-pyyaml                      6.0.2                   python                  
+pyyaml                      6.0.3                   python                  
 readline                    8.2.1-r1                apk                     
 reedsolo                    1.7.0                   python                  
 requests                    2.32.5                  python                  
 rich                        14.2.0                  python                  
 rich-click                  1.9.3                   python                  
 ruamel-yaml                 0.18.15                 python                  
-ruamel-yaml-clib            0.2.14                  python                  
+ruamel-yaml-clib            0.2.12                  python                  
 scanelf                     1.3.7-r1                apk                     
 semantic-version            2.10.0                  python                  
 setuptools                  80.9.0                  python                  
@@ -176,6 +176,6 @@ webencodings                0.5.1                   python
 wheel                       0.45.1                  python  (+1 duplicate)  
 wsproto                     1.2.0                   python                  
 xz-libs                     5.4.3-r1                apk                     
-zeroconf                    0.147.2                 python                  
+zeroconf                    0.148.0                 python                  
 zipp                        3.19.2                  python                  
 zlib                        1.2.13-r1               apk                     
