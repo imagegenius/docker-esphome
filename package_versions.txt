@@ -1,6 +1,6 @@
 NAME                         VERSION                            TYPE     
 adduser                      3.137ubuntu1                       deb       
-aioesphomeapi                40.2.1                             python    
+aioesphomeapi                41.16.1                            python    
 aiohappyeyeballs             2.6.1                              python    
 ajsonrpc                     1.2.0                              python    
 anyio                        4.11.0                             python    
@@ -45,10 +45,10 @@ diffutils                    1:3.10-1build1                     deb
 dirmngr                      2.4.4-2ubuntu17.3                  deb       
 dpkg                         1.22.6ubuntu6.2                    deb       
 e2fsprogs                    1.47.0-2.4~exp1ubuntu4.1           deb       
-esphome                      2025.9.3                           python    
-esphome-dashboard            20250904.0                         python    
+esphome                      2025.10.0                          python    
+esphome-dashboard            20251013.0                         python    
 esphome-glyphsets            0.2.0                              python    
-esptool                      5.0.2                              python    
+esptool                      5.1.0                              python    
 findutils                    4.9.0-5build1                      deb       
 freetype-py                  2.5.1                              python    
 gcc-14-base                  14.2.0-4ubuntu2~24.04              deb       
@@ -218,14 +218,14 @@ python3-setuptools           68.1.2-2ubuntu1.2                  deb
 python3-wheel                0.42.0-2                           deb       
 python3.12                   3.12.3-1ubuntu0.8                  deb       
 python3.12-minimal           3.12.3-1ubuntu0.8                  deb       
-pyyaml                       6.0.2                              python    
+pyyaml                       6.0.3                              python    
 readline-common              8.2-4build1                        deb       
 reedsolo                     1.7.0                              python    
 requests                     2.32.5                             python    
 rich                         14.2.0                             python    
 rich-click                   1.9.3                              python    
 ruamel-yaml                  0.18.15                            python    
-ruamel-yaml-clib             0.2.14                             python    
+ruamel-yaml-clib             0.2.12                             python    
 sed                          4.9-2build1                        deb       
 semantic-version             2.10.0                             python    
 sensible-utils               0.0.22                             deb       
@@ -255,6 +255,6 @@ webencodings                 0.5.1                              python
 wheel                        0.42.0                             python    
 wheel                        0.45.1                             python    
 wsproto                      1.2.0                              python    
-zeroconf                     0.147.2                            python    
+zeroconf                     0.148.0                            python    
 zipp                         3.19.2                             python    
 zlib1g                       1:1.3.dfsg-3.1ubuntu2.1            deb       
