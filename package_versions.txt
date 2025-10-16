@@ -39,7 +39,7 @@ cryptography                45.0.1                  python
 cssselect2                  0.8.0                   python                  
 curl                        8.5.0-r0                apk                     
 defusedxml                  0.7.1                   python                  
-esphome                     2025.10.0               python                  
+esphome                     2025.10.1               python                  
 esphome-dashboard           20251013.0              python                  
 esphome-glyphsets           0.2.0                   python                  
 esptool                     5.1.0                   python                  
@@ -122,7 +122,7 @@ pkgconf                     1.9.5-r0                apk
 platformdirs                4.2.2                   python                  
 platformio                  6.1.18                  python                  
 procps-ng                   4.0.4-r0                apk                     
-protobuf                    6.32.1                  python                  
+protobuf                    6.33.0                  python                  
 puremagic                   1.30                    python                  
 py3-packaging               23.1-r1                 apk                     
 py3-packaging-pyc           23.1-r1                 apk                     
