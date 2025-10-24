@@ -8,7 +8,7 @@ alpine-keys                 2.4-r1                  apk
 alpine-release              3.18.7-r0               apk                     
 anyio                       4.11.0                  python                  
 apk-tools                   2.14.4-r0               apk                     
-argcomplete                 3.6.2                   python                  
+argcomplete                 3.6.3                   python                  
 async-interrupt             1.2.2                   python                  
 autocommand                 2.2.2                   python                  
 backports-tarfile           1.2.0                   python                  
@@ -39,7 +39,7 @@ cryptography                45.0.1                  python
 cssselect2                  0.8.0                   python                  
 curl                        8.5.0-r0                apk                     
 defusedxml                  0.7.1                   python                  
-esphome                     2025.10.2               python                  
+esphome                     2025.10.3               python                  
 esphome-dashboard           20251013.0              python                  
 esphome-glyphsets           0.2.0                   python                  
 esptool                     5.1.0                   python                  
