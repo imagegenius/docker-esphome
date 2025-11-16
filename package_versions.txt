@@ -24,7 +24,7 @@ ca-certificates-bundle      20240226-r0             apk
 cairocffi                   1.7.1                   python                  
 cairosvg                    2.8.2                   python                  
 catatonit                   0.1.7-r0                apk                     
-certifi                     2025.10.5               python                  
+certifi                     2025.11.12              python                  
 cffi                        2.0.0                   python                  
 chacha20poly1305-reuseable  0.13.2                  python                  
 charset-normalizer          3.4.4                   python                  
@@ -122,7 +122,7 @@ pkgconf                     1.9.5-r0                apk
 platformdirs                4.2.2                   python                  
 platformio                  6.1.18                  python                  
 procps-ng                   4.0.4-r0                apk                     
-protobuf                    6.33.0                  python                  
+protobuf                    6.33.1                  python                  
 puremagic                   1.30                    python                  
 py3-packaging               23.1-r1                 apk                     
 py3-packaging-pyc           23.1-r1                 apk                     
@@ -174,7 +174,7 @@ uvicorn                     0.34.3                  python
 voluptuous                  0.15.2                  python                  
 webencodings                0.5.1                   python                  
 wheel                       0.45.1                  python  (+1 duplicate)  
-wsproto                     1.3.0                   python                  
+wsproto                     1.3.1                   python                  
 xz-libs                     5.4.3-r1                apk                     
 zeroconf                    0.148.0                 python                  
 zipp                        3.19.2                  python                  
