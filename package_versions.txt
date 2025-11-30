@@ -3,7 +3,7 @@ adduser                      3.137ubuntu1                       deb
 aioesphomeapi                42.7.0                             python    
 aiohappyeyeballs             2.6.1                              python    
 ajsonrpc                     1.2.0                              python    
-anyio                        4.11.0                             python    
+anyio                        4.12.0                             python    
 apt                          2.8.3                              deb       
 apt-utils                    2.8.3                              deb       
 argcomplete                  3.6.3                              python    
@@ -231,7 +231,6 @@ sed                          4.9-2build1                        deb
 semantic-version             2.10.0                             python    
 sensible-utils               0.0.22                             deb       
 setuptools                   80.9.0                             python    
-sniffio                      1.3.1                              python    
 starlette                    0.46.2                             python    
 systemd-standalone-sysusers  255.4-1ubuntu8.11                  deb       
 sysvinit-utils               3.08-6ubuntu3                      deb       
