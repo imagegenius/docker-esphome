@@ -41,7 +41,7 @@ cssselect2                  0.8.0                   python
 curl                        8.5.0-r0                apk                     
 dbus-fast                   3.1.2                   python                  
 defusedxml                  0.7.1                   python                  
-esphome                     2025.11.2               python                  
+esphome                     2025.11.3               python                  
 esphome-dashboard           20251013.0              python                  
 esphome-glyphsets           0.2.0                   python                  
 esptool                     5.1.0                   python                  
