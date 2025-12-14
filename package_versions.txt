@@ -166,9 +166,9 @@ typeguard                   4.3.0                   python
 typing-extensions           4.12.2                  python                  
 typing-extensions           4.15.0                  python                  
 tzdata                      2024a-r0                apk                     
-tzdata                      2025.2                  python                  
+tzdata                      2025.3                  python                  
 tzlocal                     5.3.1                   python                  
-urllib3                     2.6.1                   python                  
+urllib3                     2.6.2                   python                  
 utmps-libs                  0.1.2.1-r1              apk                     
 uvicorn                     0.34.3                  python                  
 voluptuous                  0.15.2                  python                  
