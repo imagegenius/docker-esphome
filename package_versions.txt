@@ -47,7 +47,7 @@ diffutils                    1:3.10-1build1                     deb
 dirmngr                      2.4.4-2ubuntu17.3                  deb       
 dpkg                         1.22.6ubuntu6.5                    deb       
 e2fsprogs                    1.47.0-2.4~exp1ubuntu4.1           deb       
-esphome                      2025.12.1                          python    
+esphome                      2025.12.2                          python    
 esphome-dashboard            20251013.0                         python    
 esphome-glyphsets            0.2.0                              python    
 esptool                      5.1.0                              python    
@@ -178,7 +178,7 @@ login                        1:4.13+dfsg1-4ubuntu3.2            deb
 logsave                      1.47.0-2.4~exp1ubuntu4.1           deb       
 markdown-it-py               4.0.0                              python    
 markupsafe                   3.0.3                              python    
-marshmallow                  3.26.1                             python    
+marshmallow                  3.26.2                             python    
 mawk                         1.3.4.20240123-1build1             deb       
 mdurl                        0.1.2                              python    
 media-types                  10.1.0                             deb       
@@ -209,7 +209,7 @@ puremagic                    1.30                               python
 pycparser                    2.23                               python    
 pyelftools                   0.32                               python    
 pygments                     2.19.2                             python    
-pyparsing                    3.2.5                              python    
+pyparsing                    3.3.1                              python    
 pyserial                     3.5                                python    
 python3                      3.12.3-0ubuntu2.1                  deb       
 python3-minimal              3.12.3-0ubuntu2.1                  deb       
@@ -224,7 +224,7 @@ readline-common              8.2-4build1                        deb
 reedsolo                     1.7.0                              python    
 requests                     2.32.5                             python    
 rich                         14.2.0                             python    
-rich-click                   1.9.4                              python    
+rich-click                   1.9.5                              python    
 ruamel-yaml                  0.18.16                            python    
 ruamel-yaml-clib             0.2.15                             python    
 sed                          4.9-2build1                        deb       
