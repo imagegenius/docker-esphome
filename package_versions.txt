@@ -123,7 +123,7 @@ pkgconf                     1.9.5-r0                apk
 platformdirs                4.2.2                   python                  
 platformio                  6.1.18                  python                  
 procps-ng                   4.0.4-r0                apk                     
-protobuf                    6.33.2                  python                  
+protobuf                    6.33.3                  python                  
 puremagic                   1.30                    python                  
 py3-packaging               23.1-r1                 apk                     
 py3-packaging-pyc           23.1-r1                 apk                     
@@ -168,7 +168,7 @@ typing-extensions           4.15.0                  python
 tzdata                      2024a-r0                apk                     
 tzdata                      2025.3                  python                  
 tzlocal                     5.3.1                   python                  
-urllib3                     2.6.2                   python                  
+urllib3                     2.6.3                   python                  
 utmps-libs                  0.1.2.1-r1              apk                     
 uvicorn                     0.34.3                  python                  
 voluptuous                  0.15.2                  python                  
