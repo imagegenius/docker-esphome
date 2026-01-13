@@ -47,7 +47,7 @@ diffutils                    1:3.10-1build1                     deb
 dirmngr                      2.4.4-2ubuntu17.3                  deb       
 dpkg                         1.22.6ubuntu6.5                    deb       
 e2fsprogs                    1.47.0-2.4~exp1ubuntu4.1           deb       
-esphome                      2025.12.5                          python    
+esphome                      2025.12.6                          python    
 esphome-dashboard            20251013.0                         python    
 esphome-glyphsets            0.2.0                              python    
 esptool                      5.1.0                              python    
@@ -147,8 +147,8 @@ libpcre2-8-0                 10.42-4ubuntu2.1                   deb
 libproc2-0                   2:4.0.4-4ubuntu3.2                 deb       
 libpsl5t64                   0.21.2-1.1build1                   deb       
 libpython3-stdlib            3.12.3-0ubuntu2.1                  deb       
-libpython3.12-minimal        3.12.3-1ubuntu0.9                  deb       
-libpython3.12-stdlib         3.12.3-1ubuntu0.9                  deb       
+libpython3.12-minimal        3.12.3-1ubuntu0.10                 deb       
+libpython3.12-stdlib         3.12.3-1ubuntu0.10                 deb       
 libreadline8t64              8.2-4build1                        deb       
 librtmp1                     2.4+20151223.gitfa8646d.1-2build7  deb       
 libsasl2-2                   2.1.28+dfsg1-5ubuntu3.1            deb       
@@ -203,7 +203,7 @@ pip                          24.0                               python
 platformdirs                 4.2.2                              python    
 platformio                   6.1.18                             python    
 procps                       2:4.0.4-4ubuntu3.2                 deb       
-protobuf                     6.33.3                             python    
+protobuf                     6.33.4                             python    
 publicsuffix                 20231001.0357-0.1                  deb       
 puremagic                    1.30                               python    
 pycparser                    2.23                               python    
@@ -217,8 +217,8 @@ python3-pip                  24.0+dfsg-1ubuntu1.3               deb
 python3-pkg-resources        68.1.2-2ubuntu1.2                  deb       
 python3-setuptools           68.1.2-2ubuntu1.2                  deb       
 python3-wheel                0.42.0-2                           deb       
-python3.12                   3.12.3-1ubuntu0.9                  deb       
-python3.12-minimal           3.12.3-1ubuntu0.9                  deb       
+python3.12                   3.12.3-1ubuntu0.10                 deb       
+python3.12-minimal           3.12.3-1ubuntu0.10                 deb       
 pyyaml                       6.0.3                              python    
 readline-common              8.2-4build1                        deb       
 reedsolo                     1.7.0                              python    
