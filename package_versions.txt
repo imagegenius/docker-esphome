@@ -218,7 +218,7 @@ readline-common              8.2-4build1                        deb
 reedsolo                     1.7.0                              python    
 requests                     2.32.5                             python    
 resvg-py                     0.2.5                              python    
-rich                         14.2.0                             python    
+rich                         14.3.1                             python    
 rich-click                   1.9.6                              python    
 ruamel-yaml                  0.19.1                             python    
 ruamel-yaml-clib             0.2.15                             python    
