@@ -1,5 +1,5 @@
 NAME                        VERSION                 TYPE                   
-aioesphomeapi               43.13.0                 python                  
+aioesphomeapi               44.0.0                  python                  
 aiohappyeyeballs            2.6.1                   python                  
 ajsonrpc                    1.2.0                   python                  
 alpine-baselayout           3.4.3-r1                apk                     
@@ -37,8 +37,8 @@ coreutils                   9.3-r2                  apk
 cryptography                45.0.1                  python                  
 curl                        8.5.0-r0                apk                     
 dbus-fast                   4.0.0                   python                  
-esphome                     2026.1.5                python                  
-esphome-dashboard           20260110.0              python                  
+esphome                     2026.2.0                python                  
+esphome-dashboard           20260210.0              python                  
 esphome-glyphsets           0.2.0                   python                  
 esptool                     5.1.0                   python                  
 findutils                   4.9.0-r5                apk                     
@@ -113,7 +113,7 @@ pillow                      11.3.0                  python
 pip                         23.1.2                  python                  
 pkgconf                     1.9.5-r0                apk                     
 platformdirs                4.4.0                   python                  
-platformio                  6.1.18                  python                  
+platformio                  6.1.19                  python                  
 procps-ng                   4.0.4-r0                apk                     
 protobuf                    6.33.5                  python                  
 puremagic                   1.30                    python                  
@@ -138,7 +138,7 @@ pyyaml                      6.0.3                   python
 readline                    8.2.1-r1                apk                     
 reedsolo                    1.7.0                   python                  
 requests                    2.32.5                  python                  
-resvg-py                    0.2.5                   python                  
+resvg-py                    0.2.6                   python                  
 rich                        14.3.2                  python                  
 rich-click                  1.9.7                   python                  
 ruamel-yaml                 0.19.1                  python                  
@@ -150,7 +150,7 @@ shadow                      4.13-r4                 apk
 skalibs                     2.13.1.1-r1             apk                     
 sqlite-libs                 3.41.2-r4               apk                     
 ssl_client                  1.36.1-r7               apk                     
-starlette                   0.46.2                  python                  
+starlette                   0.52.1                  python                  
 tabulate                    0.9.0                   python                  
 tomli                       2.4.0                   python                  
 tornado                     6.5.4                   python                  
@@ -160,7 +160,7 @@ tzdata                      2025.3                  python
 tzlocal                     5.3.1                   python                  
 urllib3                     2.6.3                   python                  
 utmps-libs                  0.1.2.1-r1              apk                     
-uvicorn                     0.34.3                  python                  
+uvicorn                     0.40.0                  python                  
 voluptuous                  0.16.0                  python                  
 wheel                       0.46.3                  python  (+1 duplicate)  
 wsproto                     1.3.2                   python                  
