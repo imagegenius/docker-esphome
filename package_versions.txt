@@ -37,7 +37,7 @@ coreutils                   9.3-r2                  apk
 cryptography                45.0.1                  python                  
 curl                        8.5.0-r0                apk                     
 dbus-fast                   4.0.0                   python                  
-esphome                     2026.2.0                python                  
+esphome                     2026.2.1                python                  
 esphome-dashboard           20260210.0              python                  
 esphome-glyphsets           0.2.0                   python                  
 esptool                     5.1.0                   python                  
@@ -139,7 +139,7 @@ readline                    8.2.1-r1                apk
 reedsolo                    1.7.0                   python                  
 requests                    2.32.5                  python                  
 resvg-py                    0.2.6                   python                  
-rich                        14.3.2                  python                  
+rich                        14.3.3                  python                  
 rich-click                  1.9.7                   python                  
 ruamel-yaml                 0.19.1                  python                  
 ruamel-yaml-clib            0.2.15                  python                  
