@@ -37,7 +37,7 @@ coreutils                   9.3-r2                  apk
 cryptography                45.0.1                  python                  
 curl                        8.5.0-r0                apk                     
 dbus-fast                   4.0.0                   python                  
-esphome                     2026.2.3                python                  
+esphome                     2026.2.4                python                  
 esphome-dashboard           20260210.0              python                  
 esphome-glyphsets           0.2.0                   python                  
 esptool                     5.1.0                   python                  
