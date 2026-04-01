@@ -40,7 +40,7 @@ crcmod                      1.7                     python
 cryptography                46.0.5                  python                  
 curl                        8.5.0-r0                apk                     
 dbus-fast                   4.0.0                   python                  
-esphome                     2026.3.1                python                  
+esphome                     2026.3.2                python                  
 esphome-dashboard           20260210.0              python                  
 esphome-glyphsets           0.2.0                   python                  
 esptool                     5.2.0                   python                  
@@ -133,7 +133,7 @@ pycparser                   3.0                     python
 pydantic                    2.12.5                  python                  
 pydantic-core               2.41.5                  python                  
 pyelftools                  0.32                    python                  
-pygments                    2.19.2                  python                  
+pygments                    2.20.0                  python                  
 pyparsing                   3.0.9                   python                  
 pyserial                    3.5                     python                  
 python3                     3.11.12-r1              apk                     
