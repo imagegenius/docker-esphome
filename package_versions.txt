@@ -14,7 +14,7 @@ backports-tarfile            1.2.0                              python
 base-files                   13ubuntu10.4                       deb                     
 base-passwd                  3.6.3build1                        deb                     
 bash                         5.2.21-2ubuntu4                    deb                     
-bitarray                     3.8.0                              python                  
+bitarray                     3.8.1                              python                  
 bitstring                    4.4.0                              python                  
 bleak                        2.1.1                              python                  
 bottle                       0.13.4                             python                  
@@ -25,7 +25,7 @@ cbor2                        5.9.0                              python
 certifi                      2026.2.25                          python                  
 cffi                         2.0.0                              python                  
 chacha20poly1305-reuseable   0.13.2                             python                  
-charset-normalizer           3.4.6                              python                  
+charset-normalizer           3.4.7                              python                  
 cli                          UNKNOWN                            binary                  
 cli-32                       UNKNOWN                            binary                  
 cli-64                       UNKNOWN                            binary                  
@@ -39,7 +39,7 @@ cron-daemon-common           3.0pl1-184ubuntu2                  deb
 cryptography                 46.0.5                             python                  
 curl                         8.5.0-2ubuntu10.8                  deb                     
 dash                         0.5.12-6ubuntu5                    deb                     
-dbus-fast                    4.0.0                              python                  
+dbus-fast                    4.0.4                              python                  
 debconf                      1.5.86ubuntu1                      deb                     
 debianutils                  5.17build1                         deb                     
 diffutils                    1:3.10-1build1                     deb                     
@@ -241,8 +241,8 @@ tomli                        2.4.0                              python
 tornado                      6.5.5                              python                  
 typing-extensions            4.15.0                             python                  
 typing-inspection            0.4.2                              python                  
-tzdata                       2025.3                             python                  
 tzdata                       2025b-0ubuntu0.24.04.1             deb                     
+tzdata                       2026.1                             python                  
 tzlocal                      5.3.1                              python                  
 ubuntu-keyring               2023.11.28.1                       deb                     
 unminimize                   0.2.1                              deb                     
