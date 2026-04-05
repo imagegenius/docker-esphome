@@ -14,7 +14,7 @@ async-interrupt             1.2.2                   python
 autocommand                 2.2.2                   python                  
 backports-tarfile           1.2.0                   python                  
 bash                        5.2.15-r5               apk                     
-bitarray                    3.8.0                   python                  
+bitarray                    3.8.1                   python                  
 bitstring                   4.4.0                   python                  
 bleak                       2.1.1                   python                  
 bottle                      0.13.4                  python                  
@@ -28,7 +28,7 @@ cbor2                       5.9.0                   python
 certifi                     2026.2.25               python                  
 cffi                        2.0.0                   python                  
 chacha20poly1305-reuseable  0.13.2                  python                  
-charset-normalizer          3.4.6                   python                  
+charset-normalizer          3.4.7                   python                  
 cli                         UNKNOWN                 binary                  
 cli-32                      UNKNOWN                 binary                  
 cli-64                      UNKNOWN                 binary                  
@@ -39,7 +39,7 @@ coreutils                   9.3-r2                  apk
 crcmod                      1.7                     python                  
 cryptography                46.0.5                  python                  
 curl                        8.5.0-r0                apk                     
-dbus-fast                   4.0.0                   python                  
+dbus-fast                   4.0.4                   python                  
 esphome                     2026.3.2                python                  
 esphome-dashboard           20260210.0              python                  
 esphome-glyphsets           0.2.0                   python                  
@@ -165,7 +165,7 @@ tornado                     6.5.5                   python
 typing-extensions           4.15.0                  python                  
 typing-inspection           0.4.2                   python                  
 tzdata                      2024a-r0                apk                     
-tzdata                      2025.3                  python                  
+tzdata                      2026.1                  python                  
 tzlocal                     5.3.1                   python                  
 urllib3                     2.6.3                   python                  
 utmps-libs                  0.1.2.1-r1              apk                     
