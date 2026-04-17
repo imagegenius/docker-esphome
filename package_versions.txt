@@ -203,8 +203,8 @@ protobuf                     7.34.1                             python
 publicsuffix                 20231001.0357-0.1                  deb       
 puremagic                    1.30                               python    
 pycparser                    3.0                                python    
-pydantic                     2.13.1                             python    
-pydantic-core                2.46.1                             python    
+pydantic                     2.13.2                             python    
+pydantic-core                2.46.2                             python    
 pyelftools                   0.32                               python    
 pygments                     2.20.0                             python    
 pyparsing                    3.3.2                              python    
