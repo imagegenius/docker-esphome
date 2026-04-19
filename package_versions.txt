@@ -131,8 +131,8 @@ py3-setuptools              70.3.0-r0               apk
 py3-setuptools-pyc          70.3.0-r0               apk                     
 pyc                         0.1-r0                  apk                     
 pycparser                   3.0                     python                  
-pydantic                    2.13.0                  python                  
-pydantic-core               2.46.0                  python                  
+pydantic                    2.13.2                  python                  
+pydantic-core               2.46.2                  python                  
 pyelftools                  0.32                    python                  
 pygments                    2.20.0                  python                  
 pyparsing                   3.0.9                   python                  
