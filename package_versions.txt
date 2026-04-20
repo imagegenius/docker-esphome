@@ -1,5 +1,5 @@
 NAME                        VERSION                 TYPE                   
-aioesphomeapi               44.15.0                 python                  
+aioesphomeapi               44.16.1                 python                  
 aiohappyeyeballs            2.6.1                   python                  
 ajsonrpc                    1.2.0                   python                  
 alpine-baselayout           3.4.3-r1                apk                     
@@ -40,7 +40,7 @@ crcmod                      1.7                     python
 cryptography                46.0.7                  python                  
 curl                        8.5.0-r0                apk                     
 dbus-fast                   4.0.4                   python                  
-esphome                     2026.4.0                python                  
+esphome                     2026.4.1                python                  
 esphome-dashboard           20260408.1              python                  
 esphome-glyphsets           0.2.0                   python                  
 esptool                     5.2.0                   python                  
