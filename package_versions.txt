@@ -189,7 +189,7 @@ noiseprotocol                0.3.1                              python
 openssh-client               1:9.6p1-3ubuntu13.15               deb       
 openssl                      3.0.13-0ubuntu3.9                  deb       
 packaging                    26.0                               python    
-packaging                    26.1                               python    
+packaging                    26.2                               python    
 paho-mqtt                    1.6.1                              python    
 passwd                       1:4.13+dfsg1-4ubuntu3.2            deb       
 perl-base                    5.38.2-3.2ubuntu0.2                deb       
