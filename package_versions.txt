@@ -110,7 +110,7 @@ noiseprotocol               0.3.1                   python
 oniguruma                   6.9.8-r1                apk       
 openssl-dev                 3.1.8-r0                apk       
 packaging                   26.0                    python    
-packaging                   26.1                    python    
+packaging                   26.2                    python    
 paho-mqtt                   1.6.1                   python    
 pcre2                       10.42-r1                apk       
 pillow                      12.2.0                  python    
@@ -166,7 +166,7 @@ tornado                     6.5.5                   python
 typing-extensions           4.15.0                  python    
 typing-inspection           0.4.2                   python    
 tzdata                      2024a-r0                apk       
-tzdata                      2026.1                  python    
+tzdata                      2026.2                  python    
 tzlocal                     5.3.1                   python    
 urllib3                     2.6.3                   python    
 utmps-libs                  0.1.2.1-r1              apk       
