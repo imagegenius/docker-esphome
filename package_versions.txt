@@ -40,7 +40,7 @@ crcmod                      1.7                     python
 cryptography                46.0.7                  python    
 curl                        8.5.0-r0                apk       
 dbus-fast                   4.0.4                   python    
-esphome                     2026.4.2                python    
+esphome                     2026.4.3                python    
 esphome-dashboard           20260408.1              python    
 esphome-glyphsets           0.2.0                   python    
 esptool                     5.2.0                   python    
