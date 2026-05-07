@@ -173,7 +173,7 @@ libzstd1                     1.5.5+dfsg2-2build1.1              deb
 locales                      2.39-0ubuntu8.7                    deb       
 login                        1:4.13+dfsg1-4ubuntu3.2            deb       
 logsave                      1.47.0-2.4~exp1ubuntu4.1           deb       
-markdown-it-py               4.1.0                              python    
+markdown-it-py               4.2.0                              python    
 markupsafe                   3.0.3                              python    
 marshmallow                  3.26.2                             python    
 mawk                         1.3.4.20240123-1build1             deb       
