@@ -71,7 +71,7 @@ gzip                         1.12-1ubuntu3.1                    deb
 h11                          0.16.0                             python    
 hostname                     3.23+nmu2ubuntu2                   deb       
 icmplib                      3.0.4                              python    
-idna                         3.13                               python    
+idna                         3.14                               python    
 ifaddr                       0.2.0                              python    
 importlib-metadata           8.7.1                              python    
 init-system-helpers          1.66ubuntu1                        deb       
