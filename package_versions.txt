@@ -1,6 +1,6 @@
 NAME                        VERSION                 TYPE     
-aioesphomeapi               44.16.1                 python    
-aiohappyeyeballs            2.6.1                   python    
+aioesphomeapi               45.0.4                  python    
+aiohappyeyeballs            2.6.2                   python    
 ajsonrpc                    1.2.0                   python    
 alpine-baselayout           3.4.3-r1                apk       
 alpine-baselayout-data      3.4.3-r1                apk       
@@ -25,7 +25,7 @@ ca-certificates             20240226-r0             apk
 ca-certificates-bundle      20240226-r0             apk       
 catatonit                   0.1.7-r0                apk       
 cbor2                       5.9.0                   python    
-certifi                     2026.4.22               python    
+certifi                     2026.5.20               python    
 cffi                        2.0.0                   python    
 chacha20poly1305-reuseable  0.13.2                  python    
 charset-normalizer          3.4.7                   python    
@@ -33,15 +33,15 @@ cli                         UNKNOWN                 binary
 cli-32                      UNKNOWN                 binary    
 cli-64                      UNKNOWN                 binary    
 cli-arm64                   UNKNOWN                 binary    
-click                       8.3.2                   python    
+click                       8.3.3                   python    
 colorama                    0.4.6                   python    
 coreutils                   9.3-r2                  apk       
 crcmod                      1.7                     python    
-cryptography                46.0.7                  python    
+cryptography                48.0.0                  python    
 curl                        8.5.0-r0                apk       
-dbus-fast                   4.2.7                   python    
-esphome                     2026.4.5                python    
-esphome-dashboard           20260408.1              python    
+dbus-fast                   5.0.3                   python    
+esphome                     2026.5.0                python    
+esphome-dashboard           20260425.0              python    
 esphome-glyphsets           0.2.0                   python    
 esptool                     5.2.0                   python    
 findutils                   4.9.0-r5                apk       
@@ -119,7 +119,7 @@ pkgconf                     1.9.5-r0                apk
 platformdirs                4.4.0                   python    
 platformio                  6.1.19                  python    
 procps-ng                   4.0.4-r0                apk       
-protobuf                    7.34.1                  python    
+protobuf                    7.35.0                  python    
 puremagic                   1.30                    python    
 py3-packaging               23.1-r1                 apk       
 py3-packaging-pyc           23.1-r1                 apk       
@@ -135,7 +135,7 @@ pydantic                    2.13.4                  python
 pydantic-core               2.46.4                  python    
 pyelftools                  0.32                    python    
 pygments                    2.20.0                  python    
-pyparsing                   3.0.9                   python    
+pyparsing                   3.3.2                   python    
 pyserial                    3.5                     python    
 python3                     3.11.12-r1              apk       
 python3-pyc                 3.11.12-r1              apk       
@@ -143,8 +143,8 @@ python3-pycache-pyc0        3.11.12-r1              apk
 pyyaml                      6.0.3                   python    
 readline                    8.2.1-r1                apk       
 reedsolo                    1.7.0                   python    
-requests                    2.33.1                  python    
-resvg-py                    0.2.6                   python    
+requests                    2.34.1                  python    
+resvg-py                    0.3.1                   python    
 rich                        15.0.0                  python    
 rich-click                  1.9.7                   python    
 ruamel-yaml                 0.19.1                  python    
@@ -176,6 +176,6 @@ wheel                       0.46.3                  python
 wheel                       0.47.0                  python    
 wsproto                     1.3.2                   python    
 xz-libs                     5.4.3-r1                apk       
-zeroconf                    0.148.0                 python    
+zeroconf                    0.149.12                python    
 zipp                        3.23.0                  python    
 zlib                        1.2.13-r1               apk       
