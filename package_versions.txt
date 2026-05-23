@@ -39,7 +39,7 @@ cron-daemon-common           3.0pl1-184ubuntu2                  deb
 cryptography                 48.0.0                             python    
 curl                         8.5.0-2ubuntu10.9                  deb       
 dash                         0.5.12-6ubuntu5                    deb       
-dbus-fast                    5.0.3                              python    
+dbus-fast                    5.0.4                              python    
 debconf                      1.5.86ubuntu1                      deb       
 debianutils                  5.17build1                         deb       
 diffutils                    1:3.10-1build1                     deb       
