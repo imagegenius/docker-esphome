@@ -39,8 +39,8 @@ coreutils                   9.3-r2                  apk
 crcmod                      1.7                     python    
 cryptography                48.0.0                  python    
 curl                        8.5.0-r0                apk       
-dbus-fast                   5.0.4                   python    
-esphome                     2026.5.0                python    
+dbus-fast                   5.0.6                   python    
+esphome                     2026.5.1                python    
 esphome-dashboard           20260425.0              python    
 esphome-glyphsets           0.2.0                   python    
 esptool                     5.2.0                   python    
@@ -176,6 +176,6 @@ wheel                       0.46.3                  python
 wheel                       0.47.0                  python    
 wsproto                     1.3.2                   python    
 xz-libs                     5.4.3-r1                apk       
-zeroconf                    0.149.12                python    
+zeroconf                    0.149.16                python    
 zipp                        3.23.0                  python    
 zlib                        1.2.13-r1               apk       
