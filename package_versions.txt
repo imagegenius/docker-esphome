@@ -39,7 +39,7 @@ coreutils                   9.3-r2                  apk
 crcmod                      1.7                     python    
 cryptography                48.0.0                  python    
 curl                        8.5.0-r0                apk       
-dbus-fast                   5.0.3                   python    
+dbus-fast                   5.0.4                   python    
 esphome                     2026.5.0                python    
 esphome-dashboard           20260425.0              python    
 esphome-glyphsets           0.2.0                   python    
@@ -56,7 +56,7 @@ gui-64                      UNKNOWN                 binary
 gui-arm64                   UNKNOWN                 binary    
 h11                         0.16.0                  python    
 icmplib                     3.0.4                   python    
-idna                        3.15                    python    
+idna                        3.16                    python    
 ifaddr                      0.2.0                   python    
 importlib-metadata          8.7.1                   python    
 intelhex                    2.3.0                   python    
