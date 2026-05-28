@@ -223,7 +223,7 @@ reedsolo                     1.7.0                              python
 requests                     2.34.1                             python    
 resvg-py                     0.3.1                              python    
 rich                         15.0.0                             python    
-rich-click                   1.9.7                              python    
+rich-click                   1.9.8                              python    
 ruamel-yaml                  0.19.1                             python    
 ruamel-yaml-clib             0.2.15                             python    
 sed                          4.9-2ubuntu0.24.04.1               deb       
