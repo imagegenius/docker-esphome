@@ -205,7 +205,7 @@ puremagic                    1.30                               python
 pycparser                    3.0                                python    
 pydantic                     2.13.4                             python    
 pydantic-core                2.46.4                             python    
-pyelftools                   0.32                               python    
+pyelftools                   0.33                               python    
 pygments                     2.20.0                             python    
 pyparsing                    3.3.2                              python    
 pyserial                     3.5                                python    
