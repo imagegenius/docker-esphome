@@ -1,8 +1,6 @@
 # syntax=docker/dockerfile:1
-# check=skip=InvalidDefaultArgInFrom
 
-ARG BASE_IMAGE
-FROM ${BASE_IMAGE}
+FROM ghcr.io/linuxserver/baseimage-alpine:3.23
 
 # set version label
 ARG VERSION
