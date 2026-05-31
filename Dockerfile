@@ -1,16 +1,23 @@
 # syntax=docker/dockerfile:1
+# check=skip=InvalidDefaultArgInFrom
 
-FROM ghcr.io/imagegenius/baseimage-alpine:3.18
+ARG BASE_IMAGE
+FROM ${BASE_IMAGE}
 
 # set version label
-ARG BUILD_DATE
 ARG VERSION
-ARG ESPHOME_VERSION
-LABEL build_version="ImageGenius Version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="hydazz"
+LABEL org.opencontainers.image.authors="hydazz"
 
 # environment settings
-ENV PLATFORMIO_GLOBALLIB_DIR=/piolibs
+ENV \
+  PLATFORMIO_GLOBALLIB_DIR=/piolibs \
+  PIP_BREAK_SYSTEM_PACKAGES=1 \
+  PIP_DISABLE_PIP_VERSION_CHECK=1 \
+  PIP_NO_CACHE_DIR=1 \
+  PIP_ROOT_USER_ACTION=ignore \
+  PYTHONDONTWRITEBYTECODE=1 \
+  PYTHONUNBUFFERED=1
 
 RUN \
   echo "**** install build packages ****" && \
@@ -23,39 +30,37 @@ RUN \
     python3-dev && \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
+    curl \
     gcompat \
     git \
-    mpfr-dev \
     iputils \
+    jq \
+    mpfr-dev \
     openssl-dev \
     py3-pip \
     python3 && \
-  pip install --break-system-packages --no-cache-dir --upgrade \
+  pip install --upgrade \
     reedsolo \
     setuptools \
     wheel && \
-  pip install --break-system-packages --no-binary :all: \
+  pip install --no-binary :all: \
     protobuf && \
   echo "**** install esphome ****" && \
   mkdir -p \
     /tmp/esphome \
     /piolibs && \
-  if [ -z ${ESPHOME_VERSION} ]; then \
-    ESPHOME_VERSION=$(curl -sL https://api.github.com/repos/esphome/esphome/releases/latest | \
-      jq -r '.tag_name'); \
-  fi && \
   curl -o \
     /tmp/esphome.tar.gz -L \
-    "https://github.com/esphome/esphome/archive/${ESPHOME_VERSION}.tar.gz" && \
+    "https://github.com/esphome/esphome/archive/${VERSION}.tar.gz" && \
   tar xf \
     /tmp/esphome.tar.gz -C \
     /tmp/esphome --strip-components=1 && \
   cd /tmp/esphome && \
-  pip install --break-system-packages --no-cache-dir \
+  pip install \
     -r requirements.txt && \
   python3 script/platformio_install_deps.py platformio.ini --libraries && \
-  pip install --break-system-packages --no-cache-dir \
-    esphome=="${ESPHOME_VERSION}" && \
+  pip install \
+    esphome=="${VERSION}" && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
