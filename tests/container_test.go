@@ -1,18 +1,16 @@
 package main
 
 import (
-	"context"
 	"testing"
 
-	"github.com/imagegenius/docker-esphome/tests/testhelpers"
+	helpers "github.com/hydazz/containers/tests"
 )
 
 func Test(t *testing.T) {
-	ctx := context.Background()
-	image := testhelpers.GetTestImage("esphome:local")
+	image := helpers.GetTestImage("esphome:local")
 	t.Logf("testing image: %s", image)
 
-	testhelpers.TestHTTPEndpoint(t, ctx, image, testhelpers.HTTPTestConfig{
+	helpers.RequireHTTPEndpoint(t, image, helpers.HTTPTestConfig{
 		Port:       "6052",
 		Path:       "/version",
 		StatusCode: 200,
