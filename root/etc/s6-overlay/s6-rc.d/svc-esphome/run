@@ -5,4 +5,4 @@ export HOME=/config
 exec \
     s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z 127.0.0.1 6052" \
         s6-setuidgid abc \
-            esphome dashboard /config
+            esphome-device-builder /config

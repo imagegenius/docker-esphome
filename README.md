@@ -16,7 +16,7 @@ ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configu
 Pin a specific upstream ESPHome release with the version tag:
 
 ```text
-ghcr.io/imagegenius/esphome:2026.5.1
+ghcr.io/imagegenius/esphome:2026.7.4
 ```
 
 ## Requirements
@@ -31,19 +31,19 @@ ghcr.io/imagegenius/esphome:2026.5.1
 ```yaml
 ---
 services:
-  esphome:
-    image: ghcr.io/imagegenius/esphome:latest
-    container_name: esphome
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
-      - ESPHOME_DASHBOARD_USE_PING=false #optional
-    volumes:
-      - path_to_appdata:/config
-    ports:
-      - 6052:6052
-    restart: unless-stopped
+    esphome:
+        image: ghcr.io/imagegenius/esphome:latest
+        container_name: esphome
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - TZ=Etc/UTC
+            - ESPHOME_DASHBOARD_USE_PING=false #optional
+        volumes:
+            - path_to_appdata:/config
+        ports:
+            - 6052:6052
+        restart: unless-stopped
 ```
 
 ## Parameters

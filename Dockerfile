@@ -44,21 +44,10 @@ RUN \
   pip install --no-binary :all: \
     protobuf && \
   echo "**** install esphome ****" && \
-  mkdir -p \
-    /tmp/esphome \
-    /piolibs && \
-  curl -o \
-    /tmp/esphome.tar.gz -L \
-    "https://github.com/esphome/esphome/archive/${VERSION}.tar.gz" && \
-  tar xf \
-    /tmp/esphome.tar.gz -C \
-    /tmp/esphome --strip-components=1 && \
-  cd /tmp/esphome && \
+  mkdir -p /piolibs && \
   pip install \
-    -r requirements.txt && \
-  python3 script/platformio_install_deps.py platformio.ini --libraries && \
-  pip install \
-    esphome=="${VERSION}" && \
+    esphome=="${VERSION}" \
+    esphome-device-builder && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
